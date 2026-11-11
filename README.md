@@ -4,6 +4,14 @@ Este projeto reúne os programas, prompts, dados e resultados de um experimento 
 
 Cada um dos 30 problemas foi enviado aos três modelos, uma vez por modelo, totalizando 90 respostas. Os mesmos enunciados e as mesmas configurações de geração foram usados nas chamadas. O problema é a unidade pareada da análise estatística.
 
+## Motivo e objetivo do trabalho
+
+Modelos de linguagem podem ajudar a produzir código, mas a utilidade de uma resposta depende de ela atender ao que foi pedido, compilar e funcionar. Por isso, este trabalho compara, em condições iguais, três modelos locais na resolução de exercícios introdutórios de orientação a objetos em Java. A execução local também permite observar o desempenho dos modelos em um computador de recursos limitados, sem GPU dedicada.
+
+O objetivo é identificar como os modelos se comportam em relação à aderência aos requisitos, compilação e execução, além de registrar custo de geração (tokens e tempo), tamanho do código e uma estimativa de complexidade. Os resultados servem como evidência para a atividade acadêmica; não pretendem estabelecer qual modelo é melhor para todo tipo de programação.
+
+O estudo foi desenvolvido no contexto da disciplina de Desenvolvimento Orientado a Objetos (DOO), ministrada pelo professor [@filipefernandesphd](https://github.com/filipefernandesphd).
+
 ## Modelos avaliados
 
 - `phi4-mini:3.8b`
@@ -92,7 +100,7 @@ O relatório em LaTeX está em `overleaf_upload_pronto/`. Para enviá-lo ao Over
 
 Todos os metadados estao disponiveis no github abaixo
 
-Feito e mantido por: 
+Feito e mantido por Rafael P. Silva.
 
 > Silva, Rafael P. (2026). *Avaliação de modelos de linguagem locais na geração de código Java orientado a objetos* [software e artefatos de pesquisa].
 
