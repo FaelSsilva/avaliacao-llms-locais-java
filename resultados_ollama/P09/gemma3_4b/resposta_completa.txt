@@ -1,0 +1,78 @@
+```java
+package com.example;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+    static class Publicacao {
+        private String titulo;
+        private int ano;
+
+        public Publicacao(String titulo, int ano) {
+            this.titulo = titulo;
+            this.ano = ano;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public int getAno() {
+            return ano;
+        }
+
+        public String descricao() {
+            return "Publicação: " + titulo + " (" + ano + ")";
+        }
+    }
+
+    static class Livro extends Publicacao {
+        private String autor;
+
+        public Livro(String titulo, int ano, String autor) {
+            super(titulo, ano);
+            this.autor = autor;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+
+        @Override
+        public String descricao() {
+            return "Livro: " + super.descricao() + ", Autor: " + autor;
+        }
+    }
+
+    static class Revista extends Publicacao {
+        private int edicao;
+
+        public Revista(String titulo, int ano, int edicao) {
+            super(titulo, ano);
+            this.edicao = edicao;
+        }
+
+        public int getEdicao() {
+            return edicao;
+        }
+
+        @Override
+        public String descricao() {
+            return "Revista: " + super.descricao() + ", Edição: " + edicao;
+        }
+    }
+
+    public static void main(String[] args) {
+        List<Publicacao> publicacoes = new ArrayList<>();
+        publicacoes.add(new Livro("O Senhor dos Anéis", 1954, "J.R.R. Tolkien"));
+        publicacoes.add(new Revista("Revista X", 2023, 12));
+        publicacoes.add(new Livro("Dom Quixote", 1605, "Miguel de Cervantes"));
+
+        for (Publicacao publicacao : publicacoes) {
+            System.out.println(publicacao.descricao());
+        }
+    }
+}
+```

@@ -1,0 +1,38 @@
+import java.util.LinkedList;
+
+public class Main {
+
+    static class FilaReservas {
+        private LinkedList<String> reservas = new LinkedList<>();
+
+        public void reservar(String nome) {
+            reservas.addLast(nome);
+        }
+
+        public String proximo() {
+            if (estaVazia()) {
+                throw new java.util.NoSuchElementException("A fila de reservas está vazia.");
+            }
+            return reservas.removeFirst();
+        }
+
+        public boolean estaVazia() {
+            return reservas.isEmpty();
+        }
+    }
+
+    public static void main(String[] args) {
+        FilaReservas fila = new FilaReservas();
+        fila.reservar("Alice");
+        fila.reservar("Bob");
+
+        System.out.println("Próximo: " + fila.proximo());
+        System.out.println("Próximo: " + fila.proximo());
+
+        try {
+            System.out.println("Próximo: " + fila.proximo());
+        } catch (java.util.NoSuchElementException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}

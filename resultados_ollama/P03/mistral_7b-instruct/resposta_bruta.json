@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:37:35.3923007Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        private static int total = 0;\n        private final String titulo;\n        private final String autor;\n\n        Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n            total++;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n\n        static int getTotalLivros() {\n            return total;\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\");\n        Livro livro2 = new Livro(\"Fundação\", \"Isaac Asimov\");\n        Livro livro3 = new Livro(\"Duna\", \"Frank Herbert\");\n\n        System.out.println(\"Total de livros criados: \" + Livro.getTotalLivros());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 40636465900,
+  "load_duration": 11818900,
+  "prompt_eval_count": 362,
+  "prompt_eval_cached_count": 313,
+  "prompt_eval_duration": 1039426999,
+  "eval_count": 264,
+  "eval_duration": 39555361000
+}

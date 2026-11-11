@@ -1,0 +1,482 @@
+{
+  "n_problems": 30,
+  "models": [
+    "phi4-mini:3.8b",
+    "gemma3:4b",
+    "mistral:7b-instruct"
+  ],
+  "numeric": {
+    "assertividade_0_100": {
+      "label": "Assertividade",
+      "friedman": {
+        "n": 30,
+        "statistic": 7.435294117647039,
+        "df": 2,
+        "p": 0.023248837558122095,
+        "p_chi2_approx": 0.02429105608279836,
+        "p_permutation": 0.023248837558122095,
+        "permutations": 20000,
+        "seed": 20261111,
+        "kendall_w": 0.12392156862745064,
+        "rank_sums": [
+          53.0,
+          70.0,
+          57.0
+        ],
+        "p_holm": 0.023248837558122095
+      },
+      "descriptive": {
+        "phi4-mini:3.8b": {
+          "mean": 46.5,
+          "median": 42.5,
+          "q1": 0.0,
+          "q3": 90.0
+        },
+        "gemma3:4b": {
+          "mean": 65.66666666666667,
+          "median": 92.5,
+          "q1": 11.25,
+          "q3": 100.0
+        },
+        "mistral:7b-instruct": {
+          "mean": 47.0,
+          "median": 22.5,
+          "q1": 0.0,
+          "q3": 100.0
+        }
+      }
+    },
+    "tokens_total": {
+      "label": "Tokens",
+      "friedman": {
+        "n": 30,
+        "statistic": 45.866666666666674,
+        "df": 2,
+        "p": 4.999750012499375e-05,
+        "p_chi2_approx": 1.0969324436797258e-10,
+        "p_permutation": 4.999750012499375e-05,
+        "permutations": 20000,
+        "seed": 20261111,
+        "kendall_w": 0.7644444444444446,
+        "rank_sums": [
+          32.0,
+          64.0,
+          84.0
+        ],
+        "p_holm": 0.00024998750062496874
+      },
+      "descriptive": {
+        "phi4-mini:3.8b": {
+          "mean": 553.3333333333334,
+          "median": 551.0,
+          "q1": 494.0,
+          "q3": 602.75
+        },
+        "gemma3:4b": {
+          "mean": 698.9333333333333,
+          "median": 724.0,
+          "q1": 591.75,
+          "q3": 783.5
+        },
+        "mistral:7b-instruct": {
+          "mean": 798.3666666666667,
+          "median": 785.0,
+          "q1": 729.25,
+          "q3": 852.75
+        }
+      }
+    },
+    "tempo_total_s": {
+      "label": "Tempo (s)",
+      "friedman": {
+        "n": 30,
+        "statistic": 52.26666666666665,
+        "df": 2,
+        "p": 4.999750012499375e-05,
+        "p_chi2_approx": 4.4713384019761204e-12,
+        "p_permutation": 4.999750012499375e-05,
+        "permutations": 20000,
+        "seed": 20261111,
+        "kendall_w": 0.8711111111111108,
+        "rank_sums": [
+          32.0,
+          60.0,
+          88.0
+        ],
+        "p_holm": 0.00024998750062496874
+      },
+      "descriptive": {
+        "phi4-mini:3.8b": {
+          "mean": 29.225433333333335,
+          "median": 29.1575,
+          "q1": 23.64725,
+          "q3": 31.9775
+        },
+        "gemma3:4b": {
+          "mean": 46.1361,
+          "median": 45.7185,
+          "q1": 33.60225,
+          "q3": 53.138000000000005
+        },
+        "mistral:7b-instruct": {
+          "mean": 72.1534,
+          "median": 65.07050000000001,
+          "q1": 56.897000000000006,
+          "q3": 84.697
+        }
+      }
+    },
+    "linhas_codigo": {
+      "label": "Linhas",
+      "friedman": {
+        "n": 30,
+        "statistic": 16.956521739130434,
+        "df": 2,
+        "p": 0.00024998750062496874,
+        "p_chi2_approx": 0.00020794002325793084,
+        "p_permutation": 0.00024998750062496874,
+        "permutations": 20000,
+        "seed": 20261111,
+        "kendall_w": 0.2826086956521739,
+        "rank_sums": [
+          47.5,
+          77.5,
+          55.0
+        ],
+        "p_holm": 0.0007499625018749063
+      },
+      "descriptive": {
+        "phi4-mini:3.8b": {
+          "mean": 43.0,
+          "median": 42.0,
+          "q1": 35.0,
+          "q3": 51.75
+        },
+        "gemma3:4b": {
+          "mean": 51.7,
+          "median": 50.0,
+          "q1": 38.0,
+          "q3": 60.75
+        },
+        "mistral:7b-instruct": {
+          "mean": 44.46666666666667,
+          "median": 48.0,
+          "q1": 31.75,
+          "q3": 53.5
+        }
+      }
+    },
+    "complexidade_ciclomatica_estimada": {
+      "label": "Complexidade estimada",
+      "friedman": {
+        "n": 30,
+        "statistic": 12.273972602739681,
+        "df": 2,
+        "p": 0.002049897505124744,
+        "p_chi2_approx": 0.0021614277044091647,
+        "p_permutation": 0.002049897505124744,
+        "permutations": 20000,
+        "seed": 20261111,
+        "kendall_w": 0.20456621004566136,
+        "rank_sums": [
+          52.0,
+          72.0,
+          56.0
+        ],
+        "p_holm": 0.004099795010249488
+      },
+      "descriptive": {
+        "phi4-mini:3.8b": {
+          "mean": 2.4,
+          "median": 2.0,
+          "q1": 1.0,
+          "q3": 3.0
+        },
+        "gemma3:4b": {
+          "mean": 3.3,
+          "median": 3.0,
+          "q1": 2.0,
+          "q3": 5.0
+        },
+        "mistral:7b-instruct": {
+          "mean": 2.6,
+          "median": 2.0,
+          "q1": 2.0,
+          "q3": 3.0
+        }
+      }
+    }
+  },
+  "pairwise_numeric": [
+    {
+      "metric": "assertividade_0_100",
+      "a": "phi4-mini:3.8b",
+      "b": "gemma3:4b",
+      "n_nonzero": 21,
+      "w_plus": 58.5,
+      "effect_rank_biserial": -0.4935064935064935,
+      "p": 0.04783794223804262,
+      "p_holm": 0.2239554499459936
+    },
+    {
+      "metric": "assertividade_0_100",
+      "a": "phi4-mini:3.8b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 17,
+      "w_plus": 63.5,
+      "effect_rank_biserial": -0.16993464052287582,
+      "p": 0.5526397671841796,
+      "p_holm": 1.0
+    },
+    {
+      "metric": "assertividade_0_100",
+      "a": "gemma3:4b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 21,
+      "w_plus": 173.5,
+      "effect_rank_biserial": 0.5021645021645021,
+      "p": 0.044791089989198715,
+      "p_holm": 0.2239554499459936
+    },
+    {
+      "metric": "tokens_total",
+      "a": "phi4-mini:3.8b",
+      "b": "gemma3:4b",
+      "n_nonzero": 30,
+      "w_plus": 6.0,
+      "effect_rank_biserial": -0.9741935483870968,
+      "p": 3.3424806536536606e-06,
+      "p_holm": 4.345224849749759e-05
+    },
+    {
+      "metric": "tokens_total",
+      "a": "phi4-mini:3.8b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 30,
+      "w_plus": 0,
+      "effect_rank_biserial": -1.0,
+      "p": 1.8242279994594843e-06,
+      "p_holm": 2.7363419991892266e-05
+    },
+    {
+      "metric": "tokens_total",
+      "a": "gemma3:4b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 30,
+      "w_plus": 48.0,
+      "effect_rank_biserial": -0.7935483870967742,
+      "p": 0.00015397181680567283,
+      "p_holm": 0.0015397181680567283
+    },
+    {
+      "metric": "tempo_total_s",
+      "a": "phi4-mini:3.8b",
+      "b": "gemma3:4b",
+      "n_nonzero": 30,
+      "w_plus": 7.0,
+      "effect_rank_biserial": -0.9698924731182795,
+      "p": 3.6943446109527344e-06,
+      "p_holm": 4.433213533143281e-05
+    },
+    {
+      "metric": "tempo_total_s",
+      "a": "phi4-mini:3.8b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 30,
+      "w_plus": 0,
+      "effect_rank_biserial": -1.0,
+      "p": 1.825371456361214e-06,
+      "p_holm": 2.7363419991892266e-05
+    },
+    {
+      "metric": "tempo_total_s",
+      "a": "gemma3:4b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 30,
+      "w_plus": 7.0,
+      "effect_rank_biserial": -0.9698924731182795,
+      "p": 3.6943446109527344e-06,
+      "p_holm": 4.433213533143281e-05
+    },
+    {
+      "metric": "linhas_codigo",
+      "a": "phi4-mini:3.8b",
+      "b": "gemma3:4b",
+      "n_nonzero": 29,
+      "w_plus": 76.0,
+      "effect_rank_biserial": -0.6505747126436782,
+      "p": 0.0022834289809737546,
+      "p_holm": 0.02055086082876379
+    },
+    {
+      "metric": "linhas_codigo",
+      "a": "phi4-mini:3.8b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 28,
+      "w_plus": 170.5,
+      "effect_rank_biserial": -0.16009852216748768,
+      "p": 0.4659048222647857,
+      "p_holm": 1.0
+    },
+    {
+      "metric": "linhas_codigo",
+      "a": "gemma3:4b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 28,
+      "w_plus": 335.0,
+      "effect_rank_biserial": 0.6502463054187192,
+      "p": 0.0027337556542924458,
+      "p_holm": 0.021870045234339566
+    },
+    {
+      "metric": "complexidade_ciclomatica_estimada",
+      "a": "phi4-mini:3.8b",
+      "b": "gemma3:4b",
+      "n_nonzero": 16,
+      "w_plus": 21.5,
+      "effect_rank_biserial": -0.6838235294117647,
+      "p": 0.016433699317240966,
+      "p_holm": 0.0986021959034458
+    },
+    {
+      "metric": "complexidade_ciclomatica_estimada",
+      "a": "phi4-mini:3.8b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 16,
+      "w_plus": 51.0,
+      "effect_rank_biserial": -0.25,
+      "p": 0.3745362035827778,
+      "p_holm": 1.0
+    },
+    {
+      "metric": "complexidade_ciclomatica_estimada",
+      "a": "gemma3:4b",
+      "b": "mistral:7b-instruct",
+      "n_nonzero": 20,
+      "w_plus": 172.0,
+      "effect_rank_biserial": 0.638095238095238,
+      "p": 0.00963924310488473,
+      "p_holm": 0.06747470173419311
+    }
+  ],
+  "binary": {
+    "compilou": {
+      "cochran_q": {
+        "n": 30,
+        "statistic": 5.375,
+        "df": 2,
+        "p": 0.0680508540250102,
+        "successes": [
+          16,
+          23,
+          17
+        ],
+        "p_holm": 0.1361017080500204
+      },
+      "rates": {
+        "phi4-mini:3.8b": {
+          "successes": 16,
+          "n": 30,
+          "rate": 0.5333333333333333
+        },
+        "gemma3:4b": {
+          "successes": 23,
+          "n": 30,
+          "rate": 0.7666666666666667
+        },
+        "mistral:7b-instruct": {
+          "successes": 17,
+          "n": 30,
+          "rate": 0.5666666666666667
+        }
+      }
+    },
+    "executou": {
+      "cochran_q": {
+        "n": 30,
+        "statistic": 2.3333333333333335,
+        "df": 2,
+        "p": 0.3114032239145977,
+        "successes": [
+          16,
+          21,
+          17
+        ],
+        "p_holm": 0.3114032239145977
+      },
+      "rates": {
+        "phi4-mini:3.8b": {
+          "successes": 16,
+          "n": 30,
+          "rate": 0.5333333333333333
+        },
+        "gemma3:4b": {
+          "successes": 21,
+          "n": 30,
+          "rate": 0.7
+        },
+        "mistral:7b-instruct": {
+          "successes": 17,
+          "n": 30,
+          "rate": 0.5666666666666667
+        }
+      }
+    }
+  },
+  "pairwise_binary": [
+    {
+      "outcome": "compilou",
+      "model_a": "phi4-mini:3.8b",
+      "model_b": "gemma3:4b",
+      "b": 3,
+      "c": 10,
+      "p": 0.09228515625,
+      "p_holm": 0.5537109375
+    },
+    {
+      "outcome": "compilou",
+      "model_a": "phi4-mini:3.8b",
+      "model_b": "mistral:7b-instruct",
+      "b": 4,
+      "c": 5,
+      "p": 1.0,
+      "p_holm": 1.0
+    },
+    {
+      "outcome": "compilou",
+      "model_a": "gemma3:4b",
+      "model_b": "mistral:7b-instruct",
+      "b": 8,
+      "c": 2,
+      "p": 0.109375,
+      "p_holm": 0.5537109375
+    },
+    {
+      "outcome": "executou",
+      "model_a": "phi4-mini:3.8b",
+      "model_b": "gemma3:4b",
+      "b": 5,
+      "c": 10,
+      "p": 0.3017578125,
+      "p_holm": 1.0
+    },
+    {
+      "outcome": "executou",
+      "model_a": "phi4-mini:3.8b",
+      "model_b": "mistral:7b-instruct",
+      "b": 4,
+      "c": 5,
+      "p": 1.0,
+      "p_holm": 1.0
+    },
+    {
+      "outcome": "executou",
+      "model_a": "gemma3:4b",
+      "model_b": "mistral:7b-instruct",
+      "b": 8,
+      "c": 4,
+      "p": 0.3876953125,
+      "p_holm": 1.0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:32:57.8026785Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Biblioteca {\n        private String nome;\n        private Catalogo catalogo;\n\n        public Biblioteca(String nome) {\n            this.nome = nome;\n            this.catalogo = new Catalogo();\n        }\n\n        public void adicionarLivro(String titulo, String autor) {\n            catalogo.adicionarLivro(titulo, autor);\n        }\n\n        public int obterQuantidadeLivros() {\n            return catalogo.obterQuantidadeLivros();\n        }\n    }\n\n    static class Catalogo {\n        private java.util.ArrayList<Livro> livros = new java.util.ArrayList<>();\n\n        public void adicionarLivro(String titulo, String autor) {\n            Livro livro = new Livro(titulo, autor);\n            livros.add(livro);\n        }\n\n        public int obterQuantidadeLivros() {\n            return livros.size();\n        }\n    }\n\n    static class Livro {\n        private String titulo;\n        private String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n        }\n    }\n\n    public static void main(String[] args) {\n        Biblioteca biblioteca = new Biblioteca(\"Central\");\n        biblioteca.adicionarLivro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\");\n        biblioteca.adicionarLivro(\"Dom Quixote\", \"Miguel de Cervantes\");\n        System.out.println(\"Quantidade de livros na biblioteca: \" + biblioteca.obterQuantidadeLivros());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 41034681200,
+  "load_duration": 13628600,
+  "prompt_eval_count": 261,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 4167862000,
+  "eval_count": 364,
+  "eval_duration": 36661057000
+}

@@ -1,0 +1,63 @@
+```java
+public class Main {
+
+    static class Livro {
+        String titulo;
+        String autor;
+        boolean disponivel;
+
+        Livro(String titulo, String autor, boolean disponivel) {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.disponivel = disponivel;
+        }
+    }
+
+    static class Usuario {
+        String nome;
+        int limiteEmprestimo;
+
+        Usuario(String nome, int limiteEmprestimo) {
+            this.nome = nome;
+            this.limiteEmprestimo = limiteEmprestimo;
+        }
+    }
+
+    static class ServicoEmprestimo {
+        public void emprestar(Livro livro, Usuario usuario) {
+            if (!livro.disponivel) {
+                throw new IllegalStateException("Livro não está disponível.");
+            }
+            if (usuario.limiteEmprestimo <= 0) {
+                throw new IllegalStateException("Limite de empréstimo do usuário é zero ou negativo.");
+            }
+            livro.disponivel = false;
+            usuario.limiteEmprestimo--;
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", true);
+        Usuario usuario1 = new Usuario("Alice", 2);
+        ServicoEmprestimo servico = new ServicoEmprestimo();
+
+        try {
+            servico.emprestar(livro1, usuario1);
+            System.out.println("Empréstimo bem-sucedido.");
+        } catch (IllegalStateException e) {
+            System.out.println("Erro ao emprestar: " + e.getMessage());
+        }
+
+        Livro livro2 = new Livro("1984", "George Orwell", true);
+        Usuario usuario2 = new Usuario("Bob", 0);
+        ServicoEmprestimo servico2 = new ServicoEmprestimo();
+
+        try {
+            servico2.emprestar(livro2, usuario2);
+            System.out.println("Empréstimo bem-sucedido.");
+        } catch (IllegalStateException e) {
+            System.out.println("Erro ao emprestar: " + e.getMessage());
+        }
+    }
+}
+```

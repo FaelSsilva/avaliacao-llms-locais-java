@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:37:34.8486376Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    static class Livro {\n        private String genero;\n\n        public Livro(String genero) {\n            this.genero = genero;\n        }\n\n        public String getGenero() {\n            return genero;\n        }\n    }\n\n    static class Catalogo {\n        private java.util.List<Livro> livros;\n\n        public Catalogo() {\n            this.livros = new java.util.ArrayList<>();\n        }\n\n        public void adicionarLivro(Livro livro) {\n            this.livros.add(livro);\n        }\n\n        public int calcularQuantidadeTotal() {\n            return this.livros.size();\n        }\n\n        public int calcularQuantidadePorGenero(String genero) {\n            int count = 0;\n            for (Livro livro : this.livros) {\n                if (livro.getGenero().equals(genero)) {\n                    count++;\n                }\n            }\n            return count;\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo catalogo = new Catalogo();\n        Livro livro1 = new Livro(\"Fantasia\");\n        Livro livro2 = new Livro(\"Ficção Científica\");\n        Livro livro3 = new Livro(\"Fantasia\");\n        Livro livro4 = new Livro(\"Romance\");\n\n        catalogo.adicionarLivro(livro1);\n        catalogo.adicionarLivro(livro2);\n        catalogo.adicionarLivro(livro3);\n        catalogo.adicionarLivro(livro4);\n\n        System.out.println(\"Quantidade total de livros: \" + catalogo.calcularQuantidadeTotal());\n        System.out.println(\"Quantidade de livros de Fantasia: \" + catalogo.calcularQuantidadePorGenero(\"Fantasia\"));\n        System.out.println(\"Quantidade de livros de Ficção Científica: \" + catalogo.calcularQuantidadePorGenero(\"Ficção Científica\"));\n        System.out.println(\"Quantidade de livros de Romance: \" + catalogo.calcularQuantidadePorGenero(\"Romance\"));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 48596799400,
+  "load_duration": 12678900,
+  "prompt_eval_count": 261,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2919902000,
+  "eval_count": 484,
+  "eval_duration": 45024418000
+}

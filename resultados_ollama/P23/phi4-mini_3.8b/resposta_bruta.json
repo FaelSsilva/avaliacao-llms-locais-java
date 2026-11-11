@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:22:45.7942416Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    interface EstrategiaBusca {\n        boolean buscar(String título);\n    }\n\n    static class BuscaExataPorTítulo implements EstrategiaBusca {\n        @Override\n        public boolean buscar(String título) {\n            return Main.catalogo.buscarExatamentePorTítulo(título.toLowerCase());\n        }\n    }\n\n    static class BuscaPorTrechoDoTítulo implements EstrategiaBusca {\n        @Override\n        public boolean buscar(String trecho) {\n            return Main.catalogo.buscarPorTrechoDoTítulo(título.toLowerCase());\n        }\n    }\n\n    static class Catalogo {\n        private List<String> livros = Arrays.asList(\"O Mundo sem Músicas\", \"A Arte da Programação\", \"Algoritmos e Estruturas de Dados\");\n\n        public boolean buscarExatamentePorTítulo(String título) {\n            return livros.contains(título);\n        }\n\n        public boolean buscarPorTrechoDoTítulo(String trecho) {\n            return livros.stream()\n                    .anyMatch(livro -> livro.toLowerCase().contains(título));\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo catalogo = new Catalogo();\n        EstrategiaBusca buscaExatamentePorTítulo = new BuscaExatamentePorTítulo();\n        EstrategiaBusca buscaPorTrechoDoTítulo = new BuscaPorTrechoDoTítulo();\n\n        System.out.println(\"Busca exata por título: 'o mundo sem músicas': \" + buscaExatamentePorTítulo.buscar(\"O Mundo sem Músicas\"));\n        System.out.println(\"Busca por trecho do título: 'arte': \" + buscaPorTrechoDoTítulo.buscar(\"arte\"));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 34312206800,
+  "load_duration": 9902700,
+  "prompt_eval_count": 270,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 903020000,
+  "eval_count": 340,
+  "eval_duration": 33320084000
+}

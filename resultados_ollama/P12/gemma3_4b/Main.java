@@ -1,0 +1,64 @@
+public class Main {
+
+    static class Livro {
+        private String isbn;
+        private String titulo;
+
+        public Livro(String isbn, String titulo) {
+            this.isbn = isbn;
+            this.titulo = titulo;
+        }
+
+        public String getIsbn() {
+            return isbn;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+    }
+
+    static class Catalogo {
+        private java.util.Map<String, Livro> livros = new java.util.HashMap<>();
+
+        public boolean adicionar(String isbn, String titulo) {
+            if (livros.containsKey(isbn)) {
+                return false;
+            }
+            livros.put(isbn, new Livro(isbn, titulo));
+            return true;
+        }
+
+        public boolean remover(String isbn) {
+            return livros.remove(isbn) != null;
+        }
+    }
+
+    public static void main(String[] args) {
+        Catalogo catalogo = new Catalogo();
+
+        System.out.println("Adicionando livro 1...");
+        catalogo.adicionar("9788412401423", "O Senhor dos Anéis");
+        System.out.println("Adicionando livro 2...");
+        catalogo.adicionar("9788412401423", "Dom Quixote"); // Tentando adicionar duplicado
+        System.out.println("Adicionando livro 3...");
+        catalogo.adicionar("9788412401425", "1984");
+
+        System.out.println("Removendo livro 1...");
+        boolean removido1 = catalogo.remover("9788412401423");
+        System.out.println("Remoção 1: " + removido1);
+
+        System.out.println("Removendo livro 2...");
+        boolean removido2 = catalogo.remover("9788412401423");
+        System.out.println("Remoção 2: " + removido2);
+
+        System.out.println("Removendo livro 3...");
+        boolean removido3 = catalogo.remover("9788412401425");
+        System.out.println("Remoção 3: " + removido3);
+
+        System.out.println("Livros no catálogo:");
+        for (java.util.Map.Entry<String, Livro> entry : catalogo.livros.entrySet()) {
+            System.out.println("ISBN: " + entry.getKey() + ", Título: " + entry.getValue().getTitulo());
+        }
+    }
+}

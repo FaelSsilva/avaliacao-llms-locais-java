@@ -1,0 +1,29 @@
+public class Main {
+
+    static class PoliticaEmprestimo {
+        private final int prazoEmDias;
+        private final int limitePorUsuario;
+
+        public PoliticaEmprestimo(int prazoEmDias, int limitePorUsuario) {
+            if (prazoEmDias <= 0 || limitePorUsuario <= 0) {
+                throw new IllegalArgumentException("Valores inválidos.");
+            }
+            this.prazoEmDias = prazoEmDias;
+            this.limitePorUsuario = limitePorUsuario;
+        }
+
+        public int getPrazoEmDias() {
+            return prazoEmDias;
+        }
+
+        public int getLimitePorUsuario() {
+            return limitePorUsuario;
+        }
+    }
+
+    public static void main(String[] args) {
+        PoliticaEmprestimo politica = new PoliticaEmprestimo(30, 5);
+        System.out.println("Prazo em dias: " + politica.getPrazoEmDias());
+        System.out.println("Limite por usuário: " + politica.getLimitePorUsuario());
+    }
+}

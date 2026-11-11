@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T20:47:47.7604324Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npackage com.example;\n\npublic class Main {\n\n    interface Emprestavel {\n        void emprestar();\n        void devolver();\n        boolean isDisponivel();\n    }\n\n    static class Livro implements Emprestavel {\n        private String titulo;\n        private boolean disponivel;\n        private boolean emprestado;\n\n        public Livro(String titulo) {\n            this.titulo = titulo;\n            this.disponivel = true;\n            this.emprestado = false;\n        }\n\n        @Override\n        public void emprestar() {\n            if (disponivel) {\n                disponivel = false;\n                emprestado = true;\n                System.out.println(titulo + \" foi emprestado.\");\n            } else {\n                throw new IllegalStateException(titulo + \" já está emprestado.\");\n            }\n        }\n\n        @Override\n        public void devolver() {\n            if (!emprestado) {\n                throw new IllegalStateException(titulo + \" não está emprestado.\");\n            }\n            disponivel = true;\n            emprestado = false;\n            System.out.println(titulo + \" foi devolvido.\");\n        }\n\n        @Override\n        public boolean isDisponivel() {\n            return disponivel;\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"O Senhor dos Anéis\");\n        Livro livro2 = new Livro(\"1984\");\n\n        System.out.println(livro1.isDisponivel());\n\n        try {\n            livro1.emprestar();\n            System.out.println(livro1.isDisponivel());\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n\n        try {\n            livro1.emprestar();\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n\n        try {\n            livro1.devolver();\n            System.out.println(livro1.isDisponivel());\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n\n        try {\n            livro1.devolver();\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 51922562200,
+  "load_duration": 6997600,
+  "prompt_eval_count": 282,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2829540000,
+  "eval_count": 551,
+  "eval_duration": 49033209000
+}

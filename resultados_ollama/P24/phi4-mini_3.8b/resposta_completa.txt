@@ -1,0 +1,36 @@
+```java
+public class Main {
+    public static class Devolucao {
+        private final Map<String, String> livros = new HashMap<>();
+
+        public void adicionar(String isbn, String titulo) {
+            livros.put(isbn, titulo);
+        }
+
+        public void remover(String isbn) {
+            livros.remove(isbn);
+        }
+
+        public int quantidade() {
+            return livros.size();
+        }
+
+        public String recuperar(String isbn) {
+            return livros.get(isbn);
+        }
+    }
+
+    public static void main(String[] args) {
+        Devolucao devolucao = new Devolucao();
+        devolucao.adicionar("1234567890", "O Código da Felicidade");
+        devolucao.adicionar("0987654321", "1984");
+        devolucao.adicionar("1234567890", "O Código da Felicidade"); // Duplicado
+
+        System.out.println("Quantidade de livros: " + devolucao.quantidade());
+        System.out.println("Título do livro com ISBN '1234567890': " + devolucao.recuperar("1234567890"));
+        System.out.println("Quantidade de livros após remover o segundo: " + devolucao.quantidade());
+        devolucao.remover("0987654321");
+        System.out.println("Quantidade de livros após remover um: " + devolucao.quantidade());
+    }
+}
+```

@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Main {
+    static class Livro implements Comparable<Livro> {
+        private final String titulo;
+        private final String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo.toUpperCase();
+            this.autor = autor;
+        }
+
+        @Override
+        public int compareTo(Livro outro) {
+            return this.titulo.compareTo(outro.titulo);
+        }
+    }
+
+    public static void main(String[] args) {
+        List<Livro> livros = new ArrayList<>();
+        livros.add(new Livro("A Vida é um Sonho", "Fiódor Dostoievski"));
+        livros.add(new Livro("O Índico", "António Lobo Antunes"));
+        livros.add(new Livro("O Senhor dos Anéis", "J.R.R. Tolkien"));
+        livros.add(new Livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry"));
+
+        Collections.sort(livros);
+
+        for (Livro livro : livros) {
+            System.out.println(livro.titulo + ", " + livro.autor);
+        }
+    }
+}

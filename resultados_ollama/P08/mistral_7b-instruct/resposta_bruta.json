@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:48:51.837792Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic interface Emprestavel {\n    void emprestar() throws IllegalStateException;\n    void devolver() throws IllegalStateException;\n    boolean isDisponivel();\n}\n\npublic class Main {\n    static class Livro implements Emprestavel {\n        private boolean emprestado;\n\n        public Livro(boolean inicialmenteEmprestado) {\n            this.emprestado = inicialmenteEmprestado;\n        }\n\n        @Override\n        public void emprestar() throws IllegalStateException {\n            if (emprestado) {\n                throw new IllegalStateException(\"Livro já está emprestado.\");\n            }\n            emprestado = true;\n        }\n\n        @Override\n        public void devolver() throws IllegalStateException {\n            if (!emprestado) {\n                throw new IllegalStateException(\"Livro não está emprestado.\");\n            }\n            emprestado = false;\n        }\n\n        @Override\n        public boolean isDisponivel() {\n            return !emprestado;\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro = new Livro(false);\n        try {\n            livro.emprestar();\n            System.out.println(\"Livro emprestado.\");\n            livro.devolver();\n            System.out.println(\"Livro devolvido.\");\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n        System.out.println(\"Livro disponível: \" + livro.isDisponivel());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 61199666100,
+  "load_duration": 9232100,
+  "prompt_eval_count": 383,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1638479000,
+  "eval_count": 395,
+  "eval_duration": 59485576000
+}

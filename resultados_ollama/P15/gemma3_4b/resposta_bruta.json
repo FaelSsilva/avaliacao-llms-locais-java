@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:04:37.6113499Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npackage com.example;\n\nimport java.time.LocalDate;\n\nclass Emprestimo {\n    private LocalDate dataRetirada;\n    private LocalDate dataDevolucao;\n\n    public Emprestimo(LocalDate dataRetirada, LocalDate dataDevolucao) {\n        this.dataRetirada = dataRetirada;\n        this.dataDevolucao = dataDevolucao;\n        if (dataRetirada.isAfter(dataDevolucao)) {\n            throw new IllegalArgumentException(\"A data de retirada não pode ser posterior à data de devolução.\");\n        }\n    }\n\n    public LocalDate getDataRetirada() {\n        return dataRetirada;\n    }\n\n    public LocalDate getDataDevolucao() {\n        return dataDevolucao;\n    }\n\n    public boolean estaAtrasado(LocalDate dataAtual) {\n        return dataAtual.isAfter(dataDevolucao);\n    }\n}\n\nclass TesteEmprestimo {\n    public static void main(String[] args) {\n        Emprestimo emprestimo1 = new Emprestimo(LocalDate.of(2024, 1, 1), LocalDate.of(2024, 1, 15));\n        System.out.println(\"Emprestimo 1 está atrasado? \" + emprestimo1.estaAtrasado(LocalDate.of(2024, 1, 12))); // false\n\n        Emprestimo emprestimo2 = new Emprestimo(LocalDate.of(2024, 1, 1), LocalDate.of(2023, 12, 31));\n        System.out.println(\"Emprestimo 2 está atrasado? \" + emprestimo2.estaAtrasado(LocalDate.of(2024, 1, 10))); // true\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 41105024700,
+  "load_duration": 8447100,
+  "prompt_eval_count": 276,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2786656000,
+  "eval_count": 431,
+  "eval_duration": 38249432000
+}

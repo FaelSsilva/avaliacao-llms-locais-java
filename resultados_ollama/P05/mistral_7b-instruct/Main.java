@@ -1,0 +1,35 @@
+public class Main {
+
+    static class Usuario {
+        private final String nome;
+        private final String identificador;
+
+        public Usuario(String nome, String identificador) {
+            if (nome.isEmpty() || identificador.isEmpty()) {
+                throw new IllegalArgumentException("Nome e identificador devem ser informados.");
+            }
+            this.nome = nome;
+            this.identificador = identificador;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public String getIdentificador() {
+            return identificador;
+        }
+
+        public String apresentar() {
+            return String.format("%s (%s)", nome, identificador);
+        }
+    }
+
+    public static void main(String[] args) {
+        Usuario usuario1 = new Usuario("João Silva", "123456");
+        Usuario usuario2 = new Usuario("Maria Souza", "789012");
+
+        System.out.println(usuario1.apresentar());
+        System.out.println(usuario2.apresentar());
+    }
+}

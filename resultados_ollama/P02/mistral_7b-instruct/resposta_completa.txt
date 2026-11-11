@@ -1,0 +1,29 @@
+ ```java
+public class Main {
+
+    static class Livro {
+        private final String titulo;
+        private final String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+        }
+
+        public Livro copiar() {
+            return new Livro(this.titulo, this.autor);
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien");
+        Livro livro2 = livro1.copiar();
+
+        livro1.titulo = "Novo Título";
+        System.out.println("Livro 1: " + livro1.titulo);
+        System.out.println("Livro 2: " + livro2.titulo);
+    }
+}
+```
+
+Esse código cria uma classe `Main` com uma classe aninhada `static` chamada `Livro`. A classe `Livro` tem dois atributos privados `titulo` e `autor`, e um método `copiar()` que retorna uma nova instância do objeto com os mesmos dados. A alteração do objeto original não afeta a cópia. O `main` demonstra a independência criando dois objetos `Livro` e alterando o título do primeiro, mostrando que o segundo objeto não foi afetado.

@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:59:00.2260648Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        private final String isbn;\n        private String titulo;\n\n        public Livro(String isbn, String titulo) {\n            this.isbn = isbn;\n            this.titulo = titulo;\n        }\n\n        public String getIsbn() {\n            return isbn;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public void setTitulo(String titulo) {\n            this.titulo = titulo;\n        }\n    }\n\n    static class Catalogo {\n        private final Map<String, Livro> livros = new HashMap<>();\n\n        public void adicionar(Livro livro) {\n            if (livros.containsKey(livro.getIsbn())) {\n                throw new IllegalArgumentException(\"ISBN já existe no catálogo.\");\n            }\n            livros.put(livro.getIsbn(), livro);\n        }\n\n        public boolean remover(String isbn) {\n            return livros.remove(isbn) != null;\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo cat = new Catalogo();\n        cat.adicionar(new Livro(\"123-4567\", \"Livro 1\"));\n        cat.adicionar(new Livro(\"890-1234\", \"Livro 2\"));\n\n        System.out.println(\"Adicionados: \" + cat.livros);\n\n        cat.adicionar(new Livro(\"123-4567\", \"Novo Título\")); // Exceção\n\n        System.out.println(\"Tentativa de adicionar ISBN duplicado:\");\n\n        cat.remover(\"890-1234\"); // Falso\n        System.out.println(\"Remoção de ISBN inexistente: \" + cat.remover(\"987-6543\"));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 75043725700,
+  "load_duration": 10543700,
+  "prompt_eval_count": 376,
+  "prompt_eval_cached_count": 312,
+  "prompt_eval_duration": 1487690000,
+  "eval_count": 489,
+  "eval_duration": 73510493000
+}

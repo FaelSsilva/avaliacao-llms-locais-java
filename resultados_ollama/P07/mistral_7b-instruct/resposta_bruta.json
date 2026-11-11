@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:46:24.1120924Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Multa {\n        private int diasAtraso;\n        private double valorDia;\n\n        public Multa(int diasAtraso, double valorDia) {\n            if (diasAtraso < 0) {\n                throw new IllegalArgumentException(\"Dias de atraso inválido: deve ser maior ou igual a zero.\");\n            }\n            if (valorDia <= 0) {\n                throw new IllegalArgumentException(\"Valor diário inválido: deve ser maior que zero.\");\n            }\n            this.diasAtraso = diasAtraso;\n            this.valorDia = valorDia;\n        }\n\n        public double calcularValor() {\n            return diasAtraso * valorDia;\n        }\n    }\n\n    public static void main(String[] args) {\n        Multa multa0 = new Multa(0, 10);\n        Multa multa5 = new Multa(5, 10);\n        System.out.printf(\"Valor da multa para 0 dia(s): R$%.2f%n\", multa0.calcularValor());\n        System.out.printf(\"Valor da multa para 5 dia(s): R$%.2f%n\", multa5.calcularValor());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 51394435700,
+  "load_duration": 6935500,
+  "prompt_eval_count": 372,
+  "prompt_eval_cached_count": 309,
+  "prompt_eval_duration": 1541059000,
+  "eval_count": 333,
+  "eval_duration": 49788538000
+}

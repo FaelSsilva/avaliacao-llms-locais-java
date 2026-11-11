@@ -1,0 +1,43 @@
+```java
+public class Main {
+    interface EstrategiaBusca {
+        boolean buscar(String título);
+    }
+
+    static class BuscaExataPorTítulo implements EstrategiaBusca {
+        @Override
+        public boolean buscar(String título) {
+            return Main.catalogo.buscarExatamentePorTítulo(título.toLowerCase());
+        }
+    }
+
+    static class BuscaPorTrechoDoTítulo implements EstrategiaBusca {
+        @Override
+        public boolean buscar(String trecho) {
+            return Main.catalogo.buscarPorTrechoDoTítulo(título.toLowerCase());
+        }
+    }
+
+    static class Catalogo {
+        private List<String> livros = Arrays.asList("O Mundo sem Músicas", "A Arte da Programação", "Algoritmos e Estruturas de Dados");
+
+        public boolean buscarExatamentePorTítulo(String título) {
+            return livros.contains(título);
+        }
+
+        public boolean buscarPorTrechoDoTítulo(String trecho) {
+            return livros.stream()
+                    .anyMatch(livro -> livro.toLowerCase().contains(título));
+        }
+    }
+
+    public static void main(String[] args) {
+        Catalogo catalogo = new Catalogo();
+        EstrategiaBusca buscaExatamentePorTítulo = new BuscaExatamentePorTítulo();
+        EstrategiaBusca buscaPorTrechoDoTítulo = new BuscaPorTrechoDoTítulo();
+
+        System.out.println("Busca exata por título: 'o mundo sem músicas': " + buscaExatamentePorTítulo.buscar("O Mundo sem Músicas"));
+        System.out.println("Busca por trecho do título: 'arte': " + buscaPorTrechoDoTítulo.buscar("arte"));
+    }
+}
+```

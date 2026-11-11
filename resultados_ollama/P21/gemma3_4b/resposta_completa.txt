@@ -1,0 +1,47 @@
+```java
+package com.example;
+
+public class Main {
+
+    interface Validador<T> {
+        boolean validar(T obj);
+    }
+
+    static class ValidadorIsbnSimples implements Validador<String> {
+        @Override
+        public boolean validar(String isbn) {
+            if (isbn == null) {
+                return false;
+            }
+            try {
+                Integer.parseInt(isbn);
+                return isbn.length() == 13;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Validador<String> validador = new ValidadorIsbnSimples();
+
+        System.out.println("Validando ISBN-13: 9780321765647");
+        System.out.println(validador.validar("9780321765647")); // true
+
+        System.out.println("Validando ISBN-13: 9780321765648");
+        System.out.println(validador.validar("9780321765648")); // true
+
+        System.out.println("Validando ISBN-13: 978032176564"));
+        System.out.println(validador.validar("978032176564")); // false
+
+        System.out.println("Validando ISBN-13: 9780321765647a");
+        System.out.println(validador.validar("9780321765647a")); // false
+
+        System.out.println("Validando ISBN-13: null");
+        System.out.println(validador.validar(null)); // false
+
+        System.out.println("Validando ISBN-13: 123456789012");
+        System.out.println(validador.validar("123456789012")); // false
+    }
+}
+```

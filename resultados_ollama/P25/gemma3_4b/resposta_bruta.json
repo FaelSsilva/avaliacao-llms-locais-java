@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:30:17.9471165Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Usuario {\n        String nome;\n        String cpf;\n\n        public Usuario(String nome, String cpf) {\n            this.nome = nome;\n            this.cpf = cpf;\n        }\n    }\n\n    static class Emprestimo {\n        Usuario usuario;\n        String isbn;\n        String data;\n\n        public Emprestimo(Usuario usuario, String isbn, String data) {\n            this.usuario = usuario;\n            this.isbn = isbn;\n            this.data = data;\n        }\n    }\n\n    static class HistoricoEmprestimos {\n        List<Emprestimo> emprestimos;\n\n        public HistoricoEmprestimos() {\n            this.emprestimos = new ArrayList<>();\n        }\n\n        public void adicionarEmprestimo(Emprestimo emprestimo) {\n            emprestimos.add(emprestimo);\n        }\n\n        public List<Emprestimo> getEmprestimos() {\n            return emprestimos;\n        }\n    }\n\n    public static void main(String[] args) {\n        HistoricoEmprestimos historico = new HistoricoEmprestimos();\n\n        Usuario usuario1 = new Usuario(\"João\", \"123.456.789-0\");\n        Usuario usuario2 = new Usuario(\"Maria\", \"987.654.321-0\");\n\n        Emprestimo emprestimo1 = new Emprestimo(usuario1, \"111\", \"2024-01-01\");\n        Emprestimo emprestimo2 = new Emprestimo(usuario1, \"222\", \"2024-01-15\");\n        Emprestimo emprestimo3 = new Emprestimo(usuario2, \"333\", \"2024-02-01\");\n\n        historico.adicionarEmprestimo(emprestimo1);\n        historico.adicionarEmprestimo(emprestimo2);\n        historico.adicionarEmprestimo(emprestimo3);\n\n        List<Emprestimo> emprestimosJoao = historico.getEmprestimos().stream()\n                .filter(emprestimo -> emprestimo.usuario.nome.equals(\"João\"))\n                .collect(Collectors.toList());\n\n        System.out.println(\"Empréstimos de João:\");\n        emprestimosJoao.forEach(emprestimo -> System.out.println(emprestimo.usuario.nome + \" - \" + emprestimo.isbn + \" - \" + emprestimo.data));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 60569344900,
+  "load_duration": 12479800,
+  "prompt_eval_count": 263,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2630058000,
+  "eval_count": 592,
+  "eval_duration": 57409251000
+}

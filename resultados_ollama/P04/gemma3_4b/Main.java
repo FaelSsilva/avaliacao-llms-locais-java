@@ -1,0 +1,59 @@
+public class Main {
+    static class Livro {
+        private String titulo;
+        private boolean disponibilidade;
+
+        public Livro(String titulo, boolean disponibilidade) {
+            this.titulo = titulo;
+            this.disponibilidade = disponibilidade;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public boolean isDisponibilidade() {
+            return disponibilidade;
+        }
+
+        public void emprestar() throws IllegalStateException {
+            if (!isDisponibilidade()) {
+                throw new IllegalStateException("Livro indisponível para empréstimo.");
+            }
+            disponibilidade = false;
+        }
+
+        public void devolver() throws IllegalStateException {
+            if (isDisponibilidade()) {
+                throw new IllegalStateException("Livro já está disponível.");
+            }
+            disponibilidade = true;
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("O Senhor dos Anéis", true);
+        System.out.println("Livro: " + livro1.getTitulo() + ", Disponível: " + livro1.isDisponibilidade());
+
+        try {
+            livro1.emprestar();
+            System.out.println("Livro: " + livro1.getTitulo() + ", Disponível: " + livro1.isDisponibilidade());
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            livro1.devolver();
+            System.out.println("Livro: " + livro1.getTitulo() + ", Disponível: " + livro1.isDisponibilidade());
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+
+        Livro livro2 = new Livro("Dom Quixote", false);
+        try {
+            livro2.emprestar();
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}

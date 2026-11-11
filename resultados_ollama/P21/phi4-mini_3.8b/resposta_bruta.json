@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:17:39.2908558Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Validador<T> {\n        public boolean validar(T entrada) {\n            throw new UnsupportedOperationException(\"Método não implementado\");\n        }\n    }\n\n    static class ValidadorIsbnSimples extends Validador<String> {\n        @Override\n        public boolean validar(String isbn) {\n            return isbn != null && isbn.matches(\"\\\\d{13}\");\n        }\n    }\n\n    public static void main(String[] args) {\n        ValidadorIsbnSimples validator = new ValidadorIsbnSimples();\n        System.out.println(\"Validação de '9780134190440': \" + validator.validar(\"9780134190440\")); // Válido\n        System.out.println(\"Validação de '978013419044': '978013419044' é inválido: \" + validator.validar(\"978013419044\")); // Invalido\n        System.out.println(\"Validação de '123': '123' é inválido: \" + validator.validar(\"123\")); // Invalido\n        System.out.println(\"Validação de '1234567890123': '1234567890123' é inválido: \" + validator.validar(\"1234567890123\")); // Invalido\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 27544720400,
+  "load_duration": 24047100,
+  "prompt_eval_count": 278,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 3242192000,
+  "eval_count": 267,
+  "eval_duration": 24093930000
+}

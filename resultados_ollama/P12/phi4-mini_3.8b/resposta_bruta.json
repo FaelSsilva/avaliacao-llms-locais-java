@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:56:39.7181383Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Livro {\n        private String isbn;\n        private String titulo;\n\n        public Livro(String isbn, String titulo) {\n            this.isbn = isbn;\n            this.titulo = titulo;\n        }\n\n        public String getIsbn() {\n            return isbn;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n    }\n\n    static class Catalogo {\n        private Map<String, Livro> livros = new HashMap<>();\n\n        public boolean adicionar(Livro livro) {\n            if (livros.containsKey(livro.getIsbn())) {\n                return false;\n            }\n            livros.put(livro.getIsbn(), livro);\n            return true;\n        }\n\n        public boolean remover(String isbn) {\n            return livros.remove(isbn) != null;\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo catalogo = new Catalogo();\n        catalogo.adicionar(new Livro(\"1234567890\", \"Livro 1\"));\n        catalogo.adicionar(new Livro(\"0987654321\", \"Livro 2\"));\n        System.out.println(\"Adicionar Livro 1: \" + catalogo.adicionar(new Livro(\"1234567890\", \"Livro 1\"))); // false\n        System.out.println(\"Adicionar Livro 2: \" + catalogo.adicionar(new Livro(\"0987654321\", \"Livro 2\"))); // true\n        System.out.println(\"Remover Livro 1: \" + catalogo.remover(\"1234567890\")); // true\n        System.out.println(\"Remover Livro 3: \" + catalogo.remover(\"0987654321\")); // false\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 29370682800,
+  "load_duration": 12210500,
+  "prompt_eval_count": 264,
+  "prompt_eval_cached_count": 215,
+  "prompt_eval_duration": 596032000,
+  "eval_count": 344,
+  "eval_duration": 28710327000
+}

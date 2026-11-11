@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T20:34:58.0299674Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    static class Livro {\n        private String titulo;\n        private String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n\n        public Livro copiar() {\n            return new Livro(this.titulo, this.autor);\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\");\n        Livro livro2 = livro1.copiar();\n\n        System.out.println(\"Livro 1: Título = \" + livro1.getTitulo() + \", Autor = \" + livro1.getAutor());\n        System.out.println(\"Livro 2: Título = \" + livro2.getTitulo() + \", Autor = \" + livro2.getAutor());\n\n        livro1.getTitulo();\n        livro1.getAutor();\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 27012678800,
+  "load_duration": 11538400,
+  "prompt_eval_count": 273,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2940142000,
+  "eval_count": 268,
+  "eval_duration": 24017126000
+}

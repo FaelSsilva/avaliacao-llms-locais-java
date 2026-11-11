@@ -1,0 +1,83 @@
+```java
+package com.example;
+
+public class Main {
+
+    interface Emprestavel {
+        void emprestar();
+        void devolver();
+        boolean isDisponivel();
+    }
+
+    static class Livro implements Emprestavel {
+        private String titulo;
+        private boolean disponivel;
+        private boolean emprestado;
+
+        public Livro(String titulo) {
+            this.titulo = titulo;
+            this.disponivel = true;
+            this.emprestado = false;
+        }
+
+        @Override
+        public void emprestar() {
+            if (disponivel) {
+                disponivel = false;
+                emprestado = true;
+                System.out.println(titulo + " foi emprestado.");
+            } else {
+                throw new IllegalStateException(titulo + " já está emprestado.");
+            }
+        }
+
+        @Override
+        public void devolver() {
+            if (!emprestado) {
+                throw new IllegalStateException(titulo + " não está emprestado.");
+            }
+            disponivel = true;
+            emprestado = false;
+            System.out.println(titulo + " foi devolvido.");
+        }
+
+        @Override
+        public boolean isDisponivel() {
+            return disponivel;
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("O Senhor dos Anéis");
+        Livro livro2 = new Livro("1984");
+
+        System.out.println(livro1.isDisponivel());
+
+        try {
+            livro1.emprestar();
+            System.out.println(livro1.isDisponivel());
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            livro1.emprestar();
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            livro1.devolver();
+            System.out.println(livro1.isDisponivel());
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            livro1.devolver();
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```

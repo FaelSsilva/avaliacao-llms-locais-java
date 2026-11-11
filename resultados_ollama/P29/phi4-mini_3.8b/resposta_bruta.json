@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:39:45.070658Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nimport java.time.LocalDate;\n\npublic class Main {\n    public static class RegraDevolucao {\n        public int calcularDiasDeAtraso(LocalDate dataPresenca, LocalDate dataPresencaPrazo) {\n            if (dataPresenca.isAfter(dataPresencaPrazo)) {\n                return 0;\n            }\n            return (int) ChronoUnit.DAYS.between(dataPresencaPrazo, dataPresenca);\n        }\n    }\n\n    public static void main(String[] args) {\n        RegraDevolucao regra = new RegraDevolucao();\n        LocalDate dataPresencaPrazo = LocalDate.of(2023, 4, 15);\n        LocalDate dataPresenca = LocalDate.of(2023, 4, 20);\n\n        int diasDeAtraso = regra.calcularDiasDeAtraso(dataPresenca, dataPresencaPrazo);\n        System.out.println(\"Dias de atraso: \" + diasDeAtraso); // Saída: Dias de atraso: 5\n\n        dataPresenca = LocalDate.of(2023, 4, 10);\n        diasDeAtraso = regra.calcularDiasDeAtraso(dataPresenca, dataPresencaPrazo);\n        System.out.println(\"Dias de atraso: \" + diasDeAtraso); // Saída: Dias de atraso: 0\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 34218399400,
+  "load_duration": 16264900,
+  "prompt_eval_count": 257,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 2856579000,
+  "eval_count": 292,
+  "eval_duration": 30640438000
+}

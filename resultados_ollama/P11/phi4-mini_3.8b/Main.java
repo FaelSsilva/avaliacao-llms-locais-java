@@ -1,0 +1,44 @@
+public class Main {
+    static class Livro {
+        private String titulo;
+        private String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+    }
+
+    static class Catalogo {
+        private List<Livro> livros = new ArrayList<>();
+
+        public void adicionarLivro(Livro livro) {
+            livros.add(livro);
+        }
+
+        public List<Livro> buscarPorTítulo(String trecho) {
+            return livros.stream()
+                    .filter(livro -> livro.getTitulo().toLowerCase().contains(titulo.toLowerCase()))
+                    .collect(Collectors.toList());
+        }
+    }
+
+    public static void main(String[] args) {
+        Catalogo catalogo = new Catalogo();
+        catalogo.adicionarLivro(new Livro("O Mundo em 100 Dúvidas", "Steven Hawking"));
+        catalogo.adicionarLivro(new Livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry"));
+
+        List<Livro> resultados = catalogo.buscarPorTítulo("prince");
+        for (Livro livro : resultados) {
+            System.out.println(livro.getAutor() + " - " + livro.getTitulo());
+        }
+    }
+}

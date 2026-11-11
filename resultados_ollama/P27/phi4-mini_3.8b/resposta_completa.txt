@@ -1,0 +1,27 @@
+```java
+public class Main {
+    public static class PoliticaEmprestimo {
+        private final int prazoEmDias;
+        private final int limitePorUsuario;
+
+        public PoliticaEmprestimo(int prazoEmDias, int limitePorUsuario) {
+            this.prazoEmDias = prazoEmDias;
+            this.limitePorUsuario = limitePorUsuario;
+        }
+
+        public int getPrazoEmDias() {
+            return prazoEmDias;
+        }
+
+        public int getLimitePorUsuario() {
+            return limitePorUsuario;
+        }
+    }
+
+    public static void main(String[] args) {
+        PoliticaEmprestimo politica = new PoliticaEmprestimo(30, 5);
+        System.out.println("Prazo em dias: " + politica.getPrazoEmDias());
+        System.out.println("Limite por usuário: " + politica.getLimitePorUsuario());
+    }
+}
+```

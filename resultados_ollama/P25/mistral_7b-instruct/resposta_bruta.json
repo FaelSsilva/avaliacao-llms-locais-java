@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:31:46.9567483Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Emprestimo {\n        private final String usuario;\n        private final String isbn;\n        private final LocalDate data;\n\n        public Emprestimo(String usuario, String isbn, LocalDate data) {\n            this.usuario = Objects.requireNonNull(usuario);\n            this.isbn = Objects.requireNonNull(isbn);\n            this.data = Objects.requireNonNull(data);\n        }\n    }\n\n    static class Historico {\n        private final Map<String, List<Emprestimo>> emprestimosPorUsuario = new HashMap<>();\n\n        public void adicionar(Emprestimo emprestimo) {\n            String usuario = emprestimo.usuario;\n            if (!emprestimosPorUsuario.containsKey(usuario)) {\n                emprestimosPorUsuario.put(usuario, new ArrayList<>());\n            }\n            emprestimosPorUsuario.get(usuario).add(emprestimo);\n        }\n\n        public List<Emprestimo> getHistorico(String usuario) {\n            return emprestimosPorUsuario.getOrDefault(usuario, new ArrayList<>());\n        }\n    }\n\n    public static void main(String[] args) {\n        Historico historico = new Historico();\n        historico.adicionar(new Emprestimo(\"João\", \"123-4567\", LocalDate.of(2022, 1, 1)));\n        historico.adicionar(new Emprestimo(\"Maria\", \"234-8901\", LocalDate.of(2022, 2, 2)));\n        historico.adicionar(new Emprestimo(\"João\", \"345-7892\", LocalDate.of(2022, 3, 3)));\n\n        System.out.println(historico.getHistorico(\"João\"));\n        System.out.println(historico.getHistorico(\"Maria\"));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 86281264200,
+  "load_duration": 11378900,
+  "prompt_eval_count": 368,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1677531000,
+  "eval_count": 506,
+  "eval_duration": 84554873000
+}

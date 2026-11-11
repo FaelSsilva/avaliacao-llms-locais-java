@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:54:10.3274055Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Livro {\n        private String titulo;\n        private String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n    }\n\n    static class Catalogo {\n        private List<Livro> livros = new ArrayList<>();\n\n        public void adicionarLivro(Livro livro) {\n            livros.add(livro);\n        }\n\n        public List<Livro> buscarPorTítulo(String trecho) {\n            return livros.stream()\n                    .filter(livro -> livro.getTitulo().toLowerCase().contains(titulo.toLowerCase()))\n                    .collect(Collectors.toList());\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo catalogo = new Catalogo();\n        catalogo.adicionarLivro(new Livro(\"O Mundo em 100 Dúvidas\", \"Steven Hawking\"));\n        catalogo.adicionarLivro(new Livro(\"O Pequeno Príncipe\", \"Antoine de Saint-Exupéry\"));\n\n        List<Livro> resultados = catalogo.buscarPorTítulo(\"prince\");\n        for (Livro livro : resultados) {\n            System.out.println(livro.getAutor() + \" - \" + livro.getTitulo());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 24460145200,
+  "load_duration": 7773300,
+  "prompt_eval_count": 270,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 592513000,
+  "eval_count": 284,
+  "eval_duration": 23728367000
+}

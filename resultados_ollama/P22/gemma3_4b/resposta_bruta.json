@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:20:43.4344698Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nimport java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.List;\n\npublic class Main {\n\n    static class Livro implements Comparable<Livro> {\n        private String titulo;\n        private String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n\n        @Override\n        public int compareTo(Livro other) {\n            return this.titulo.compareToIgnoreCase(other.titulo);\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Livro> livros = new ArrayList<>();\n        livros.add(new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\"));\n        livros.add(new Livro(\"1984\", \"George Orwell\"));\n        livros.add(new Livro(\"Dom Quixote\", \"Miguel de Cervantes\"));\n        livros.add(new Livro(\"Alice no País das Maravilhas\", \"Lewis Carroll\"));\n\n        System.out.println(\"Lista original:\");\n        for (Livro livro : livros) {\n            System.out.println(livro.getTitulo() + \" - \" + livro.getAutor());\n        }\n\n        Collections.sort(livros);\n\n        System.out.println(\"\\nLista ordenada por título:\");\n        for (Livro livro : livros) {\n            System.out.println(livro.getTitulo() + \" - \" + livro.getAutor());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 41509563000,
+  "load_duration": 14350400,
+  "prompt_eval_count": 263,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3050325000,
+  "eval_count": 388,
+  "eval_duration": 37891382000
+}

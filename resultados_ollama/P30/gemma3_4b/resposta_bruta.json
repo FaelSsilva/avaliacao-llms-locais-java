@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:43:16.5579747Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    static class Livro {\n        String titulo;\n        String autor;\n        boolean disponivel;\n\n        Livro(String titulo, String autor, boolean disponivel) {\n            this.titulo = titulo;\n            this.autor = autor;\n            this.disponivel = disponivel;\n        }\n    }\n\n    static class Usuario {\n        String nome;\n        int limiteEmprestimo;\n\n        Usuario(String nome, int limiteEmprestimo) {\n            this.nome = nome;\n            this.limiteEmprestimo = limiteEmprestimo;\n        }\n    }\n\n    static class ServicoEmprestimo {\n        public void emprestar(Livro livro, Usuario usuario) {\n            if (!livro.disponivel) {\n                throw new IllegalStateException(\"Livro não está disponível.\");\n            }\n            if (usuario.limiteEmprestimo <= 0) {\n                throw new IllegalStateException(\"Limite de empréstimo do usuário é zero ou negativo.\");\n            }\n            livro.disponivel = false;\n            usuario.limiteEmprestimo--;\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\", true);\n        Usuario usuario1 = new Usuario(\"Alice\", 2);\n        ServicoEmprestimo servico = new ServicoEmprestimo();\n\n        try {\n            servico.emprestar(livro1, usuario1);\n            System.out.println(\"Empréstimo bem-sucedido.\");\n        } catch (IllegalStateException e) {\n            System.out.println(\"Erro ao emprestar: \" + e.getMessage());\n        }\n\n        Livro livro2 = new Livro(\"1984\", \"George Orwell\", true);\n        Usuario usuario2 = new Usuario(\"Bob\", 0);\n        ServicoEmprestimo servico2 = new ServicoEmprestimo();\n\n        try {\n            servico2.emprestar(livro2, usuario2);\n            System.out.println(\"Empréstimo bem-sucedido.\");\n        } catch (IllegalStateException e) {\n            System.out.println(\"Erro ao emprestar: \" + e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 53084570700,
+  "load_duration": 8343900,
+  "prompt_eval_count": 280,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3027305000,
+  "eval_count": 531,
+  "eval_duration": 49960141000
+}

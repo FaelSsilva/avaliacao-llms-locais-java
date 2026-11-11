@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:46:53.0496868Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"Livro A\");\n        Livro livro2 = new Livro(\"Livro B\");\n\n        Livro emprestado1 = livro1.emprestar();\n        Livro emprestado2 = livro2.emprestar();\n\n        emprestado1.devolver();\n        emprestado2.devolver();\n\n        System.out.println(livro1.isDisponivel());\n        System.out.println(livro2.isDisponivel());\n    }\n\n    static class Livro implements Emprestavel {\n        private String titulo;\n        private boolean emprestado;\n\n        public Livro(String titulo) {\n            this.titulo = titulo;\n            this.emprestado = false;\n        }\n\n        @Override\n        public Livro emprestar() {\n            if (this.emprestado) {\n                throw new IllegalStateException(\"Este livro já está emprestado.\");\n            }\n            this.emprestado = true;\n            return this;\n        }\n\n        @Override\n        public void devolver() {\n            if (!this.emprestado) {\n                throw new IllegalStateException(\"Este livro não está emprestado.\");\n            }\n            this.emprestado = false;\n        }\n\n        @Override\n        public boolean isDisponivel() {\n            return !this.emprestado;\n        }\n    }\n\n    interface Emprestavel {\n        Livro emprestar();\n        void devolver();\n        boolean isDisponivel();\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 26114783800,
+  "load_duration": 8002900,
+  "prompt_eval_count": 271,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 648261000,
+  "eval_count": 305,
+  "eval_duration": 25374315000
+}

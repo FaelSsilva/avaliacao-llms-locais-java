@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:35:18.5691754Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    static class PoliticaEmprestimo {\n        private final int prazo;\n        private final int limitePorUsuario;\n\n        PoliticaEmprestimo(int prazo, int limitePorUsuario) {\n            if (prazo <= 0) {\n                throw new IllegalArgumentException(\"O prazo deve ser maior que zero.\");\n            }\n            if (limitePorUsuario <= 0) {\n                throw new IllegalArgumentException(\"O limite por usuário deve ser maior que zero.\");\n            }\n            this.prazo = prazo;\n            this.limitePorUsuario = limitePorUsuario;\n        }\n\n        public int getPrazo() {\n            return prazo;\n        }\n\n        public int getLimitePorUsuario() {\n            return limitePorUsuario;\n        }\n    }\n\n    public static void main(String[] args) {\n        PoliticaEmprestimo politica = new PoliticaEmprestimo(30, 5);\n        System.out.println(\"Prazo: \" + politica.getPrazo() + \" dias\");\n        System.out.println(\"Limite por usuário: \" + politica.getLimitePorUsuario());\n\n        try {\n            PoliticaEmprestimo politicaInvalida = new PoliticaEmprestimo(-10, 2);\n        } catch (IllegalArgumentException e) {\n            System.out.println(\"Erro: \" + e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 33324175500,
+  "load_duration": 15313700,
+  "prompt_eval_count": 262,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2741608000,
+  "eval_count": 321,
+  "eval_duration": 30399928000
+}

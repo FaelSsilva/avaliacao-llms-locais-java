@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:03:19.3369529Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class FilaReservas {\n        private Node head;\n        private int size;\n\n        public FilaReservas() {\n            head = null;\n            size = 0;\n        }\n\n        public void reservar(String nome) {\n            if (head == null) {\n                head = new Node(nome);\n            } else {\n                Node novo = new Node(nome);\n                novo.proximo = head;\n                head = novo;\n            }\n            size++;\n        }\n\n        public String proximo() {\n            if (isEmpty()) {\n                throw new NoSuchElementException(\"Fila vazia\");\n            }\n            String nome = head.nome;\n            head = head.proximo;\n            size--;\n            return nome;\n        }\n\n        public boolean isEmpty() {\n            return head == null;\n        }\n\n        private static class Node {\n            String nome;\n            Node proximo;\n\n            Node(String nome) {\n                this.nome = nome;\n                this.proximo = null;\n            }\n        }\n    }\n\n    public static void main(String[] args) {\n        FilaReservas fila = new FilaReservas();\n        fila.reservar(\"Alice\");\n        fila.reservar(\"Bob\");\n        System.out.println(fila.proximo()); // Alice\n        fila.reservar(\"Charlie\");\n        fila.reservar(\"Dave\");\n        System.out.println(fila.proximo()); // Bob\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 62331037900,
+  "load_duration": 10011200,
+  "prompt_eval_count": 388,
+  "prompt_eval_cached_count": 308,
+  "prompt_eval_duration": 1691963000,
+  "eval_count": 404,
+  "eval_duration": 60594546000
+}

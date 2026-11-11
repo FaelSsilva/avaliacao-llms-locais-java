@@ -1,0 +1,27 @@
+```java
+public class Main {
+    static class Livro {
+        private String titulo;
+        private String autor;
+        private int ano;
+
+        public Livro(String titulo, String autor, int ano) {
+            if (titulo == null || titulo.isEmpty() || autor == null || autor.isEmpty() || ano < 1) {
+                throw new IllegalArgumentException("Valores inválidos");
+            }
+            this.titulo = titulo;
+            this.autor = autor;
+            this.ano = ano;
+        }
+
+        public String resumo() {
+            return titulo + " — " + autor + " (" + ano + ")";
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro = new Livro("O Mundo em Cinco Minutos", "Steven Hawking", 1988);
+        System.out.println(livro.resumo());
+    }
+}
+```

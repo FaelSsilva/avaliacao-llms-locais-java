@@ -1,0 +1,50 @@
+public class Main {
+
+    static class Biblioteca {
+        private String nome;
+        private static class Catalogo {
+            private int quantidadeLivros;
+
+            public Catalogo(int quantidadeLivros) {
+                this.quantidadeLivros = quantidadeLivros;
+            }
+
+            public void adicionarLivro() {
+                if (quantidadeLivros > 0) {
+                    quantidadeLivros--;
+                }
+            }
+
+            public int consultarQuantidadeLivros() {
+                return quantidadeLivros;
+            }
+        }
+
+        public Biblioteca(String nome) {
+            this.nome = nome;
+            this.catalogo = new Catalogo(100);
+        }
+
+        private Catalogo catalogo;
+
+        public void adicionarLivro() {
+            catalogo.adicionarLivro();
+        }
+
+        public int consultarQuantidadeLivros() {
+            return catalogo.consultarQuantidadeLivros();
+        }
+
+        public String getNome() {
+            return nome;
+        }
+    }
+
+    public static void main(String[] args) {
+        Biblioteca biblioteca = new Biblioteca("Minha Biblioteca");
+        System.out.println("Quantidade inicial de livros: " + biblioteca.consultarQuantidadeLivros());
+        biblioteca.adicionarLivro();
+        System.out.println("Quantidade de livros após remoção: " + biblioteca.consultarQuantidadeLivros());
+        System.out.println("Nome da biblioteca: " + biblioteca.getNome());
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:25:48.2808585Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\ninterface EstrategiaBusca {\n    Livro buscar(String titulo);\n}\n\nclass Exata implements EstrategiaBusca {\n    @Override\n    public Livro buscar(String titulo) {\n        return livros.stream()\n                .filter(l -> l.getTitulo().equalsIgnoreCase(titulo))\n                .findFirst()\n                .orElse(null);\n    }\n}\n\nclass Trecho implements EstrategiaBusca {\n    private final String trecho;\n\n    public Trecho(String trecho) {\n        this.trecho = trecho;\n    }\n\n    @Override\n    public Livro buscar(String titulo) {\n        return livros.stream()\n                .filter(l -> l.getTitulo().toLowerCase().contains(trecho))\n                .findFirst()\n                .orElse(null);\n    }\n}\n\nclass Livro {\n    private final String titulo;\n\n    public Livro(String titulo) {\n        this.titulo = titulo;\n    }\n\n    public String getTitulo() {\n        return titulo;\n    }\n}\n\nclass Main {\n    private static final List<Livro> livros = Arrays.asList(\n            new Livro(\"A História do Mundo em 100 Milhas\"),\n            new Livro(\"O Senhor dos Anéis\"),\n            new Livro(\"O Alquimista\"),\n            new Livro(\"A Bíblia\"),\n            new Livro(\"O Guia do Estudante Idiota\"),\n            new Livro(\"O Pequeno Príncipe\")\n    );\n\n    public static void main(String[] args) {\n        EstrategiaBusca exata = new Exata();\n        EstrategiaBusca trecho = new Trecho(\"Mundo\");\n\n        System.out.println(exata.buscar(\"A História do Mundo em 100 Milhas\"));\n        System.out.println(trecho.buscar(\"O Senhor dos Anéis\"));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 83238595400,
+  "load_duration": 22485700,
+  "prompt_eval_count": 388,
+  "prompt_eval_cached_count": 309,
+  "prompt_eval_duration": 3475246000,
+  "eval_count": 506,
+  "eval_duration": 79102291000
+}

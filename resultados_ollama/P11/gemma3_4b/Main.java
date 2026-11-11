@@ -1,0 +1,48 @@
+public class Main {
+
+    static class Livro {
+        String titulo;
+        String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+        }
+    }
+
+    static class BuscaLivros {
+        public static List<Livro> buscarPorTrecho(List<Livro> catalogo, String trecho) {
+            List<Livro> resultados = new ArrayList<>();
+            for (Livro livro : catalogo) {
+                if (livro.titulo.toLowerCase().contains(trecho.toLowerCase())) {
+                    resultados.add(livro);
+                }
+            }
+            return resultados;
+        }
+    }
+
+    public static void main(String[] args) {
+        List<Livro> catalogo = new ArrayList<>();
+        catalogo.add(new Livro("O Senhor dos Anéis", "J.R.R. Tolkien"));
+        catalogo.add(new Livro("Dom Quixote", "Miguel de Cervantes"));
+        catalogo.add(new Livro("1984", "George Orwell"));
+        catalogo.add(new Livro("O Hobbit", "J.R.R. Tolkien"));
+
+        String trecho = "Tolkien";
+        List<Livro> resultados = BuscaLivros.buscarPorTrecho(catalogo, trecho);
+
+        System.out.println("Resultados da busca por '" + trecho + "':");
+        for (Livro livro : resultados) {
+            System.out.println(livro.titulo + " por " + livro.autor);
+        }
+
+        trecho = "Quixote";
+        resultados = BuscaLivros.buscarPorTrecho(catalogo, trecho);
+
+        System.out.println("\nResultados da busca por '" + trecho + "':");
+        for (Livro livro : resultados) {
+            System.out.println(livro.titulo + " por " + livro.autor);
+        }
+    }
+}

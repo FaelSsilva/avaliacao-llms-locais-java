@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:05:37.1403324Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\nimport java.time.LocalDate;\nimport java.time.temporal.ChronoUnit;\n\npublic class Main {\n    static class Emprestimo {\n        private LocalDate dataRetirada;\n        private LocalDate dataPrazo;\n\n        public Emprestimo(LocalDate dataRetirada, LocalDate dataPrazo) {\n            this.dataRetirada = dataRetirada;\n            this.dataPrazo = dataPrazo;\n            if (dataPrazo.isBefore(dataRetirada)) {\n                throw new IllegalArgumentException(\"O prazo não pode anteceder a data de retirada.\");\n            }\n        }\n\n        public boolean estaAtrasado(LocalDate dataAtual) {\n            return ChronoUnit.DAYS.between(dataAtual, dataPrazo) > 0;\n        }\n    }\n\n    public static void main(String[] args) {\n        Emprestimo emprestimo = new Emprestimo(LocalDate.of(2022, 1, 1), LocalDate.of(2022, 2, 1));\n        System.out.println(\"Emprestimo no prazo: \" + !emprestimo.estaAtrasado(LocalDate.of(2022, 1, 15)));\n        System.out.println(\"Emprestimo atrasado: \" + emprestimo.estaAtrasado(LocalDate.of(2022, 3, 1)));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 56740956200,
+  "load_duration": 7091900,
+  "prompt_eval_count": 378,
+  "prompt_eval_cached_count": 308,
+  "prompt_eval_duration": 1717260000,
+  "eval_count": 363,
+  "eval_duration": 54470455000
+}

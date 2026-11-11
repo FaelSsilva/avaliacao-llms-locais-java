@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:38:04.8224537Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    public static class Livro {\n        private String titulo;\n        private boolean disponivel;\n\n        public Livro(String titulo) {\n            this.titulo = titulo;\n            this.disponivel = true;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public boolean isDisponivel() {\n            return disponivel;\n        }\n\n        public void emprestar() {\n            if (!disponivel) {\n                throw new IllegalStateException(\"O livro não está disponível para emprestar.\");\n            }\n            disponivel = false;\n        }\n\n        public void devolver() {\n            if (disponivel) {\n                throw new IllegalStateException(\"O livro não está emprestado.\");\n            }\n            disponivel = true;\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"Algoritmos\");\n        livro1.emprestar();\n        System.out.println(\"O livro '\" + livro1.getTitulo() + \"' foi emprestado.\");\n        livro1.devolver();\n        System.out.println(\"O livro '\" + livro1.getTitulo() + \"' foi devolvido.\");\n\n        Livro livro2 = new Livro(\"O Código da Natureza\");\n        try {\n            livro2.emprestar();\n            livro2.emprestar(); // Tentativa de emprestar um livro já emprestado\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 26651321400,
+  "load_duration": 9187000,
+  "prompt_eval_count": 279,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 679479000,
+  "eval_count": 303,
+  "eval_duration": 25899212000
+}

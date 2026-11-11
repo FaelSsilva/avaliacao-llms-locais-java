@@ -1,0 +1,37 @@
+```java
+public class Main {
+
+    static class RegraMulta {
+        private final double valorPorDia = 2.0;
+
+        public abstract double calcular(int diasAtraso);
+    }
+
+    static class RegraMultaFixa extends RegraMulta {
+        @Override
+        public double calcular(int diasAtraso) {
+            return diasAtraso * valorPorDia;
+        }
+    }
+
+    static class RegraMultaComTeto extends RegraMulta {
+        private final double teto = 20.0;
+
+        @Override
+        public double calcular(int diasAtraso) {
+            double multa = diasAtraso * valorPorDia;
+            return Math.min(multa, teto);
+        }
+    }
+
+    public static void main(String[] args) {
+        RegraMultaFixa regraFixa = new RegraMultaFixa();
+        RegraMultaComTeto regraTeto = new RegraMultaComTeto();
+
+        System.out.println("Multa Fixa (5 dias): " + regraFixa.calcular(5));
+        System.out.println("Multa Teto (5 dias): " + regraTeto.calcular(5));
+        System.out.println("Multa Teto (25 dias): " + regraTeto.calcular(25));
+        System.out.println("Multa Teto (100 dias): " + regraTeto.calcular(100));
+    }
+}
+```

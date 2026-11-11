@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:06:00.164623Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Livro {\n        private boolean emprestado;\n\n        public Livro() {\n            this.emprestado = false;\n        }\n\n        public void emprestar() throws LivroIndisponivelException {\n            if (emprestado) {\n                throw new LivroIndisponivelException(\"O livro já está emprestado.\");\n            }\n            emprestado = true;\n        }\n\n        public boolean isEmprestado() {\n            return emprestado;\n        }\n    }\n\n    static class LivroIndisponivelException extends Exception {\n        public LivroIndisponivelException(String mensagem) {\n            super(mensagem);\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro = new Livro();\n        try {\n            livro.emprestar();\n            System.out.println(\"Livro emprestado com sucesso.\");\n            livro.emprestar();\n            System.out.println(\"Livro emprestado com sucesso.\");\n            livro.emprestar();\n        } catch (LivroIndisponivelException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 20212030800,
+  "load_duration": 6420400,
+  "prompt_eval_count": 262,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 564414000,
+  "eval_count": 228,
+  "eval_duration": 19588252000
+}

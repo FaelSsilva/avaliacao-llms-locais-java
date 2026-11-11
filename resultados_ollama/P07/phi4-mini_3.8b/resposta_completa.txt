@@ -1,0 +1,47 @@
+```java
+public class Main {
+    static class Multa {
+        private int diasAtraso;
+        private double valorDiario;
+
+        public Multa(int diasAtraso, double valorDiario) {
+            setDiasAtraso(diasAtraso);
+            setValorDiario(valorDiario);
+        }
+
+        public int getDiasAtraso() {
+            return diasAtraso;
+        }
+
+        public void setDiasAtraso(int diasAtraso) {
+            if (diasAtraso < 0) {
+                throw new IllegalArgumentException("Dias de atraso não podem ser negativos.");
+            }
+            this.diasAtraso = diasAtraso;
+        }
+
+        public double getValorDiario() {
+            return valorDiario;
+        }
+
+        public void setValorDiario(double valorDiario) {
+            if (valorDiario < 0) {
+                throw new IllegalArgumentException("Valor diário não pode ser negativo.");
+            }
+            this.valorDiario = valorDiario;
+        }
+
+        public double calcularValor() {
+            return diasAtraso * valorDiario;
+        }
+    }
+
+    public static void main(String[] args) {
+        Multa multaZero = new Multa(0, 100.0);
+        System.out.println("Multa com atraso zero: " + multaZero.calcularValor());
+
+        Multa multaPositiva = new Multa(5, 100.0);
+        System.out.println("Multa com atraso positivo: " + multaPositiva.calcularValor());
+    }
+}
+```

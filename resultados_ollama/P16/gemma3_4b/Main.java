@@ -1,0 +1,52 @@
+public class Main {
+
+    static class LivroIndisponivelException extends Exception {
+        public LivroIndisponivelException(String mensagem) {
+            super(mensagem);
+        }
+    }
+
+    static class Livro {
+        private String titulo;
+        private String autor;
+        private boolean emprestado;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.emprestado = false;
+        }
+
+        public void emprestar() throws LivroIndisponivelException {
+            if (emprestado) {
+                throw new LivroIndisponivelException("Livro já está emprestado: " + titulo);
+            }
+            emprestado = true;
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien");
+        Livro livro2 = new Livro("1984", "George Orwell");
+
+        try {
+            livro1.emprestar();
+            System.out.println("Livro 'O Senhor dos Anéis' foi emprestado.");
+        } catch (LivroIndisponivelException e) {
+            System.err.println("Erro ao emprestar livro: " + e.getMessage());
+        }
+
+        try {
+            livro1.emprestar();
+        } catch (LivroIndisponivelException e) {
+            System.err.println("Erro ao emprestar livro: " + e.getMessage());
+        }
+
+        try {
+            livro2.emprestar();
+            System.out.println("Livro '1984' foi emprestado.");
+        } catch (LivroIndisponivelException e) {
+            System.err.println("Erro ao emprestar livro: " + e.getMessage());
+        }
+    }
+}

@@ -1,0 +1,29 @@
+public class Main {
+
+    static class Multa {
+        private int diasAtraso;
+        private double valorDia;
+
+        public Multa(int diasAtraso, double valorDia) {
+            if (diasAtraso < 0) {
+                throw new IllegalArgumentException("Dias de atraso inválido: deve ser maior ou igual a zero.");
+            }
+            if (valorDia <= 0) {
+                throw new IllegalArgumentException("Valor diário inválido: deve ser maior que zero.");
+            }
+            this.diasAtraso = diasAtraso;
+            this.valorDia = valorDia;
+        }
+
+        public double calcularValor() {
+            return diasAtraso * valorDia;
+        }
+    }
+
+    public static void main(String[] args) {
+        Multa multa0 = new Multa(0, 10);
+        Multa multa5 = new Multa(5, 10);
+        System.out.printf("Valor da multa para 0 dia(s): R$%.2f%n", multa0.calcularValor());
+        System.out.printf("Valor da multa para 5 dia(s): R$%.2f%n", multa5.calcularValor());
+    }
+}

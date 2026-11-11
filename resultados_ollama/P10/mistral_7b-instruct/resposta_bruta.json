@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:53:43.2065762Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n    abstract class Pessoa {\n        private String nome;\n\n        public Pessoa(String nome) {\n            this.nome = nome;\n        }\n\n        public String getNome() {\n            return nome;\n        }\n\n        public abstract String tipo();\n    }\n\n    static class Usuario extends Pessoa {\n        private int identificador;\n\n        public Usuario(String nome, int identificador) {\n            super(nome);\n            this.identificador = identificador;\n        }\n\n        @Override\n        public String tipo() {\n            return \"Usuário\";\n        }\n    }\n\n    static class Bibliotecario extends Pessoa {\n        private int matricula;\n\n        public Bibliotecario(String nome, int matricula) {\n            super(nome);\n            this.matricula = matricula;\n        }\n\n        @Override\n        public String tipo() {\n            return \"Bibliotecário\";\n        }\n    }\n\n    public static void main(String[] args) {\n        Usuario usuario = new Usuario(\"João\", 12345);\n        Bibliotecario bibliotecario = new Bibliotecario(\"Maria\", 67890);\n\n        System.out.println(usuario.tipo());\n        System.out.println(bibliotecario.tipo());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 54193496100,
+  "load_duration": 9708100,
+  "prompt_eval_count": 373,
+  "prompt_eval_cached_count": 309,
+  "prompt_eval_duration": 1346790000,
+  "eval_count": 354,
+  "eval_duration": 52799296000
+}

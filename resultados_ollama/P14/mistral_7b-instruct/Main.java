@@ -1,0 +1,57 @@
+public class Main {
+
+    static class FilaReservas {
+        private Node head;
+        private int size;
+
+        public FilaReservas() {
+            head = null;
+            size = 0;
+        }
+
+        public void reservar(String nome) {
+            if (head == null) {
+                head = new Node(nome);
+            } else {
+                Node novo = new Node(nome);
+                novo.proximo = head;
+                head = novo;
+            }
+            size++;
+        }
+
+        public String proximo() {
+            if (isEmpty()) {
+                throw new NoSuchElementException("Fila vazia");
+            }
+            String nome = head.nome;
+            head = head.proximo;
+            size--;
+            return nome;
+        }
+
+        public boolean isEmpty() {
+            return head == null;
+        }
+
+        private static class Node {
+            String nome;
+            Node proximo;
+
+            Node(String nome) {
+                this.nome = nome;
+                this.proximo = null;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        FilaReservas fila = new FilaReservas();
+        fila.reservar("Alice");
+        fila.reservar("Bob");
+        System.out.println(fila.proximo()); // Alice
+        fila.reservar("Charlie");
+        fila.reservar("Dave");
+        System.out.println(fila.proximo()); // Bob
+    }
+}

@@ -1,0 +1,39 @@
+```java
+import java.time.LocalDate;
+
+public class Main {
+
+    interface RegraDevolucao {
+        int calcularDiasAtraso(LocalDate dataPrevista, LocalDate dataReal);
+    }
+
+    static class ImplementacaoRegraDevolucao implements RegraDevolucao {
+        @Override
+        public int calcularDiasAtraso(LocalDate dataPrevista, LocalDate dataReal) {
+            if (dataReal == null || dataPrevista == null) {
+                throw new IllegalArgumentException("As datas não podem ser nulas.");
+            }
+            return dataPrevista.compareTo(dataReal);
+        }
+    }
+
+    public static void main(String[] args) {
+        RegraDevolucao regra = new ImplementacaoRegraDevolucao();
+
+        LocalDate dataPrevista1 = LocalDate.of(2024, 10, 26);
+        LocalDate dataReal1 = LocalDate.of(2024, 10, 28);
+        int atraso1 = regra.calcularDiasAtraso(dataPrevista1, dataReal1);
+        System.out.println("Atraso 1: " + atraso1 + " dias");
+
+        LocalDate dataPrevista2 = LocalDate.of(2024, 10, 26);
+        LocalDate dataReal2 = LocalDate.of(2024, 10, 26);
+        int atraso2 = regra.calcularDiasAtraso(dataPrevista2, dataReal2);
+        System.out.println("Atraso 2: " + atraso2 + " dias");
+
+        LocalDate dataPrevista3 = LocalDate.of(2024, 10, 26);
+        LocalDate dataReal3 = LocalDate.of(2024, 10, 25);
+        int atraso3 = regra.calcularDiasAtraso(dataPrevista3, dataReal3);
+        System.out.println("Atraso 3: " + atraso3 + " dias");
+    }
+}
+```

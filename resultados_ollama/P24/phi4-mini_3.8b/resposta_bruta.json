@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:26:18.8044919Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    public static class Devolucao {\n        private final Map<String, String> livros = new HashMap<>();\n\n        public void adicionar(String isbn, String titulo) {\n            livros.put(isbn, titulo);\n        }\n\n        public void remover(String isbn) {\n            livros.remove(isbn);\n        }\n\n        public int quantidade() {\n            return livros.size();\n        }\n\n        public String recuperar(String isbn) {\n            return livros.get(isbn);\n        }\n    }\n\n    public static void main(String[] args) {\n        Devolucao devolucao = new Devolucao();\n        devolucao.adicionar(\"1234567890\", \"O Código da Felicidade\");\n        devolucao.adicionar(\"0987654321\", \"1984\");\n        devolucao.adicionar(\"1234567890\", \"O Código da Felicidade\"); // Duplicado\n\n        System.out.println(\"Quantidade de livros: \" + devolucao.quantidade());\n        System.out.println(\"Título do livro com ISBN '1234567890': \" + devolucao.recuperar(\"1234567890\"));\n        System.out.println(\"Quantidade de livros após remover o segundo: \" + devolucao.quantidade());\n        devolucao.remover(\"0987654321\");\n        System.out.println(\"Quantidade de livros após remover um: \" + devolucao.quantidade());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 27873908700,
+  "load_duration": 13685300,
+  "prompt_eval_count": 262,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 1051137000,
+  "eval_count": 278,
+  "eval_duration": 26353908000
+}

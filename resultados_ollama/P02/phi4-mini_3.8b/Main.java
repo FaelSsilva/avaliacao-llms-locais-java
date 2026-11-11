@@ -1,0 +1,31 @@
+public class Main {
+    static class Livro {
+        private String titulo;
+        private String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+        }
+
+        public Livro copiar() {
+            return new Livro(this.titulo, this.autor);
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livroOriginal = new Livro("1984", "George Orwell");
+        Livro livroCopia = livroOriginal.copiar();
+
+        System.out.println("Original: " + livroOriginal.getTitulo() + " por " + livroOriginal.getAutor());
+        System.out.println("Cópia: " + livroCopia.getTitulo() + " por " + livroCopia.getAutor());
+    }
+}

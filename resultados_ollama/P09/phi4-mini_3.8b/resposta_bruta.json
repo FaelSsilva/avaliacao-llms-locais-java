@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:49:20.9182735Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    public static void main(String[] args) {\n        List<Publicacao> publicacoes = new ArrayList<>();\n        publicacoes.add(new Livro(\"1984\", 1949, \"George Orwell\"));\n        publicacoes.add(new Revista(\"Nature\", 2021, \"Revista Nature\"));\n\n        for (Publicacao publica : publicacoes) {\n            System.out.println(publica.descricao());\n        }\n    }\n\n    static class Publicacao {\n        private String titulo;\n        private int ano;\n\n        public Publicacao(String titulo, int ano) {\n            this.titulo = titulo;\n            this.ano = ano;\n        }\n\n        public String descricao() {\n            return \"Título: \" + titulo + \", Ano: \" + ano;\n        }\n    }\n\n    static class Livro extends Publicacao {\n        private String autor;\n\n        public Livro(String titulo, int ano, String autor) {\n            super(titulo, ano);\n            this.autor = autor;\n        }\n\n        @Override\n        public String descricao() {\n            return super.descricao() + \", Autor: \" + autor;\n        }\n    }\n\n    static class Revista extends Publicacao {\n        private String edicao;\n\n        public Revista(String titulo, int ano, String edicao) {\n            super(titulo, ano);\n            this.edicao = edicao;\n        }\n\n        @Override\n        public String descricao() {\n            return super.descricao() + \", Edição: \" + edicao;\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 26405600800,
+  "load_duration": 9199200,
+  "prompt_eval_count": 271,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 742745000,
+  "eval_count": 307,
+  "eval_duration": 25597780000
+}

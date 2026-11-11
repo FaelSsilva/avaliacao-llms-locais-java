@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:41:43.4693995Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Usuario {\n        private final String nome;\n        private final String identificador;\n\n        public Usuario(String nome, String identificador) {\n            if (nome.isEmpty() || identificador.isEmpty()) {\n                throw new IllegalArgumentException(\"Nome e identificador devem ser informados.\");\n            }\n            this.nome = nome;\n            this.identificador = identificador;\n        }\n\n        public String getNome() {\n            return nome;\n        }\n\n        public String getIdentificador() {\n            return identificador;\n        }\n\n        public String apresentar() {\n            return String.format(\"%s (%s)\", nome, identificador);\n        }\n    }\n\n    public static void main(String[] args) {\n        Usuario usuario1 = new Usuario(\"João Silva\", \"123456\");\n        Usuario usuario2 = new Usuario(\"Maria Souza\", \"789012\");\n\n        System.out.println(usuario1.apresentar());\n        System.out.println(usuario2.apresentar());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 45510932500,
+  "load_duration": 7766400,
+  "prompt_eval_count": 367,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1439314000,
+  "eval_count": 294,
+  "eval_duration": 44028782000
+}

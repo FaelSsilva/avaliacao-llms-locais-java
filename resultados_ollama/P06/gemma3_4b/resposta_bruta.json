@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T20:43:03.9150188Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    static class Usuario {\n        private String nome;\n        private int limiteMaximo;\n        private int quantidadeEmprestimos;\n        private static int limiteEmprestimosMaximo = 3;\n\n        public Usuario(String nome, int limiteMaximo) {\n            this.nome = nome;\n            this.limiteMaximo = limiteMaximo;\n            this.quantidadeEmprestimos = 0;\n        }\n\n        public boolean podeEmprestar() {\n            return quantidadeEmprestimos < limiteMaximo;\n        }\n\n        public void registrarEmprestimo() {\n            if (quantidadeEmprestimos < limiteMaximo) {\n                quantidadeEmprestimos++;\n            } else {\n                throw new IllegalStateException(\"Limite de empréstimos atingido.\");\n            }\n        }\n\n        public void registrarDevolucao() {\n            if (quantidadeEmprestimos > 0) {\n                quantidadeEmprestimos--;\n            } else {\n                throw new IllegalStateException(\"Não há empréstimos para devolver.\");\n            }\n        }\n    }\n\n    public static void main(String[] args) {\n        Usuario usuario = new Usuario(\"João\", 2);\n        System.out.println(\"Usuário: \" + usuario.nome);\n        System.out.println(\"Pode emprestar: \" + usuario.podeEmprestar());\n\n        usuario.registrarEmprestimo();\n        System.out.println(\"Emprestimo registrado. Pode emprestar: \" + usuario.podeEmprestar());\n        System.out.println(\"Quantidade de empréstimos: \" + usuario.quantidadeEmprestimos);\n\n        usuario.registrarEmprestimo();\n        usuario.registrarEmprestimo();\n        System.out.println(\"Quantidade de empréstimos: \" + usuario.quantidadeEmprestimos);\n\n        try {\n            usuario.registrarEmprestimo();\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n\n        usuario.registrarDevolucao();\n        System.out.println(\"Quantidade de empréstimos: \" + usuario.quantidadeEmprestimos);\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 45884342600,
+  "load_duration": 9372800,
+  "prompt_eval_count": 292,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2613065000,
+  "eval_count": 487,
+  "eval_duration": 43207021000
+}

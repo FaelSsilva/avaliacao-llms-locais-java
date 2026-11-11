@@ -1,0 +1,62 @@
+ ```java
+interface EstrategiaBusca {
+    Livro buscar(String titulo);
+}
+
+class Exata implements EstrategiaBusca {
+    @Override
+    public Livro buscar(String titulo) {
+        return livros.stream()
+                .filter(l -> l.getTitulo().equalsIgnoreCase(titulo))
+                .findFirst()
+                .orElse(null);
+    }
+}
+
+class Trecho implements EstrategiaBusca {
+    private final String trecho;
+
+    public Trecho(String trecho) {
+        this.trecho = trecho;
+    }
+
+    @Override
+    public Livro buscar(String titulo) {
+        return livros.stream()
+                .filter(l -> l.getTitulo().toLowerCase().contains(trecho))
+                .findFirst()
+                .orElse(null);
+    }
+}
+
+class Livro {
+    private final String titulo;
+
+    public Livro(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+}
+
+class Main {
+    private static final List<Livro> livros = Arrays.asList(
+            new Livro("A História do Mundo em 100 Milhas"),
+            new Livro("O Senhor dos Anéis"),
+            new Livro("O Alquimista"),
+            new Livro("A Bíblia"),
+            new Livro("O Guia do Estudante Idiota"),
+            new Livro("O Pequeno Príncipe")
+    );
+
+    public static void main(String[] args) {
+        EstrategiaBusca exata = new Exata();
+        EstrategiaBusca trecho = new Trecho("Mundo");
+
+        System.out.println(exata.buscar("A História do Mundo em 100 Milhas"));
+        System.out.println(trecho.buscar("O Senhor dos Anéis"));
+    }
+}
+```

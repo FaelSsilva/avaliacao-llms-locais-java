@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:14:02.3953901Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.Optional;\n\npublic class Main {\n    public static class RepositorioLivro {\n        void salvar(Livro livro) throws IllegalArgumentException {\n            throw new UnsupportedOperationException(\"Operação não suportada\");\n        }\n\n        Optional<Livro> buscarPorIsbn(String isbn) {\n            throw new UnsupportedOperationException(\"Operação não suportada\");\n        }\n    }\n\n    public static class RepositorioLivroMemoria extends RepositorioLivro {\n        private final Map<String, Livro> livros = new HashMap<>();\n\n        @Override\n        void salvar(Livro livro) {\n            livros.put(livro.getIsbn(), livro);\n        }\n\n        @Override\n        Optional<Livro> buscarPorIsbn(String isbn) {\n            return Optional.ofNullable(livros.get(isbn));\n        }\n    }\n\n    public static void main(String[] args) {\n        RepositorioLivroMemoria repositorio = new RepositorioLivroMemoria();\n        Livro livro1 = new Livro(\"123-456-789\", \"Título 1\");\n        Livro livro2 = new Livro(\"987-654-321\", \"Título 2\");\n\n        repositorio.salvar(livro1);\n        repositorio.salvar(livro2);\n\n        Optional<Livro> livroEncontrado = repositorio.buscarPorIsbn(\"123-456-789\");\n        livroEncontrado.ifPresent(System.out::println);\n\n        livroEncontrado = repositorio.buscarPorIsbn(\"000-000-000\");\n        livroEncontrado.ifPresent(System.out::println);\n    }\n\n    static class Livro {\n        private final String isbn;\n        private final String titulo;\n\n        public Livro(String isbn, String titulo) {\n            this.isbn = isbn;\n            this.titulo = titulo;\n        }\n\n        public String getIsbn() {\n            return isbn;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        @Override\n        public String toString() {\n            return \"Livro{\" +\n                    \"isbn='\" + isbn + '\\'' +\n                    \", titulo='\" + titulo + '\\'' +\n                    '}';\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 39382100700,
+  "load_duration": 9797200,
+  "prompt_eval_count": 263,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 536032000,
+  "eval_count": 444,
+  "eval_duration": 38365253000
+}

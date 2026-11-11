@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:52:11.953324Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nabstract class Pessoa {\n    private String nome;\n\n    public Pessoa(String nome) {\n        this.nome = nome;\n    }\n\n    public String getNome() {\n        return nome;\n    }\n\n    public void setNome(String nome) {\n        this.nome = nome;\n    }\n\n    public abstract String tipo();\n}\n\nclass Usuario extends Pessoa {\n    private String identificador;\n\n    public Usuario(String nome, String identificador) {\n        super(nome);\n        this.identificador = identificador;\n    }\n\n    public String getIdentificador() {\n        return identificador;\n    }\n\n    public void setIdentificador(String identificador) {\n        this.identificador = identificador;\n    }\n\n    @Override\n    public String tipo() {\n        return \"Usuario: \" + identificador;\n    }\n}\n\nclass Bibliotecario extends Pessoa {\n    private String matricula;\n\n    public Bibliotecario(String nome, String matricula) {\n        super(nome);\n        this.matricula = matricula;\n    }\n\n    public String getMatricula() {\n        return matricula;\n    }\n\n    public void setMatricula(String matricula) {\n        this.matricula = matricula;\n    }\n\n    @Override\n    public String tipo() {\n        return \"Bibliotecario: \" + matricula;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Pessoa usuario = new Usuario(\"João\", \"12345\");\n        Pessoa bibliotecario = new Bibliotecario(\"Maria\", \"67890\");\n\n        System.out.println(usuario.tipo());\n        System.out.println(bibliotecario.tipo());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 28144997500,
+  "load_duration": 10510800,
+  "prompt_eval_count": 261,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 552250000,
+  "eval_count": 329,
+  "eval_duration": 27538332000
+}

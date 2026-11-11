@@ -1,0 +1,52 @@
+ ```java
+public class Main {
+
+    abstract static class RegraMulta {
+        private int diasAtraso;
+        private double valor;
+
+        public RegraMulta(int diasAtraso) {
+            if (diasAtraso < 0) {
+                throw new IllegalArgumentException("Dias de atraso inválido.");
+            }
+            this.diasAtraso = diasAtraso;
+        }
+
+        public abstract double calcular();
+    }
+
+    static class RegraFixa extends RegraMulta {
+        public RegraFixa(int diasAtraso) {
+            super(diasAtraso);
+        }
+
+        @Override
+        public double calcular() {
+            return diasAtraso * 2.0;
+        }
+    }
+
+    static class RegraTeto extends RegraMulta {
+        private final double teto;
+
+        public RegraTeto(int diasAtraso, double teto) {
+            super(diasAtraso);
+            this.teto = teto;
+        }
+
+        @Override
+        public double calcular() {
+            double valor = diasAtraso * 2.0;
+            return Math.min(valor, teto);
+        }
+    }
+
+    public static void main(String[] args) {
+        RegraMulta regraFixa = new RegraFixa(5);
+        RegraMulta regraTeto = new RegraTeto(10, 20);
+
+        System.out.printf("Regra fixa: R$ %.2f%n", regraFixa.calcular());
+        System.out.printf("Regra com teto: R$ %.2f%n", regraTeto.calcular());
+    }
+}
+```

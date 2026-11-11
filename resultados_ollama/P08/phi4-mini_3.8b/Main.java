@@ -1,0 +1,53 @@
+public class Main {
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("Livro A");
+        Livro livro2 = new Livro("Livro B");
+
+        Livro emprestado1 = livro1.emprestar();
+        Livro emprestado2 = livro2.emprestar();
+
+        emprestado1.devolver();
+        emprestado2.devolver();
+
+        System.out.println(livro1.isDisponivel());
+        System.out.println(livro2.isDisponivel());
+    }
+
+    static class Livro implements Emprestavel {
+        private String titulo;
+        private boolean emprestado;
+
+        public Livro(String titulo) {
+            this.titulo = titulo;
+            this.emprestado = false;
+        }
+
+        @Override
+        public Livro emprestar() {
+            if (this.emprestado) {
+                throw new IllegalStateException("Este livro já está emprestado.");
+            }
+            this.emprestado = true;
+            return this;
+        }
+
+        @Override
+        public void devolver() {
+            if (!this.emprestado) {
+                throw new IllegalStateException("Este livro não está emprestado.");
+            }
+            this.emprestado = false;
+        }
+
+        @Override
+        public boolean isDisponivel() {
+            return !this.emprestado;
+        }
+    }
+
+    interface Emprestavel {
+        Livro emprestar();
+        void devolver();
+        boolean isDisponivel();
+    }
+}

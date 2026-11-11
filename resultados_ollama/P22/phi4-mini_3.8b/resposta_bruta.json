@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:19:59.2979313Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Livro implements Comparable<Livro> {\n        private String titulo;\n        private String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n\n        @Override\n        public int compareTo(Livro outro) {\n            return this.titulo.compareToIgnoreCase(outro.titulo);\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Livro> livros = new ArrayList<>();\n        livros.add(new Livro(\"O Relato do Caiaque Solitário\", \"Adoniram Britto\"));\n        livros.add(new Livro(\"1984\", \"George Orwell\"));\n        livros.add(new Livro(\"O Grande Gatsby\", \"F. Scott Fitzgerald\"));\n\n        livros.sort(null);\n\n        livros.forEach(livro -> System.out.println(livro.getTitulo()));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 21424281900,
+  "load_duration": 13925200,
+  "prompt_eval_count": 253,
+  "prompt_eval_cached_count": 221,
+  "prompt_eval_duration": 1423295000,
+  "eval_count": 211,
+  "eval_duration": 19565743000
+}

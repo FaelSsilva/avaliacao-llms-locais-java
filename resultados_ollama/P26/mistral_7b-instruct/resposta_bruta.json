@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:34:20.2881679Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Biblioteca {\n        private String nome;\n        private static class Catalogo {\n            private int quantidadeLivros;\n\n            public Catalogo(int quantidadeLivros) {\n                this.quantidadeLivros = quantidadeLivros;\n            }\n\n            public void adicionarLivro() {\n                if (quantidadeLivros > 0) {\n                    quantidadeLivros--;\n                }\n            }\n\n            public int consultarQuantidadeLivros() {\n                return quantidadeLivros;\n            }\n        }\n\n        public Biblioteca(String nome) {\n            this.nome = nome;\n            this.catalogo = new Catalogo(100);\n        }\n\n        private Catalogo catalogo;\n\n        public void adicionarLivro() {\n            catalogo.adicionarLivro();\n        }\n\n        public int consultarQuantidadeLivros() {\n            return catalogo.consultarQuantidadeLivros();\n        }\n\n        public String getNome() {\n            return nome;\n        }\n    }\n\n    public static void main(String[] args) {\n        Biblioteca biblioteca = new Biblioteca(\"Minha Biblioteca\");\n        System.out.println(\"Quantidade inicial de livros: \" + biblioteca.consultarQuantidadeLivros());\n        biblioteca.adicionarLivro();\n        System.out.println(\"Quantidade de livros após remoção: \" + biblioteca.consultarQuantidadeLivros());\n        System.out.println(\"Nome da biblioteca: \" + biblioteca.getNome());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 79487411600,
+  "load_duration": 11720400,
+  "prompt_eval_count": 365,
+  "prompt_eval_cached_count": 308,
+  "prompt_eval_duration": 1978995000,
+  "eval_count": 427,
+  "eval_duration": 77435727000
+}

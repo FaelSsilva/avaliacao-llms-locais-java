@@ -1,0 +1,36 @@
+public class Main {
+    public static void main(String[] args) {
+        Pagavel pagavel = new Multa();
+        pagavel.calcularTotal(100);
+        pagavel.pagar(50);
+        pagavel.pagar(50); // Isso lançará IllegalStateException
+    }
+
+    static interface Pagavel {
+        void calcularTotal(double valor);
+        void pagar(double valor) throws IllegalStateException;
+    }
+
+    static class Multa implements Pagavel {
+        private double totalPagado = 0;
+
+        @Override
+        public void calcularTotal(double valor) {
+            if (valor < 0) {
+                throw new IllegalArgumentException("Valor não pode ser negativo");
+            }
+            totalPagado += valor;
+        }
+
+        @Override
+        public void pagar(double valor) throws IllegalStateException {
+            if (totalPagado <= 0) {
+                throw new IllegalStateException("A multa já foi paga ou o valor é inválido");
+            }
+            if (totalPagado < valor) {
+                throw new IllegalStateException("Valor de pagamento insuficiente");
+            }
+            totalPagado -= valor;
+        }
+    }
+}

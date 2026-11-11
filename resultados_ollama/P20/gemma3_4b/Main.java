@@ -1,0 +1,77 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+    interface RepositorioLivro {
+        void salvar(Livro livro);
+        Optional<Livro> buscarPorIsbn(String isbn);
+    }
+
+    static class RepositorioLivroMemoria implements RepositorioLivro {
+        private final Map<String, Livro> livros = new HashMap<>();
+
+        @Override
+        public void salvar(Livro livro) {
+            if (livros.containsKey(livro.getIsbn())) {
+                throw new IllegalArgumentException("ISBN já existe");
+            }
+            livros.put(livro.getIsbn(), livro);
+        }
+
+        @Override
+        public Optional<Livro> buscarPorIsbn(String isbn) {
+            return Optional.ofNullable(livros.get(isbn));
+        }
+    }
+
+    static class Livro {
+        private String titulo;
+        private String autor;
+        private String isbn;
+
+        public Livro(String titulo, String autor, String isbn) {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.isbn = isbn;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+
+        public String getIsbn() {
+            return isbn;
+        }
+    }
+
+    public static void main(String[] args) {
+        RepositorioLivro repositorio = new RepositorioLivroMemoria();
+
+        Livro livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", "978-0618260264");
+        repositorio.salvar(livro1);
+
+        Livro livro2 = new Livro("1984", "George Orwell", "978-0451524935");
+        repositorio.salvar(livro2);
+
+        Optional<Livro> livroEncontrado = repositorio.buscarPorIsbn("978-0618260264");
+        if (livroEncontrado.isPresent()) {
+            System.out.println("Livro encontrado: " + livroEncontrado.get().getTitulo());
+        }
+
+        Optional<Livro> livroNaoEncontrado = repositorio.buscarPorIsbn("123-456-789");
+        if (!livroNaoEncontrado.isPresent()) {
+            System.out.println("Livro não encontrado");
+        }
+
+        try {
+            repositorio.salvar(new Livro("O Hobbit", "J.R.R. Tolkien", "978-0618260264"));
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}

@@ -1,0 +1,56 @@
+ ```java
+public class Main {
+
+    static class Usuario {
+        private final String nome;
+        private int limiteMaximo;
+        private int quantidadeAtual;
+
+        public Usuario(String nome, int limiteMaximo) {
+            this.nome = nome;
+            this.limiteMaximo = limiteMaximo;
+            this.quantidadeAtual = 0;
+        }
+
+        public boolean podeEmprestar() {
+            return quantidadeAtual < limiteMaximo;
+        }
+
+        public void registrarEmprestimo() {
+            if (quantidadeAtual >= limiteMaximo) {
+                throw new IllegalStateException("Operação inválida: limite atingido");
+            }
+            quantidadeAtual++;
+        }
+
+        public void registrarDevolucao() {
+            if (quantidadeAtual <= 0) {
+                throw new IllegalStateException("Operação inválida: nenhum empréstimo pendente");
+            }
+            quantidadeAtual--;
+        }
+    }
+
+    public static void main(String[] args) {
+        Usuario usuario = new Usuario("João", 3);
+        System.out.println("Limite inicial: " + usuario.limiteMaximo);
+        System.out.println("Quantidade inicial: " + usuario.quantidadeAtual);
+
+        usuario.registrarEmprestimo();
+        usuario.registrarEmprestimo();
+        usuario.registrarEmprestimo();
+        System.out.println("Quantidade após empréstimos: " + usuario.quantidadeAtual);
+
+        usuario.registrarDevolucao();
+        usuario.registrarDevolucao();
+        System.out.println("Quantidade após devoluções: " + usuario.quantidadeAtual);
+
+        try {
+            usuario.registrarEmprestimo();
+            System.out.println("Quantidade após tentativa de empréstimo inválido: " + usuario.quantidadeAtual);
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```

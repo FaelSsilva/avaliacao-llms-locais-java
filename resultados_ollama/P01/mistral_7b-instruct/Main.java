@@ -1,0 +1,41 @@
+public class Main {
+
+    static class Livro {
+        private final String titulo;
+        private final String autor;
+        private final int anoPublicacao;
+
+        public Livro(String titulo, String autor, int anoPublicacao) {
+            if (titulo.isEmpty() || autor.isEmpty()) {
+                throw new IllegalArgumentException("Título ou autor não pode ser vazio.");
+                       }
+            if (anoPublicacao < 1) {
+                throw new IllegalArgumentException("Ano de publicação deve ser maior que zero.");
+            }
+            this.titulo = titulo;
+            this.autor = autor;
+            this.anoPublicacao = anoPublicacao;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+
+        public int getAnoPublicacao() {
+            return anoPublicacao;
+        }
+
+        public String resumo() {
+            return String.format("%s — %s (%d)", titulo, autor, anoPublicacao);
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", 1954);
+        System.out.println(livro.resumo());
+    }
+}

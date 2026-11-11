@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:42:20.8821639Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Livro {\n        private String titulo;\n        private boolean emprestado;\n\n        public Livro(String titulo) {\n            this.titulo = titulo;\n            this.emprestado = false;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public boolean isEmprestado() {\n            return emprestado;\n        }\n\n        public void emprestar() {\n            this.emprestado = true;\n        }\n\n        public void devolver() {\n            this.emprestado = false;\n        }\n    }\n\n    static class Usuario {\n        private String nome;\n\n        public Usuario(String nome) {\n            this.nome = nome;\n        }\n\n        public String getNome() {\n            return nome;\n        }\n    }\n\n    static class ServicoEmprestimo {\n        public void emprestarLivro(Livro livro, Usuario usuario) throws IllegalStateException {\n            if (!livro.isEmprestado() && !livro.isAtivo()) {\n                livro.emprestar();\n                System.out.println(usuario.getNome() + \" emprestou o livro: \" + livro.getTitulo());\n            } else {\n                throw new IllegalStateException(\"O livro não está disponível ou já foi emprestado.\");\n            }\n        }\n\n        public void devolverLivro(Livro livro, Usuario usuario) throws IllegalStateException {\n            if (livro.isEmprestado()) {\n                livro.devolver();\n                System.out.println(usuario.getNome() + \" devolveu o livro: \" + livro.getTitulo());\n            } else {\n                throw new IllegalStateException(\"O livro não está emprestado.\");\n            }\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro = new Livro(\"1984\");\n        Usuario usuario = new Usuario(\"Alice\");\n        ServicoEmprestimo servico = new ServicoEmprestimo();\n\n        try {\n            servico.emprestarLivro(livro, usuario);\n            servico.devolverLivro(livro, usuario);\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 39828624100,
+  "load_duration": 12920300,
+  "prompt_eval_count": 271,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 688916000,
+  "eval_count": 436,
+  "eval_duration": 39019593000
+}

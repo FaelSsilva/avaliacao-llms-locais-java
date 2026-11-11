@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:07:47.629854Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\nclass LivroIndisponivelException extends RuntimeException {}\n\nclass Livro {\n    private boolean emprestado;\n\n    public Livro(boolean emprestado) {\n        this.emprestado = emprestado;\n    }\n\n    public void emprestar() throws LivroIndisponivelException {\n        if (emprestado) {\n            throw new LivroIndisponivelException();\n        }\n        emprestado = true;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            Livro livro = new Livro(false);\n            livro.emprestar();\n            System.out.println(\"Livro emprestado com sucesso.\");\n\n            livro.emprestar();\n            System.out.println(\"Livro emprestado novamente.\");\n        } catch (LivroIndisponivelException e) {\n            System.err.println(\"Livro indisponível para empréstimo.\");\n        }\n    }\n}\n```\n\nEsse código define uma classe `LivroIndisponivelException` que estende `RuntimeException`. A classe `Livro` tem um atributo `emprestado` e um método `emprestar()` que lança a exceção `LivroIndisponivelException` se o livro já estiver emprestado. O código principal `Main` demonstra o uso da classe `Livro` e o tratamento da exceção `LivroIndisponivelException`."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 59249443500,
+  "load_duration": 11362400,
+  "prompt_eval_count": 377,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1568178000,
+  "eval_count": 382,
+  "eval_duration": 57634769000
+}

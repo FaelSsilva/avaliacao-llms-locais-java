@@ -1,0 +1,49 @@
+```java
+public class Main {
+
+    static class Usuario {
+        private String nome;
+        private int id;
+
+        public Usuario(String nome, int id) {
+            if (nome == null || nome.trim().isEmpty()) {
+                throw new IllegalArgumentException("Nome não pode ser nulo ou vazio.");
+            }
+            if (id <= 0) {
+                throw new IllegalArgumentException("ID deve ser maior que zero.");
+            }
+            this.nome = nome;
+            this.id = id;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void apresentar() {
+            System.out.println("Nome: " + nome + ", ID: " + id);
+        }
+    }
+
+    public static void main(String[] args) {
+        Usuario usuario1 = new Usuario("João", 123);
+        usuario1.apresentar();
+
+        try {
+            Usuario usuario2 = new Usuario("", 456);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+
+        try {
+            Usuario usuario3 = new Usuario("Maria", 0);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+    }
+}
+```

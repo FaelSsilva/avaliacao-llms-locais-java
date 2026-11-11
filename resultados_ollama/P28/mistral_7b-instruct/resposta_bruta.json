@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:39:07.9554443Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        private final String titulo;\n        private final String genero;\n\n        public Livro(String titulo, String genero) {\n            this.titulo = titulo;\n            this.genero = genero;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getGenero() {\n            return genero;\n        }\n    }\n\n    static class Catalogo {\n        private final Map<String, List<Livro>> livrosPorGenero = new HashMap<>();\n\n        public void adicionar(Livro livro) {\n            String genero = livro.getGenero();\n            if (!livrosPorGenero.containsKey(genero)) {\n                livrosPorGenero.put(genero, new ArrayList<>());\n            }\n            livrosPorGenero.get(genero).add(livro);\n        }\n\n        public int quantidadeTotal() {\n            return livrosPorGenero.values().stream().mapToInt(List::size).sum();\n        }\n\n        public int quantidadePorGenero(String genero) {\n            return livrosPorGenero.getOrDefault(genero, new ArrayList<>()).size();\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo catalogo = new Catalogo();\n        catalogo.adicionar(new Livro(\"Romance 1\", \"Romance\"));\n        catalogo.adicionar(new Livro(\"Ficção 1\", \"Ficção\"));\n        catalogo.adicionar(new Livro(\"Romance 2\", \"Romance\"));\n        catalogo.adicionar(new Livro(\"Ficção 2\", \"Ficção\"));\n\n        System.out.println(\"Quantidade total: \" + catalogo.quantidadeTotal());\n        System.out.println(\"Quantidade de romances: \" + catalogo.quantidadePorGenero(\"Romance\"));\n        System.out.println(\"Quantidade de ficção: \" + catalogo.quantidadePorGenero(\"Ficção\"));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 90244046600,
+  "load_duration": 12432000,
+  "prompt_eval_count": 366,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1432436000,
+  "eval_count": 528,
+  "eval_duration": 88755453000
+}

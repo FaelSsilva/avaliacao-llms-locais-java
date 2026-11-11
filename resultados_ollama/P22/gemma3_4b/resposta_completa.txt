@@ -1,0 +1,51 @@
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+
+    static class Livro implements Comparable<Livro> {
+        private String titulo;
+        private String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+
+        @Override
+        public int compareTo(Livro other) {
+            return this.titulo.compareToIgnoreCase(other.titulo);
+        }
+    }
+
+    public static void main(String[] args) {
+        List<Livro> livros = new ArrayList<>();
+        livros.add(new Livro("O Senhor dos Anéis", "J.R.R. Tolkien"));
+        livros.add(new Livro("1984", "George Orwell"));
+        livros.add(new Livro("Dom Quixote", "Miguel de Cervantes"));
+        livros.add(new Livro("Alice no País das Maravilhas", "Lewis Carroll"));
+
+        System.out.println("Lista original:");
+        for (Livro livro : livros) {
+            System.out.println(livro.getTitulo() + " - " + livro.getAutor());
+        }
+
+        Collections.sort(livros);
+
+        System.out.println("\nLista ordenada por título:");
+        for (Livro livro : livros) {
+            System.out.println(livro.getTitulo() + " - " + livro.getAutor());
+        }
+    }
+}
+```

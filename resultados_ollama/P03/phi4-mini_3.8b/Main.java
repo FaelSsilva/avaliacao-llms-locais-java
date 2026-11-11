@@ -1,0 +1,52 @@
+public class Main {
+    private static class Livro {
+        private String titulo;
+        private String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+    }
+
+    private static int totalLivros = 0;
+
+    private static class Livro {
+        private String titulo;
+        private String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo;
+            this.autor = autor;
+            totalLivros++;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getAutor() {
+            return autor;
+        }
+    }
+
+    public static int getTotalLivros() {
+        return totalLivros;
+    }
+
+    public static void main(String[] args) {
+        new Livro("1984", "George Orwell");
+        new Livro("Brave New World", "Aldous Huxley");
+        new Livro("Fahrenheit 451", "Ray Bradbury");
+
+        System.out.println("Total de Livros: " + getTotalLivros());
+    }
+}

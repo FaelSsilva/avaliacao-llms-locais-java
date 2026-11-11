@@ -1,0 +1,54 @@
+public class Main {
+
+    static class Livro {
+        private final String isbn;
+        private String titulo;
+
+        public Livro(String isbn, String titulo) {
+            this.isbn = isbn;
+            this.titulo = titulo;
+        }
+
+        public String getIsbn() {
+            return isbn;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public void setTitulo(String titulo) {
+            this.titulo = titulo;
+        }
+    }
+
+    static class Catalogo {
+        private final Map<String, Livro> livros = new HashMap<>();
+
+        public void adicionar(Livro livro) {
+            if (livros.containsKey(livro.getIsbn())) {
+                throw new IllegalArgumentException("ISBN já existe no catálogo.");
+            }
+            livros.put(livro.getIsbn(), livro);
+        }
+
+        public boolean remover(String isbn) {
+            return livros.remove(isbn) != null;
+        }
+    }
+
+    public static void main(String[] args) {
+        Catalogo cat = new Catalogo();
+        cat.adicionar(new Livro("123-4567", "Livro 1"));
+        cat.adicionar(new Livro("890-1234", "Livro 2"));
+
+        System.out.println("Adicionados: " + cat.livros);
+
+        cat.adicionar(new Livro("123-4567", "Novo Título")); // Exceção
+
+        System.out.println("Tentativa de adicionar ISBN duplicado:");
+
+        cat.remover("890-1234"); // Falso
+        System.out.println("Remoção de ISBN inexistente: " + cat.remover("987-6543"));
+    }
+}

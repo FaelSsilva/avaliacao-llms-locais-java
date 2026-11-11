@@ -1,0 +1,51 @@
+```java
+public class Main {
+    public static class Livro {
+        private String titulo;
+        private boolean disponivel;
+
+        public Livro(String titulo) {
+            this.titulo = titulo;
+            this.disponivel = true;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public boolean isDisponivel() {
+            return disponivel;
+        }
+
+        public void emprestar() {
+            if (!disponivel) {
+                throw new IllegalStateException("O livro não está disponível para emprestar.");
+            }
+            disponivel = false;
+        }
+
+        public void devolver() {
+            if (disponivel) {
+                throw new IllegalStateException("O livro não está emprestado.");
+            }
+            disponivel = true;
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("Algoritmos");
+        livro1.emprestar();
+        System.out.println("O livro '" + livro1.getTitulo() + "' foi emprestado.");
+        livro1.devolver();
+        System.out.println("O livro '" + livro1.getTitulo() + "' foi devolvido.");
+
+        Livro livro2 = new Livro("O Código da Natureza");
+        try {
+            livro2.emprestar();
+            livro2.emprestar(); // Tentativa de emprestar um livro já emprestado
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```

@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:44:29.6554543Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Usuario {\n        private final String nome;\n        private int limiteMaximo;\n        private int quantidadeAtual;\n\n        public Usuario(String nome, int limiteMaximo) {\n            this.nome = nome;\n            this.limiteMaximo = limiteMaximo;\n            this.quantidadeAtual = 0;\n        }\n\n        public boolean podeEmprestar() {\n            return quantidadeAtual < limiteMaximo;\n        }\n\n        public void registrarEmprestimo() {\n            if (quantidadeAtual >= limiteMaximo) {\n                throw new IllegalStateException(\"Operação inválida: limite atingido\");\n            }\n            quantidadeAtual++;\n        }\n\n        public void registrarDevolucao() {\n            if (quantidadeAtual <= 0) {\n                throw new IllegalStateException(\"Operação inválida: nenhum empréstimo pendente\");\n            }\n            quantidadeAtual--;\n        }\n    }\n\n    public static void main(String[] args) {\n        Usuario usuario = new Usuario(\"João\", 3);\n        System.out.println(\"Limite inicial: \" + usuario.limiteMaximo);\n        System.out.println(\"Quantidade inicial: \" + usuario.quantidadeAtual);\n\n        usuario.registrarEmprestimo();\n        usuario.registrarEmprestimo();\n        usuario.registrarEmprestimo();\n        System.out.println(\"Quantidade após empréstimos: \" + usuario.quantidadeAtual);\n\n        usuario.registrarDevolucao();\n        usuario.registrarDevolucao();\n        System.out.println(\"Quantidade após devoluções: \" + usuario.quantidadeAtual);\n\n        try {\n            usuario.registrarEmprestimo();\n            System.out.println(\"Quantidade após tentativa de empréstimo inválido: \" + usuario.quantidadeAtual);\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 82915402800,
+  "load_duration": 8802500,
+  "prompt_eval_count": 405,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1916592000,
+  "eval_count": 537,
+  "eval_duration": 80958549000
+}

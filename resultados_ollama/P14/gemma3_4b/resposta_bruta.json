@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:02:14.1771368Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nimport java.util.LinkedList;\n\npublic class Main {\n\n    static class FilaReservas {\n        private LinkedList<String> reservas = new LinkedList<>();\n\n        public void reservar(String nome) {\n            reservas.addLast(nome);\n        }\n\n        public String proximo() {\n            if (estaVazia()) {\n                throw new java.util.NoSuchElementException(\"A fila de reservas está vazia.\");\n            }\n            return reservas.removeFirst();\n        }\n\n        public boolean estaVazia() {\n            return reservas.isEmpty();\n        }\n    }\n\n    public static void main(String[] args) {\n        FilaReservas fila = new FilaReservas();\n        fila.reservar(\"Alice\");\n        fila.reservar(\"Bob\");\n\n        System.out.println(\"Próximo: \" + fila.proximo());\n        System.out.println(\"Próximo: \" + fila.proximo());\n\n        try {\n            System.out.println(\"Próximo: \" + fila.proximo());\n        } catch (java.util.NoSuchElementException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 28209030300,
+  "load_duration": 9300100,
+  "prompt_eval_count": 279,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3159254000,
+  "eval_count": 273,
+  "eval_duration": 24957781000
+}

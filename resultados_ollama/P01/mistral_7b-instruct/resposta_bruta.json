@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:34:07.0230333Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        private final String titulo;\n        private final String autor;\n        private final int anoPublicacao;\n\n        public Livro(String titulo, String autor, int anoPublicacao) {\n            if (titulo.isEmpty() || autor.isEmpty()) {\n                throw new IllegalArgumentException(\"Título ou autor não pode ser vazio.\");\n                       }\n            if (anoPublicacao < 1) {\n                throw new IllegalArgumentException(\"Ano de publicação deve ser maior que zero.\");\n            }\n            this.titulo = titulo;\n            this.autor = autor;\n            this.anoPublicacao = anoPublicacao;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n\n        public int getAnoPublicacao() {\n            return anoPublicacao;\n        }\n\n        public String resumo() {\n            return String.format(\"%s — %s (%d)\", titulo, autor, anoPublicacao);\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro = new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\", 1954);\n        System.out.println(livro.resumo());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 100977579200,
+  "load_duration": 40629906600,
+  "prompt_eval_count": 404,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 7781507000,
+  "eval_count": 346,
+  "eval_duration": 52546409000
+}

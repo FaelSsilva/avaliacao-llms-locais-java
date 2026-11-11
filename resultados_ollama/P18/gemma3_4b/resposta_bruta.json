@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:10:22.9629398Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npackage com.example;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n\n    interface Notificador {\n        void enviar(String mensagem);\n    }\n\n    static class NotificadorEmail implements Notificador {\n        @Override\n        public void enviar(String mensagem) {\n            System.out.println(\"[EMAIL] Mensagem: \" + mensagem);\n        }\n    }\n\n    static class NotificadorConsole implements Notificador {\n        @Override\n        public void enviar(String mensagem) {\n            System.out.println(\"[CONSOLE] Mensagem: \" + mensagem);\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Notificador> notificadores = new ArrayList<>();\n        notificadores.add(new NotificadorEmail());\n        notificadores.add(new NotificadorConsole());\n\n        for (Notificador notificador : notificadores) {\n            notificador.enviar(\"Esta é uma notificação de teste.\");\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 23586996400,
+  "load_duration": 9294700,
+  "prompt_eval_count": 279,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2784380000,
+  "eval_count": 235,
+  "eval_duration": 20735394000
+}

@@ -1,0 +1,41 @@
+```java
+public class Main {
+    static class Livro {
+        private boolean emprestado;
+
+        public Livro() {
+            this.emprestado = false;
+        }
+
+        public void emprestar() throws LivroIndisponivelException {
+            if (emprestado) {
+                throw new LivroIndisponivelException("O livro já está emprestado.");
+            }
+            emprestado = true;
+        }
+
+        public boolean isEmprestado() {
+            return emprestado;
+        }
+    }
+
+    static class LivroIndisponivelException extends Exception {
+        public LivroIndisponivelException(String mensagem) {
+            super(mensagem);
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro = new Livro();
+        try {
+            livro.emprestar();
+            System.out.println("Livro emprestado com sucesso.");
+            livro.emprestar();
+            System.out.println("Livro emprestado com sucesso.");
+            livro.emprestar();
+        } catch (LivroIndisponivelException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```

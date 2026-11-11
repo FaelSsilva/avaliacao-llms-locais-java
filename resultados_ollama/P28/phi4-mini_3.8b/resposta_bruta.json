@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:36:43.5657515Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    public static class Livro {\n        private String genero;\n\n        public Livro(String genero) {\n            this.genero = genero;\n        }\n\n        public String getGenero() {\n            return genero;\n        }\n    }\n\n    public static class Catalogo {\n        private List<Livro> livros = new ArrayList<>();\n\n        public void adicionarLivro(Livro livro) {\n            livros.add(livro);\n        }\n\n        public int calcularQuantidadeTotal() {\n            return livros.size();\n        }\n\n        public int calcularQuantidadePorGenero(String genero) {\n            int quantidade = 0;\n            for (Livro livro : livros) {\n                if (livro.getGenero().equalsIgnoreCase(genero)) {\n                    quantidade++;\n                }\n            }\n            return quantidade;\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo catalogo = new Catalogo();\n        catalogo.adicionarLivro(new Livro(\"Ficção\"));\n        catalogo.adicionarLivro(new Livro(\"Ficção\"));\n        catalogo.adicionarLivro(new Livro(\"Não-Ficção\"));\n\n        System.out.println(\"Quantidade total de livros: \" + catalogo.calcularQuantidadeTotal());\n        System.out.println(\"Quantidade de livros de Ficção: \" + catalogo.calcularQuantidadePorGenero(\"Ficção\"));\n        System.out.println(\"Quantidade de livros de Não-Ficção: \" + catalogo.calcularQuantidadePorGenero(\"Não-Ficção\"));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 27772941900,
+  "load_duration": 11963700,
+  "prompt_eval_count": 253,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 694728000,
+  "eval_count": 300,
+  "eval_duration": 26978267000
+}

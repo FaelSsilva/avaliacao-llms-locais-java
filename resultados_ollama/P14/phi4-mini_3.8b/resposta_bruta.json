@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:01:43.3707682Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class FilaReservas<T> {\n        private LinkedList<T> fila = new LinkedList<>();\n\n        public void reservar(T item) {\n            fila.addLast(item);\n        }\n\n        public T proximo() {\n            if (estaVazia()) {\n                throw new NoSuchElementException(\"Fila vazia\");\n            }\n            return fila.pollFirst();\n        }\n\n        public boolean estaVazia() {\n            return fila.isEmpty();\n        }\n    }\n\n    public static void main(String[] args) {\n        FilaReservas<String> reservas = new FilaReservas<>();\n\n        reservas.reservar(\"Cliente 1\");\n        reservas.reservar(\"Cliente 2\");\n\n        System.out.println(\"Proximo: \" + reservas.proximo()); // Cliente 1\n        System.out.println(\"Proximo: \" + reservas.proximo()); // Cliente 2\n        try {\n            System.out.println(\"Proximo: \" + reservas.proximo()); // Exceção\n        } catch (NoSuchElementException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 20508870300,
+  "load_duration": 10882900,
+  "prompt_eval_count": 272,
+  "prompt_eval_cached_count": 213,
+  "prompt_eval_duration": 677488000,
+  "eval_count": 231,
+  "eval_duration": 19746674000
+}

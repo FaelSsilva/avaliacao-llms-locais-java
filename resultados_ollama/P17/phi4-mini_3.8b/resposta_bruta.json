@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:08:11.5831297Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    public static void main(String[] args) {\n        Pagavel pagavel = new Multa();\n        pagavel.calcularTotal(100);\n        pagavel.pagar(50);\n        pagavel.pagar(50); // Isso lançará IllegalStateException\n    }\n\n    static interface Pagavel {\n        void calcularTotal(double valor);\n        void pagar(double valor) throws IllegalStateException;\n    }\n\n    static class Multa implements Pagavel {\n        private double totalPagado = 0;\n\n        @Override\n        public void calcularTotal(double valor) {\n            if (valor < 0) {\n                throw new IllegalArgumentException(\"Valor não pode ser negativo\");\n            }\n            totalPagado += valor;\n        }\n\n        @Override\n        public void pagar(double valor) throws IllegalStateException {\n            if (totalPagado <= 0) {\n                throw new IllegalStateException(\"A multa já foi paga ou o valor é inválido\");\n            }\n            if (totalPagado < valor) {\n                throw new IllegalStateException(\"Valor de pagamento insuficiente\");\n            }\n            totalPagado -= valor;\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 21189636400,
+  "load_duration": 11150900,
+  "prompt_eval_count": 263,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 595540000,
+  "eval_count": 240,
+  "eval_duration": 20525625000
+}

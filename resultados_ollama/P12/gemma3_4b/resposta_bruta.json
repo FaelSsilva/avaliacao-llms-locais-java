@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T20:57:42.3273812Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    static class Livro {\n        private String isbn;\n        private String titulo;\n\n        public Livro(String isbn, String titulo) {\n            this.isbn = isbn;\n            this.titulo = titulo;\n        }\n\n        public String getIsbn() {\n            return isbn;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n    }\n\n    static class Catalogo {\n        private java.util.Map<String, Livro> livros = new java.util.HashMap<>();\n\n        public boolean adicionar(String isbn, String titulo) {\n            if (livros.containsKey(isbn)) {\n                return false;\n            }\n            livros.put(isbn, new Livro(isbn, titulo));\n            return true;\n        }\n\n        public boolean remover(String isbn) {\n            return livros.remove(isbn) != null;\n        }\n    }\n\n    public static void main(String[] args) {\n        Catalogo catalogo = new Catalogo();\n\n        System.out.println(\"Adicionando livro 1...\");\n        catalogo.adicionar(\"9788412401423\", \"O Senhor dos Anéis\");\n        System.out.println(\"Adicionando livro 2...\");\n        catalogo.adicionar(\"9788412401423\", \"Dom Quixote\"); // Tentando adicionar duplicado\n        System.out.println(\"Adicionando livro 3...\");\n        catalogo.adicionar(\"9788412401425\", \"1984\");\n\n        System.out.println(\"Removendo livro 1...\");\n        boolean removido1 = catalogo.remover(\"9788412401423\");\n        System.out.println(\"Remoção 1: \" + removido1);\n\n        System.out.println(\"Removendo livro 2...\");\n        boolean removido2 = catalogo.remover(\"9788412401423\");\n        System.out.println(\"Remoção 2: \" + removido2);\n\n        System.out.println(\"Removendo livro 3...\");\n        boolean removido3 = catalogo.remover(\"9788412401425\");\n        System.out.println(\"Remoção 3: \" + removido3);\n\n        System.out.println(\"Livros no catálogo:\");\n        for (java.util.Map.Entry<String, Livro> entry : catalogo.livros.entrySet()) {\n            System.out.println(\"ISBN: \" + entry.getKey() + \", Título: \" + entry.getValue().getTitulo());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 60011370100,
+  "load_duration": 9133400,
+  "prompt_eval_count": 272,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2843786000,
+  "eval_count": 637,
+  "eval_duration": 57102390000
+}

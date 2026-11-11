@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:39:58.3525947Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        private String titulo;\n        private boolean disponivel;\n\n        public Livro(String titulo) {\n            this.titulo = titulo;\n            this.disponivel = true;\n        }\n\n        public void emprestar() {\n            if (!disponivel) {\n                throw new IllegalStateException(\"Livro indisponível para empréstimo.\");\n            }\n            disponivel = false;\n        }\n\n        public void devolver() {\n            if (disponivel) {\n                throw new IllegalStateException(\"Livro já está disponível.\");\n            }\n            disponivel = true;\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"Livro 1\");\n        Livro livro2 = new Livro(\"Livro 2\");\n\n        try {\n            livro1.emprestar();\n            System.out.println(\"Livro 1 emprestado com sucesso.\");\n            livro1.devolver();\n            System.out.println(\"Livro 1 devolvido com sucesso.\");\n        } catch (IllegalStateException e) {\n            System.err.println(e.getMessage());\n        }\n\n        try {\n            livro2.emprestar();\n            System.out.println(\"Livro 2 emprestado com sucesso.\"); // Não será impresso\n        } catch (IllegalStateException e) {\n            System.err.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 61607576300,
+  "load_duration": 7400800,
+  "prompt_eval_count": 400,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 2066668000,
+  "eval_count": 395,
+  "eval_duration": 59505278000
+}

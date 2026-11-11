@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:40:35.6482135Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nimport java.time.LocalDate;\n\npublic class Main {\n\n    interface RegraDevolucao {\n        int calcularDiasAtraso(LocalDate dataPrevista, LocalDate dataReal);\n    }\n\n    static class ImplementacaoRegraDevolucao implements RegraDevolucao {\n        @Override\n        public int calcularDiasAtraso(LocalDate dataPrevista, LocalDate dataReal) {\n            if (dataReal == null || dataPrevista == null) {\n                throw new IllegalArgumentException(\"As datas não podem ser nulas.\");\n            }\n            return dataPrevista.compareTo(dataReal);\n        }\n    }\n\n    public static void main(String[] args) {\n        RegraDevolucao regra = new ImplementacaoRegraDevolucao();\n\n        LocalDate dataPrevista1 = LocalDate.of(2024, 10, 26);\n        LocalDate dataReal1 = LocalDate.of(2024, 10, 28);\n        int atraso1 = regra.calcularDiasAtraso(dataPrevista1, dataReal1);\n        System.out.println(\"Atraso 1: \" + atraso1 + \" dias\");\n\n        LocalDate dataPrevista2 = LocalDate.of(2024, 10, 26);\n        LocalDate dataReal2 = LocalDate.of(2024, 10, 26);\n        int atraso2 = regra.calcularDiasAtraso(dataPrevista2, dataReal2);\n        System.out.println(\"Atraso 2: \" + atraso2 + \" dias\");\n\n        LocalDate dataPrevista3 = LocalDate.of(2024, 10, 26);\n        LocalDate dataReal3 = LocalDate.of(2024, 10, 25);\n        int atraso3 = regra.calcularDiasAtraso(dataPrevista3, dataReal3);\n        System.out.println(\"Atraso 3: \" + atraso3 + \" dias\");\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 47827589700,
+  "load_duration": 21584600,
+  "prompt_eval_count": 267,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3787888000,
+  "eval_count": 470,
+  "eval_duration": 43815780000
+}

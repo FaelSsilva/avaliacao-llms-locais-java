@@ -1,0 +1,51 @@
+ ```java
+public interface Emprestavel {
+    void emprestar() throws IllegalStateException;
+    void devolver() throws IllegalStateException;
+    boolean isDisponivel();
+}
+
+public class Main {
+    static class Livro implements Emprestavel {
+        private boolean emprestado;
+
+        public Livro(boolean inicialmenteEmprestado) {
+            this.emprestado = inicialmenteEmprestado;
+        }
+
+        @Override
+        public void emprestar() throws IllegalStateException {
+            if (emprestado) {
+                throw new IllegalStateException("Livro já está emprestado.");
+            }
+            emprestado = true;
+        }
+
+        @Override
+        public void devolver() throws IllegalStateException {
+            if (!emprestado) {
+                throw new IllegalStateException("Livro não está emprestado.");
+            }
+            emprestado = false;
+        }
+
+        @Override
+        public boolean isDisponivel() {
+            return !emprestado;
+        }
+    }
+
+    public static void main(String[] args) {
+        Livro livro = new Livro(false);
+        try {
+            livro.emprestar();
+            System.out.println("Livro emprestado.");
+            livro.devolver();
+            System.out.println("Livro devolvido.");
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println("Livro disponível: " + livro.isDisponivel());
+    }
+}
+```

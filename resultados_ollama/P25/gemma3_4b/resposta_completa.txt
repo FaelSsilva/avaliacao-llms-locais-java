@@ -1,0 +1,63 @@
+```java
+public class Main {
+    static class Usuario {
+        String nome;
+        String cpf;
+
+        public Usuario(String nome, String cpf) {
+            this.nome = nome;
+            this.cpf = cpf;
+        }
+    }
+
+    static class Emprestimo {
+        Usuario usuario;
+        String isbn;
+        String data;
+
+        public Emprestimo(Usuario usuario, String isbn, String data) {
+            this.usuario = usuario;
+            this.isbn = isbn;
+            this.data = data;
+        }
+    }
+
+    static class HistoricoEmprestimos {
+        List<Emprestimo> emprestimos;
+
+        public HistoricoEmprestimos() {
+            this.emprestimos = new ArrayList<>();
+        }
+
+        public void adicionarEmprestimo(Emprestimo emprestimo) {
+            emprestimos.add(emprestimo);
+        }
+
+        public List<Emprestimo> getEmprestimos() {
+            return emprestimos;
+        }
+    }
+
+    public static void main(String[] args) {
+        HistoricoEmprestimos historico = new HistoricoEmprestimos();
+
+        Usuario usuario1 = new Usuario("João", "123.456.789-0");
+        Usuario usuario2 = new Usuario("Maria", "987.654.321-0");
+
+        Emprestimo emprestimo1 = new Emprestimo(usuario1, "111", "2024-01-01");
+        Emprestimo emprestimo2 = new Emprestimo(usuario1, "222", "2024-01-15");
+        Emprestimo emprestimo3 = new Emprestimo(usuario2, "333", "2024-02-01");
+
+        historico.adicionarEmprestimo(emprestimo1);
+        historico.adicionarEmprestimo(emprestimo2);
+        historico.adicionarEmprestimo(emprestimo3);
+
+        List<Emprestimo> emprestimosJoao = historico.getEmprestimos().stream()
+                .filter(emprestimo -> emprestimo.usuario.nome.equals("João"))
+                .collect(Collectors.toList());
+
+        System.out.println("Empréstimos de João:");
+        emprestimosJoao.forEach(emprestimo -> System.out.println(emprestimo.usuario.nome + " - " + emprestimo.isbn + " - " + emprestimo.data));
+    }
+}
+```

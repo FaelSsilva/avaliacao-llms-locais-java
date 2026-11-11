@@ -1,0 +1,52 @@
+public class Main {
+
+    static class Livro {
+        private final String titulo;
+        private final String genero;
+
+        public Livro(String titulo, String genero) {
+            this.titulo = titulo;
+            this.genero = genero;
+        }
+
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getGenero() {
+            return genero;
+        }
+    }
+
+    static class Catalogo {
+        private final Map<String, List<Livro>> livrosPorGenero = new HashMap<>();
+
+        public void adicionar(Livro livro) {
+            String genero = livro.getGenero();
+            if (!livrosPorGenero.containsKey(genero)) {
+                livrosPorGenero.put(genero, new ArrayList<>());
+            }
+            livrosPorGenero.get(genero).add(livro);
+        }
+
+        public int quantidadeTotal() {
+            return livrosPorGenero.values().stream().mapToInt(List::size).sum();
+        }
+
+        public int quantidadePorGenero(String genero) {
+            return livrosPorGenero.getOrDefault(genero, new ArrayList<>()).size();
+        }
+    }
+
+    public static void main(String[] args) {
+        Catalogo catalogo = new Catalogo();
+        catalogo.adicionar(new Livro("Romance 1", "Romance"));
+        catalogo.adicionar(new Livro("Ficção 1", "Ficção"));
+        catalogo.adicionar(new Livro("Romance 2", "Romance"));
+        catalogo.adicionar(new Livro("Ficção 2", "Ficção"));
+
+        System.out.println("Quantidade total: " + catalogo.quantidadeTotal());
+        System.out.println("Quantidade de romances: " + catalogo.quantidadePorGenero("Romance"));
+        System.out.println("Quantidade de ficção: " + catalogo.quantidadePorGenero("Ficção"));
+    }
+}

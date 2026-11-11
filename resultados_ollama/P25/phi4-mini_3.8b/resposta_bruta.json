@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:29:14.8551154Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nimport java.time.LocalDate;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.stream.Collectors;\n\npublic class Main {\n    public static class Emprestimo {\n        private String identificador;\n        private String usuario;\n        private String isbn;\n        private LocalDate dataEmpréstimo;\n\n        public Empresteo(String identificador, String usuario, String isbn, LocalDate dataEmpréstimo) {\n            this.identificador = identificador;\n            this.usuario = usuario;\n            this.isbn = isbn;\n            this.dataEmpréstimo = dataEmpréstimo;\n        }\n\n        public String getUsuario() {\n            return usuario;\n        }\n\n        public String getHistorico() {\n            return historico();\n        }\n\n        private String historico() {\n            List<Emprestimo> emprestimos = historico().getEmprestimos();\n            return emprestimos.stream()\n                    .map(Emprestimo::getUsuario)\n                    .map(String::toUpperCase)\n                    .collect(Collectors.joining(\", \"));\n        }\n\n        public static List<Emprestimo> historico(String identificador) {\n            List<Emprestimo> emprestimos = new ArrayList<>();\n            emprestimos.add(new Empresteo(\"ID001\", \"João\", \"1234567890\", LocalDate.now()));\n            emprestimos.add(new Empresteo(\"ID002\", \"Maria\", \"0987654321\", LocalDate.now()));\n            return emprestimos.stream()\n                    .filter(e -> e.getIdentificador().equals(identificador))\n                    .collect(Collectors.toList());\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Empresteo> emprestimos = new ArrayList<>();\n        emprestimos.add(new Empresteo(\"ID001\", \"João\", \"1234567890\", LocalDate.now()));\n        emprestimos.add(new Empresteo(\"ID002\", \"Maria\", \"0987654321\", LocalDate.now()));\n\n        String historicoJoao = emprestimos.get(0).getHistorico();\n        System.out.println(historicoJoao); // DEPOIS DE EMPRÉSTIMO: JOÃ, DEPOIS DE EMPRÉSTIMO: JOÃ\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 43065723300,
+  "load_duration": 11833700,
+  "prompt_eval_count": 253,
+  "prompt_eval_cached_count": 213,
+  "prompt_eval_duration": 480126000,
+  "eval_count": 473,
+  "eval_duration": 42168145000
+}

@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:45:00.3135798Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Multa {\n        private int diasAtraso;\n        private double valorDiario;\n\n        public Multa(int diasAtraso, double valorDiario) {\n            setDiasAtraso(diasAtraso);\n            setValorDiario(valorDiario);\n        }\n\n        public int getDiasAtraso() {\n            return diasAtraso;\n        }\n\n        public void setDiasAtraso(int diasAtraso) {\n            if (diasAtraso < 0) {\n                throw new IllegalArgumentException(\"Dias de atraso não podem ser negativos.\");\n            }\n            this.diasAtraso = diasAtraso;\n        }\n\n        public double getValorDiario() {\n            return valorDiario;\n        }\n\n        public void setValorDiario(double valorDiario) {\n            if (valorDiario < 0) {\n                throw new IllegalArgumentException(\"Valor diário não pode ser negativo.\");\n            }\n            this.valorDiario = valorDiario;\n        }\n\n        public double calcularValor() {\n            return diasAtraso * valorDiario;\n        }\n    }\n\n    public static void main(String[] args) {\n        Multa multaZero = new Multa(0, 100.0);\n        System.out.println(\"Multa com atraso zero: \" + multaZero.calcularValor());\n\n        Multa multaPositiva = new Multa(5, 100.0);\n        System.out.println(\"Multa com atraso positivo: \" + multaPositiva.calcularValor());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 27815042700,
+  "load_duration": 7363100,
+  "prompt_eval_count": 258,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 545816000,
+  "eval_count": 325,
+  "eval_duration": 27192027000
+}

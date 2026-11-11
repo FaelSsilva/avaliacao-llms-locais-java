@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:40:20.7896155Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Usuario {\n        private String nome;\n        private String identificador;\n\n        public Usuario(String nome, String identificador) {\n            setNome(nome);\n            setIdentificador(identificador);\n        }\n\n        public String getNome() {\n            return nome;\n        }\n\n        public String getIdentificador() {\n            return identificador;\n        }\n\n        private void setNome(String nome) {\n            if (nome == null || nome.isEmpty()) {\n                throw new IllegalArgumentException(\"Nome não pode ser vazio\");\n            }\n            this.nome = nome;\n        }\n\n        private void setIdentificador(String identificador) {\n            if (identificador == null || identificador.isEmpty()) {\n                throw new IllegalArgumentException(\"Identificador não pode ser vazio\");\n            }\n            this.identificador = identificador;\n        }\n\n        public String apresentar() {\n            return nome + \" (\" + identificador + \")\";\n        }\n    }\n\n    public static void main(String[] args) {\n        Usuario usuario = new Usuario(\"John Doe\", \"JD123\");\n        System.out.println(usuario.apresentar());\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 19684367600,
+  "load_duration": 8532700,
+  "prompt_eval_count": 260,
+  "prompt_eval_cached_count": 212,
+  "prompt_eval_duration": 536621000,
+  "eval_count": 231,
+  "eval_duration": 19086974000
+}

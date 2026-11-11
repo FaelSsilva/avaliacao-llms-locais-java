@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T21:09:56.5589962Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    interface Notificador {\n        void enviar(String mensagem);\n    }\n\n    static class NotificadorEmail implements Notificador {\n        @Override\n        public void enviar(String mensagem) {\n            System.out.println(\"Email enviado: \" + mensagem);\n        }\n    }\n\n    static class NotificadorConsole implements Notificador {\n        @Override\n        public void enviar(String mensagem) {\n            System.out.println(\"Console: \" + mensagem);\n        }\n    }\n\n    public static void main(String[] args) {\n        Notificador[] notificadores = { new NotificadorEmail(), new NotificadorConsole() };\n        for (Notificador notificador : notificadores) {\n            notificador.enviar(\"Olá, Mundo!\");\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 13937842500,
+  "load_duration": 7090800,
+  "prompt_eval_count": 268,
+  "prompt_eval_cached_count": 214,
+  "prompt_eval_duration": 655435000,
+  "eval_count": 153,
+  "eval_duration": 13213069000
+}

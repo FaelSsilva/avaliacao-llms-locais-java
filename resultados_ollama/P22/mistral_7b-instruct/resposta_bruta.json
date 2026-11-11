@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:22:08.2345552Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\nimport java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.Comparator;\nimport java.util.List;\n\npublic class Main {\n    static class Livro implements Comparable<Livro> {\n        private final String titulo;\n        private final String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo.toUpperCase();\n            this.autor = autor;\n        }\n\n        @Override\n        public int compareTo(Livro outro) {\n            return this.titulo.compareTo(outro.titulo);\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Livro> livros = new ArrayList<>();\n        livros.add(new Livro(\"A Vida é um Sonho\", \"Fiódor Dostoievski\"));\n        livros.add(new Livro(\"O Índico\", \"António Lobo Antunes\"));\n        livros.add(new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\"));\n        livros.add(new Livro(\"O Pequeno Príncipe\", \"Antoine de Saint-Exupéry\"));\n\n        Collections.sort(livros);\n\n        for (Livro livro : livros) {\n            System.out.println(livro.titulo + \", \" + livro.autor);\n        }\n    }\n}\n```\n\nEsse código cria uma classe `Livro` que implementa a interface `Comparable<Livro>`, ordenando os livros pelo título sem diferenciar maiúsculas/minúsculas. A classe `Main` contém um método `main` que cria uma lista de livros, ordena-os e imprime-os."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 81759012800,
+  "load_duration": 28642500,
+  "prompt_eval_count": 358,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1245779000,
+  "eval_count": 437,
+  "eval_duration": 80374166000
+}

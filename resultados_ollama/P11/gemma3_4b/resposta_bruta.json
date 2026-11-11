@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T20:54:57.7629072Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    static class Livro {\n        String titulo;\n        String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n        }\n    }\n\n    static class BuscaLivros {\n        public static List<Livro> buscarPorTrecho(List<Livro> catalogo, String trecho) {\n            List<Livro> resultados = new ArrayList<>();\n            for (Livro livro : catalogo) {\n                if (livro.titulo.toLowerCase().contains(trecho.toLowerCase())) {\n                    resultados.add(livro);\n                }\n            }\n            return resultados;\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Livro> catalogo = new ArrayList<>();\n        catalogo.add(new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\"));\n        catalogo.add(new Livro(\"Dom Quixote\", \"Miguel de Cervantes\"));\n        catalogo.add(new Livro(\"1984\", \"George Orwell\"));\n        catalogo.add(new Livro(\"O Hobbit\", \"J.R.R. Tolkien\"));\n\n        String trecho = \"Tolkien\";\n        List<Livro> resultados = BuscaLivros.buscarPorTrecho(catalogo, trecho);\n\n        System.out.println(\"Resultados da busca por '\" + trecho + \"':\");\n        for (Livro livro : resultados) {\n            System.out.println(livro.titulo + \" por \" + livro.autor);\n        }\n\n        trecho = \"Quixote\";\n        resultados = BuscaLivros.buscarPorTrecho(catalogo, trecho);\n\n        System.out.println(\"\\nResultados da busca por '\" + trecho + \"':\");\n        for (Livro livro : resultados) {\n            System.out.println(livro.titulo + \" por \" + livro.autor);\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 44787311200,
+  "load_duration": 9019300,
+  "prompt_eval_count": 279,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2859642000,
+  "eval_count": 463,
+  "eval_duration": 41867957000
+}

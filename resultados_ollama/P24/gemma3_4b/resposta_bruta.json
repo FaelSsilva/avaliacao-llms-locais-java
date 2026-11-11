@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:27:22.5027872Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npackage com.example;\n\nimport java.util.ArrayList;\nimport java.util.HashSet;\nimport java.util.List;\nimport java.util.Set;\n\npublic class Main {\n\n    static class Devolucao {\n        private String isbn;\n        private String titulo;\n        private int quantidade;\n\n        public Devolucao(String isbn, String titulo, int quantidade) {\n            this.isbn = isbn;\n            this.titulo = titulo;\n            this.quantidade = quantidade;\n        }\n\n        public String getIsbn() {\n            return isbn;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public int getQuantidade() {\n            return quantidade;\n        }\n\n        public void setQuantidade(int quantidade) {\n            this.quantidade = quantidade;\n        }\n    }\n\n    static class Utils {\n        static boolean contains(List<Devolucao> list, String isbn) {\n            for (Devolucao dev : list) {\n                if (dev.getIsbn().equals(isbn)) {\n                    return true;\n                }\n            }\n            return false;\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Devolucao> devolvidos = new ArrayList<>();\n\n        Devolucao livro1 = new Devolucao(\"978-8572904400\", \"O Senhor dos Anéis\", 1);\n        devolvidos.add(livro1);\n\n        Devolucao livro2 = new Devolucao(\"978-8572904400\", \"O Senhor dos Anéis\", 1);\n        devolvidos.add(livro2);\n\n        Devolucao livro3 = new Devolucao(\"978-8572904410\", \"O Hobbit\", 2);\n        devolvidos.add(livro3);\n\n        System.out.println(\"Exemplares devolvidos:\");\n        for (Devolucao dev : devolvidos) {\n            System.out.println(dev.getIsbn() + \" - \" + dev.getTitulo() + \" - \" + dev.getQuantidade());\n        }\n\n        devolvidos.get(0).setQuantidade(2);\n        System.out.println(\"\\nApós aumentar a quantidade do livro 1:\");\n        for (Devolucao dev : devolvidos) {\n            System.out.println(dev.getIsbn() + \" - \" + dev.getTitulo() + \" - \" + dev.getQuantidade());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 61052705800,
+  "load_duration": 18251200,
+  "prompt_eval_count": 271,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3743743000,
+  "eval_count": 607,
+  "eval_duration": 56679058000
+}

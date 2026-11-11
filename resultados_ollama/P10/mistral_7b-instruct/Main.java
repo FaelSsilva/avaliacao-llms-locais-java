@@ -1,0 +1,51 @@
+public class Main {
+    abstract class Pessoa {
+        private String nome;
+
+        public Pessoa(String nome) {
+            this.nome = nome;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public abstract String tipo();
+    }
+
+    static class Usuario extends Pessoa {
+        private int identificador;
+
+        public Usuario(String nome, int identificador) {
+            super(nome);
+            this.identificador = identificador;
+        }
+
+        @Override
+        public String tipo() {
+            return "Usuário";
+        }
+    }
+
+    static class Bibliotecario extends Pessoa {
+        private int matricula;
+
+        public Bibliotecario(String nome, int matricula) {
+            super(nome);
+            this.matricula = matricula;
+        }
+
+        @Override
+        public String tipo() {
+            return "Bibliotecário";
+        }
+    }
+
+    public static void main(String[] args) {
+        Usuario usuario = new Usuario("João", 12345);
+        Bibliotecario bibliotecario = new Bibliotecario("Maria", 67890);
+
+        System.out.println(usuario.tipo());
+        System.out.println(bibliotecario.tipo());
+    }
+}

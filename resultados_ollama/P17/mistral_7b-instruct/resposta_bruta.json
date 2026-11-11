@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:09:39.8243536Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\ninterface Pagavel {\n    void pagar(double valor);\n    double calcularTotal();\n}\n\nclass Multa implements Pagavel {\n    private final double valor;\n    private boolean pago;\n\n    public Multa(double valor) {\n        this.valor = valor;\n        this.pago = false;\n    }\n\n    @Override\n    public void pagar(double valor) {\n        if (!pago) {\n            this.pago = true;\n            System.out.printf(\"Pagamento de R$ %.2f realizado com sucesso.\\n\", this.valor);\n        } else {\n            throw new IllegalStateException(\"A multa já foi paga.\");\n        }\n    }\n\n    @Override\n    public double calcularTotal() {\n        return this.valor;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Multa multa = new Multa(100.0);\n        multa.pagar(100.0);\n        System.out.printf(\"Total da multa: R$ %.2f\\n\", multa.calcularTotal());\n        try {\n            multa.pagar(100.0);\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 51104998900,
+  "load_duration": 7533100,
+  "prompt_eval_count": 368,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1409828000,
+  "eval_count": 330,
+  "eval_duration": 49645523000
+}

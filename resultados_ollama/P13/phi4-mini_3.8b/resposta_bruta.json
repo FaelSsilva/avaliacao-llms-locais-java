@@ -1,0 +1,17 @@
+{
+  "model": "phi4-mini:3.8b",
+  "created_at": "2026-11-10T20:59:25.0093262Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n    static class Livro {\n        private String titulo;\n\n        public Livro(String titulo) {\n            this.titulo = titulo;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n    }\n\n    static class Reserva {\n        private Livro livro;\n        private String usuario;\n        private boolean ativo;\n\n        public Reserva(Livro livro, String usuario) {\n            this.livro = livro;\n            this.usuario = usuario;\n            this.ativo = true;\n        }\n\n        public void cancelar() {\n            if (!ativo) {\n                throw new IllegalStateException(\"A reserva já está cancelada.\");\n            }\n            ativo = false;\n        }\n\n        public boolean isAtivo() {\n            return ativo;\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro = new Livro(\"Algoritmos\");\n        Reserva reserva = new Reserva(livro, \"João\");\n\n        System.out.println(\"Reserva ativa: \" + reserva.isAtivo());\n\n        reserva.cancelar();\n        System.out.println(\"Reserva ativa após cancelamento: \" + reserva.isAtivo());\n\n        try {\n            reserva.cancelar();\n        } catch (IllegalStateException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 22150765500,
+  "load_duration": 11820900,
+  "prompt_eval_count": 261,
+  "prompt_eval_cached_count": 215,
+  "prompt_eval_duration": 505638000,
+  "eval_count": 260,
+  "eval_duration": 21579203000
+}

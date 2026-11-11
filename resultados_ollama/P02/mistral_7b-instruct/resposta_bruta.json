@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T20:35:59.8595703Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        private final String titulo;\n        private final String autor;\n\n        public Livro(String titulo, String autor) {\n            this.titulo = titulo;\n            this.autor = autor;\n        }\n\n        public Livro copiar() {\n            return new Livro(this.titulo, this.autor);\n        }\n    }\n\n    public static void main(String[] args) {\n        Livro livro1 = new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\");\n        Livro livro2 = livro1.copiar();\n\n        livro1.titulo = \"Novo Título\";\n        System.out.println(\"Livro 1: \" + livro1.titulo);\n        System.out.println(\"Livro 2: \" + livro2.titulo);\n    }\n}\n```\n\nEsse código cria uma classe `Main` com uma classe aninhada `static` chamada `Livro`. A classe `Livro` tem dois atributos privados `titulo` e `autor`, e um método `copiar()` que retorna uma nova instância do objeto com os mesmos dados. A alteração do objeto original não afeta a cópia. O `main` demonstra a independência criando dois objetos `Livro` e alterando o título do primeiro, mostrando que o segundo objeto não foi afetado."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 59010542100,
+  "load_duration": 9542800,
+  "prompt_eval_count": 373,
+  "prompt_eval_cached_count": 307,
+  "prompt_eval_duration": 1513281000,
+  "eval_count": 369,
+  "eval_duration": 57441333000
+}

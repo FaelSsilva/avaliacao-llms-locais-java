@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:01:20.0307605Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        private final String titulo;\n\n        public Livro(String titulo) {\n            this.titulo = titulo;\n        }\n\n        @Override\n        public String toString() {\n            return titulo;\n        }\n    }\n\n    static class Reserva {\n        private final Usuario usuario;\n        private final Livro livro;\n        private boolean ativa;\n\n        public Reserva(Usuario usuario, Livro livro) {\n            this.usuario = usuario;\n            this.livro = livro;\n            this.ativa = true;\n        }\n\n        public void cancelar() {\n            if (!ativa) {\n                throw new IllegalStateException(\"A reserva já foi cancelada.\");\n            }\n            ativa = false;\n        }\n\n        @Override\n        public String toString() {\n            return \"Reserva de \" + livro + \" pelo \" + usuario;\n        }\n    }\n\n    static class Usuario {\n        private final String nome;\n\n        public Usuario(String nome) {\n            this.nome = nome;\n        }\n\n        @Override\n        public String toString() {\n            return nome;\n        }\n    }\n\n    public static void main(String[] args) {\n        Usuario joao = new Usuario(\"João\");\n        Livro livro1 = new Livro(\"Livro 1\");\n        Reserva reserva1 = new Reserva(joao, livro1);\n        System.out.println(reserva1);\n        reserva1.cancelar();\n        System.out.println(reserva1);\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 64716798500,
+  "load_duration": 9112700,
+  "prompt_eval_count": 375,
+  "prompt_eval_cached_count": 312,
+  "prompt_eval_duration": 1580227000,
+  "eval_count": 417,
+  "eval_duration": 63089581000
+}

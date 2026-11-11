@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:24:22.3204026Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npublic class Main {\n\n    interface EstrategiaBusca {\n        String buscar(List<String> livros);\n    }\n\n    static class BuscaExata implements EstrategiaBusca {\n        @Override\n        public String buscar(List<String> livros) {\n            StringBuilder resultado = new StringBuilder();\n            for (String livro : livros) {\n                if (livro != null) {\n                    resultado.append(livro).append(\"\\n\");\n                }\n            }\n            return resultado.toString();\n        }\n    }\n\n    static class BuscaTrecho implements EstrategiaBusca {\n        @Override\n        public String buscar(List<String> livros) {\n            StringBuilder resultado = new StringBuilder();\n            for (String livro : livros) {\n                if (livro != null) {\n                    resultado.append(livro).append(\"\\n\");\n                }\n            }\n            return resultado.toString();\n        }\n    }\n\n    static class Catalogo {\n        private EstrategiaBusca estrategia;\n\n        public Catalogo(EstrategiaBusca estrategia) {\n            this.estrategia = estrategia;\n        }\n\n        public String buscar(List<String> livros) {\n            return estrategia.buscar(livros);\n        }\n    }\n\n    public static void main(String[] args) {\n        List<String> livros = new ArrayList<>();\n        livros.add(\"O Senhor dos Anéis\");\n        livros.add(\"O Hobbit\");\n        livros.add(\"A Guerra dos Tronos\");\n        livros.add(\"O Nome do Vento\");\n\n        EstrategiaBusca buscaExata = new BuscaExata();\n        Catalogo catalogoExato = new Catalogo(buscaExata);\n        System.out.println(\"Busca Exata:\\n\" + catalogoExato.buscar(livros));\n\n        EstrategiaBusca buscaTrecho = new BuscaTrecho();\n        Catalogo catalogoTrecho = new Catalogo(buscaTrecho);\n        System.out.println(\"\\nBusca por Trecho:\\n\" + catalogoTrecho.buscar(livros));\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 93831171800,
+  "load_duration": 10532600,
+  "prompt_eval_count": 281,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3891181000,
+  "eval_count": 485,
+  "eval_duration": 89045619000
+}

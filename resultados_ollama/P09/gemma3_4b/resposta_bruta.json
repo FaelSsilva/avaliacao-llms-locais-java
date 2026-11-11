@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T20:50:10.9938829Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npackage com.example;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n\n    static class Publicacao {\n        private String titulo;\n        private int ano;\n\n        public Publicacao(String titulo, int ano) {\n            this.titulo = titulo;\n            this.ano = ano;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public int getAno() {\n            return ano;\n        }\n\n        public String descricao() {\n            return \"Publicação: \" + titulo + \" (\" + ano + \")\";\n        }\n    }\n\n    static class Livro extends Publicacao {\n        private String autor;\n\n        public Livro(String titulo, int ano, String autor) {\n            super(titulo, ano);\n            this.autor = autor;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n\n        @Override\n        public String descricao() {\n            return \"Livro: \" + super.descricao() + \", Autor: \" + autor;\n        }\n    }\n\n    static class Revista extends Publicacao {\n        private int edicao;\n\n        public Revista(String titulo, int ano, int edicao) {\n            super(titulo, ano);\n            this.edicao = edicao;\n        }\n\n        public int getEdicao() {\n            return edicao;\n        }\n\n        @Override\n        public String descricao() {\n            return \"Revista: \" + super.descricao() + \", Edição: \" + edicao;\n        }\n    }\n\n    public static void main(String[] args) {\n        List<Publicacao> publicacoes = new ArrayList<>();\n        publicacoes.add(new Livro(\"O Senhor dos Anéis\", 1954, \"J.R.R. Tolkien\"));\n        publicacoes.add(new Revista(\"Revista X\", 2023, 12));\n        publicacoes.add(new Livro(\"Dom Quixote\", 1605, \"Miguel de Cervantes\"));\n\n        for (Publicacao publicacao : publicacoes) {\n            System.out.println(publicacao.descricao());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 47392366400,
+  "load_duration": 10782500,
+  "prompt_eval_count": 282,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2639301000,
+  "eval_count": 503,
+  "eval_duration": 44669438000
+}

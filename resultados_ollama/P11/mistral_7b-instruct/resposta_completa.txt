@@ -1,0 +1,51 @@
+ ```java
+public class Main {
+
+    static class Livro {
+        private final String titulo;
+        private final String autor;
+
+        public Livro(String titulo, String autor) {
+            this.titulo = titulo.toLowerCase();
+            this.autor = autor;
+        }
+
+        @Override
+        public String toString() {
+            return "Livro{" +
+                    "titulo='" + titulo + '\'' +
+                    ", autor='" + autor + '\'' +
+                    '}';
+        }
+    }
+
+    static class Catalogo {
+        private final List<Livro> livros = new ArrayList<>();
+
+        public void adiciona(Livro livro) {
+            livros.add(livro);
+        }
+
+        public List<Livro> buscaPorTitulo(String trecho) {
+            List<Livro> resultado = new ArrayList<>();
+            for (Livro livro : livros) {
+                if (livro.titulo.contains(trecho.toLowerCase())) {
+                    resultado.add(livro);
+                }
+            }
+            return resultado;
+        }
+    }
+
+    public static void main(String[] args) {
+        Catalogo catalogo = new Catalogo();
+        catalogo.adiciona(new Livro("A História do Mundo", "Heródoto"));
+        catalogo.adiciona(new Livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry"));
+
+        List<Livro> resultado = catalogo.buscaPorTitulo("pequeno");
+        for (Livro livro : resultado) {
+            System.out.println(livro);
+        }
+    }
+}
+```

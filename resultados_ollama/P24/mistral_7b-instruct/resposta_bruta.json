@@ -1,0 +1,17 @@
+{
+  "model": "mistral:7b-instruct",
+  "created_at": "2026-11-10T21:28:29.1177858Z",
+  "message": {
+    "role": "assistant",
+    "content": " ```java\npublic class Main {\n\n    static class Livro {\n        final String titulo;\n        final String isbn;\n\n        Livro(String titulo, String isbn) {\n            this.titulo = titulo;\n            this.isbn = isbn;\n        }\n\n        @Override\n        public boolean equals(Object obj) {\n            if (obj instanceof Livro) {\n                Livro outro = (Livro) obj;\n                return outro.isbn.equals(isbn);\n            }\n            return false;\n        }\n\n        @Override\n        public int hashCode() {\n            return isbn.hashCode();\n        }\n    }\n\n    static class Devolucao {\n        private final Set<Livro> livros = new TreeSet<>();\n\n        void adicionar(Livro livro) {\n            livros.add(livro);\n        }\n\n        void remover(Livro livro) {\n            livros.remove(livro);\n        }\n\n        int quantidade() {\n            return livros.size();\n        }\n    }\n\n    public static void main(String[] args) {\n        Devolucao devolucao = new Devolucao();\n        devolucao.adicionar(new Livro(\"Livro1\", \"123\"));\n        devolucao.adicionar(new Livro(\"Livro2\", \"456\"));\n        devolucao.adicionar(new Livro(\"Livro1\", \"123\"));\n        System.out.println(devolucao.quantidade()); // 2\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 63705185500,
+  "load_duration": 12124300,
+  "prompt_eval_count": 377,
+  "prompt_eval_cached_count": 309,
+  "prompt_eval_duration": 1611656000,
+  "eval_count": 398,
+  "eval_duration": 61603670000
+}

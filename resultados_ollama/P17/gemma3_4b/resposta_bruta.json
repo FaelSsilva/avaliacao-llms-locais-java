@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:08:45.9021679Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\npackage com.example;\n\npublic class Main {\n\n    interface Pagavel {\n        void pagar();\n        double calcularTotal();\n    }\n\n    static class Multa implements Pagavel {\n        private double valor;\n        private boolean paga;\n\n        public Multa(double valor) {\n            this.valor = valor;\n            this.paga = false;\n        }\n\n        @Override\n        public void pagar() {\n            if (paga) {\n                throw new IllegalStateException(\"Multa já foi paga.\");\n            }\n            this.paga = true;\n        }\n\n        @Override\n        public double calcularTotal() {\n            return valor;\n        }\n    }\n\n    public static void main(String[] args) {\n        Multa multa = new Multa(100.0);\n        System.out.println(\"Valor da multa: \" + multa.calcularTotal());\n\n        try {\n            multa.pagar();\n            System.out.println(\"Multa paga com sucesso.\");\n            System.out.println(\"Valor da multa: \" + multa.calcularTotal());\n        } catch (IllegalStateException e) {\n            System.out.println(\"Erro: \" + e.getMessage());\n        }\n\n        try {\n            multa.pagar();\n        } catch (IllegalStateException e) {\n            System.out.println(\"Erro: \" + e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 31519526600,
+  "load_duration": 8518300,
+  "prompt_eval_count": 269,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2672158000,
+  "eval_count": 325,
+  "eval_duration": 28775545000
+}

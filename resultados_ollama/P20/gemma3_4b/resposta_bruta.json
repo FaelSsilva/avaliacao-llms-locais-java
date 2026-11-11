@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "created_at": "2026-11-10T21:15:12.2562735Z",
+  "message": {
+    "role": "assistant",
+    "content": "```java\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n\n    interface RepositorioLivro {\n        void salvar(Livro livro);\n        Optional<Livro> buscarPorIsbn(String isbn);\n    }\n\n    static class RepositorioLivroMemoria implements RepositorioLivro {\n        private final Map<String, Livro> livros = new HashMap<>();\n\n        @Override\n        public void salvar(Livro livro) {\n            if (livros.containsKey(livro.getIsbn())) {\n                throw new IllegalArgumentException(\"ISBN já existe\");\n            }\n            livros.put(livro.getIsbn(), livro);\n        }\n\n        @Override\n        public Optional<Livro> buscarPorIsbn(String isbn) {\n            return Optional.ofNullable(livros.get(isbn));\n        }\n    }\n\n    static class Livro {\n        private String titulo;\n        private String autor;\n        private String isbn;\n\n        public Livro(String titulo, String autor, String isbn) {\n            this.titulo = titulo;\n            this.autor = autor;\n            this.isbn = isbn;\n        }\n\n        public String getTitulo() {\n            return titulo;\n        }\n\n        public String getAutor() {\n            return autor;\n        }\n\n        public String getIsbn() {\n            return isbn;\n        }\n    }\n\n    public static void main(String[] args) {\n        RepositorioLivro repositorio = new RepositorioLivroMemoria();\n\n        Livro livro1 = new Livro(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\", \"978-0618260264\");\n        repositorio.salvar(livro1);\n\n        Livro livro2 = new Livro(\"1984\", \"George Orwell\", \"978-0451524935\");\n        repositorio.salvar(livro2);\n\n        Optional<Livro> livroEncontrado = repositorio.buscarPorIsbn(\"978-0618260264\");\n        if (livroEncontrado.isPresent()) {\n            System.out.println(\"Livro encontrado: \" + livroEncontrado.get().getTitulo());\n        }\n\n        Optional<Livro> livroNaoEncontrado = repositorio.buscarPorIsbn(\"123-456-789\");\n        if (!livroNaoEncontrado.isPresent()) {\n            System.out.println(\"Livro não encontrado\");\n        }\n\n        try {\n            repositorio.salvar(new Livro(\"O Hobbit\", \"J.R.R. Tolkien\", \"978-0618260264\"));\n        } catch (IllegalArgumentException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 66802278100,
+  "load_duration": 9287300,
+  "prompt_eval_count": 278,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 2977317000,
+  "eval_count": 666,
+  "eval_duration": 63743923000
+}

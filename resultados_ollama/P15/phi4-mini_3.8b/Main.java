@@ -1,0 +1,40 @@
+import java.time.LocalDate;
+
+public class Main {
+    static class Emprestimo {
+        private LocalDate dataRetirada;
+        private LocalDate dataDevolucao;
+
+        public Emprestimo(LocalDate dataRetirada, LocalDate dataDevolucao) {
+            this.dataRetirada = dataRetirada;
+            setDataDevolucao(dataDevolucao);
+        }
+
+        public void setDataDevolucao(LocalDate dataDevolucao) {
+            if (dataDevolucao.isBefore(dataRetirada)) {
+                throw new IllegalArgumentException("Prazo de devolução não pode preceder a data de retirada.");
+            }
+            this.dataDevolucao = dataDevolucao;
+        }
+
+        public boolean estaAtrasado(LocalDate dataAtual) {
+            return dataDevolucao.isAfter(dataAtual);
+        }
+
+        @Override
+        public String toString() {
+            return "Emprestimo da " + dataRetirada + " para " + dataDevolucao;
+        }
+    }
+
+    public static void main(String[] args) {
+        LocalDate dataAtual = LocalDate.now();
+        Emprestimo emprestimoPrazo = new Emprestimo(dataAtual, dataAtual.plusDays(10));
+        System.out.println(emprestimoPrazo);
+
+        Emprestimo emprestimoAtrasado = new Emprestimo(dataAtual, dataAtual.plusDays(5));
+        System.out.println(emprestimoAtrasado);
+        System.out.println("Emprestimo em prazo: " + emprestimoPrazo.estaAtrasado(dataAtual));
+        System.out.println("Emprestimo atrasado: " + emprestimoAtrasado.estaAtrasado(dataAtual));
+    }
+}
