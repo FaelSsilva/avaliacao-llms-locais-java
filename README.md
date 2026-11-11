@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Avaliação de modelos locais na geração de código Java orientado a objetos
 
 Este repositório reúne os prompts, os códigos gerados, os dados de coleta, os scripts de análise e os gráficos de um experimento acadêmico sobre geração de código Java para problemas introdutórios de orientação a objetos (OO).
