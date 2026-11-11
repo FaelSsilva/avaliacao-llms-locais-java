@@ -96,8 +96,6 @@ Os enunciados foram elaborados especificamente para este estudo, com apoio de IA
 
 Repositório: https://github.com/FaelSsilva/avaliacao-llms-locais-java
 
-O relatório em LaTeX está em `overleaf_upload_pronto/`. Para enviá-lo ao Overleaf, use o pacote `relatorio_sbc_completo_overleaf.zip` fornecido separadamente e exporte o PDF pelo Overleaf após a compilação.
-
 Todos os metadados estao disponiveis no github abaixo
 
 Feito e mantido por Rafael P. Silva.
