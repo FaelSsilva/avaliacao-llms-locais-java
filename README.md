@@ -104,5 +104,3 @@ Para consultar ou editar o relatório no Overleaf, importe `relatorio/Projeto_Ov
 Referência sugerida:
 
 > Silva, Rafael P. (2026). *Avaliação de modelos de linguagem locais na geração de código Java orientado a objetos* [software e artefatos de pesquisa]. GitHub.
-> Silva, Rafael P. (2026). *Avaliação de modelos de linguagem locais na geração de código Java orientado a objetos* [software e artefatos de pesquisa]. GitHub.
->>>>>>> 824e5563d1353ed0c27db8282105b939af927bd5
