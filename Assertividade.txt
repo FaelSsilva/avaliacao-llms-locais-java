@@ -1,0 +1,8 @@
+ASSERTIVIDADE — REVISÃO DOS 90 CÓDIGOS
+Rubrica: funcionalidade 70 + OO 20 + validações 10.
+Método: revisão estática dos fontes + status compilou/executou previamente registrado. Não é suíte unitária independente.
+Regra: fonte marcado como não compilado recebe zero; limitações funcionais/estruturais recebem desconto e justificativa na ficha.
+
+phi4-mini:3.8b: média 46.5/100; abaixo de 60: 16/30
+gemma3:4b: média 65.7/100; abaixo de 60: 10/30
+mistral:7b-instruct: média 47.0/100; abaixo de 60: 16/30
