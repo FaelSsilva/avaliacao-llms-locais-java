@@ -24,20 +24,19 @@ A seleção considerou a execução local viável no computador disponível dura
 
 | Arquivo ou pasta | Conteúdo |
 |---|---|
-| `prompts_30_biblioteca.md` | Prompt-base de role-playing e os 30 enunciados efetivamente usados. |
+| `prompts_30_biblioteca.md` | Prompt-base de role-playing e as 30 especificações utilizadas. |
 | `medir_ollama.py` | Envia os prompts à API local do Ollama, salva as respostas e registra métricas. |
-| `resultados_ollama/metricas.csv` | Registro consolidado das 90 chamadas, com tokens, duração, linhas, complexidade estimada e status técnico. |
-| `resultados_ollama/P01` a `P30/` | Código Java gerado, resposta textual e resposta JSON bruta de cada par problema/modelo. |
-| `analise_estatistica_pareada.py` | Código da análise pareada e dos ajustes para comparações múltiplas. |
-| `resultados_ollama/analise_estatistica_pareada.json` | Saída completa da análise estatística, incluindo comparações par a par. |
-| `resultados_ollama/analise_estatistica_pareada.md` | Resumo legível dos resultados estatísticos. |
-| `gerar_graficos.py` | Gera os gráficos e o resumo de métricas por modelo. |
-| `graficos_metricas/` | Gráficos e tabela-resumo exportados. |
+| `resultados_ollama/metricas.csv` | Registro das 90 chamadas, com tokens, duração, linhas, complexidade estimada e resultados de compilação, execução e assertividade. |
+| `resultados_ollama/P01` a `P30/` | Códigos Java gerados e respostas completas e brutas de cada modelo para cada problema. |
+| `analise_estatistica_pareada.py` | Script da análise estatística pareada. |
+| `resultados_ollama/analise_estatistica_pareada.json` e `.md` | Resultados completos e resumo legível da análise estatística. |
+| `gerar_graficos.py` | Script para gerar gráficos a partir dos dados. |
 | `ficha_assertividade.csv` | Notas e justificativas da revisão dos códigos. |
-| `roteiro_testes_assertividade.csv`, `Assertividade.txt` | Critérios usados na revisão e síntese das notas. |
-| `overleaf_upload_pronto/` | Projeto LaTeX do relatório, referências, figuras e materiais de rastreabilidade. |
-| `CITATION.cff` | Metadados para citar este projeto. |
-| `MANIFEST.json` | Lista de arquivos do pacote, com tamanho e hash SHA-256 para conferência de integridade. |
+| `roteiro_testes_assertividade.csv` e `Assertividade.txt` | Critérios e síntese da avaliação de assertividade. |
+| `Relatorio-overleaf.zip` | Projeto completo do relatório para o Overleaf. O arquivo contém os fontes LaTeX, referências, dados complementares e figuras. |
+| `MANIFEST.json` | Lista de arquivos e hashes SHA-256 para conferência de integridade. |
+
+O projeto do relatório e as figuras estão dentro de `Relatorio-overleaf.zip`; eles não aparecem como pastas separadas na raiz deste repositório.
 
 ## Ambiente registrado
 
@@ -62,7 +61,11 @@ python medir_ollama.py
 
 A execução completa faz 90 chamadas locais e pode demorar. Para limitar a coleta ao primeiro problema:
 
-Para gerar um resumo de registros já coletados:
+```powershell
+python medir_ollama.py --limit 1
+```
+
+Para gerar um resumo dos registros já coletados:
 
 ```powershell
 python medir_ollama.py --report
@@ -90,15 +93,16 @@ A análise trata cada problema como um bloco com três respostas relacionadas. U
 
 ## Procedência dos problemas e dos prompts
 
-Os enunciados foram elaborados especificamente para este estudo, com apoio de IA generativa na redação inicial; não foram transcritos de um benchmark público. O domínio de biblioteca mantém o contexto geral constante, enquanto os conceitos e comportamentos variam entre os problemas. A matriz `overleaf_upload_pronto/artefatos/rastreabilidade_especificacoes.csv` relaciona os IDs aos conceitos de OO e ao comportamento esperado. O arquivo `overleaf_upload_pronto/artefatos/revisao_e_procedencia.md` descreve as decisões, o processo de revisão de consistência e as ambiguidades registradas.
+Os enunciados foram elaborados especificamente para este estudo, com apoio de IA generativa na redação inicial; não foram transcritos de um benchmark público. O domínio de biblioteca mantém o contexto geral constante, enquanto os conceitos e comportamentos variam entre os problemas.
+
+A matriz `artefatos/rastreabilidade_especificacoes.csv`, incluída no projeto do relatório, relaciona os IDs aos conceitos de OO e ao comportamento esperado. O arquivo `artefatos/revisao_e_procedencia.md`, também incluído no ZIP do Overleaf, descreve as decisões, o processo de revisão de consistência e as ambiguidades registradas.
 
 ## Relatório e citação
 
 Repositório: https://github.com/FaelSsilva/avaliacao-llms-locais-java
 
-Todos os metadados estao disponiveis no github abaixo
+O projeto-fonte do relatório está em `Relatorio-overleaf.zip`. Para utilizá-lo no Overleaf, importe esse ZIP e compile o documento. O relatório cita este repositório como local de acesso aos artefatos.
 
-Feito e mantido por Rafael P. Silva.
+Referência sugerida:
 
-> Silva, Rafael P. (2026). *Avaliação de modelos de linguagem locais na geração de código Java orientado a objetos* [software e artefatos de pesquisa].
-
+> Silva, Rafael P. (2026). *Avaliação de modelos de linguagem locais na geração de código Java orientado a objetos* [software e artefatos de pesquisa]. GitHub.
