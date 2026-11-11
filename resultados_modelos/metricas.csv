@@ -1,0 +1,540 @@
+"problema_id","problema_titulo","modelo","data_utc","status","tokens_entrada","tokens_saida","tokens_total","tempo_total_s","tempo_prompt_s","tempo_geracao_s","linhas_codigo","complexidade_ciclomatica_estimada","compilou","executou","assertividade_0_100","arquivo_codigo","erro"
+"P01","Livro e encapsulamento","phi4-mini:3.8b","2026-11-10T20:31:09.898346+00:00","ok","289","177","466","39.405","5.828","15.593","25","6","sim","sim","85","resultados_modelos\P01\phi4-mini_3.8b\Main.java",""
+"P01","Livro e encapsulamento","gemma3:4b","2026-11-10T20:31:50.050101+00:00","ok","299","249","548","33.124","2.893","22.141","38","2","sim","sim","95","resultados_modelos\P01\gemma3_4b\Main.java",""
+"P01","Livro e encapsulamento","mistral:7b-instruct","2026-11-10T20:32:23.976467+00:00","ok","404","346","750","103.048","7.782","52.546","41","4","sim","sim","100","resultados_modelos\P01\mistral_7b-instruct\Main.java",""
+"P02","Cópia de livro","phi4-mini:3.8b","2026-11-10T20:34:07.866167+00:00","ok","265","190","455","20.325","1.668","16.404","31","1","sim","sim","90","resultados_modelos\P02\phi4-mini_3.8b\Main.java",""
+"P02","Cópia de livro","gemma3:4b","2026-11-10T20:34:28.933058+00:00","ok","273","268","541","29.099","2.94","24.017","35","1","sim","sim","90","resultados_modelos\P02\gemma3_4b\Main.java",""
+"P02","Cópia de livro","mistral:7b-instruct","2026-11-10T20:34:58.769503+00:00","ok","373","369","742","61.092","1.513","57.441","25","1","nao","nao","0","resultados_modelos\P02\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P02\mistral_7b-instruct\build\Main.java:21: error: cannot assign a value to final variable titulo
+        livro1.titulo = ""Novo Título"";
+              ^
+1 error"
+"P03","Contador de livros","phi4-mini:3.8b","2026-11-10T20:36:00.385196+00:00","ok","255","255","510","25.187","0.457","22.585","52","1","nao","nao","0","resultados_modelos\P03\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P03\phi4-mini_3.8b\build\Main.java:22: error: class Livro is already defined in class Main
+    private static class Livro {
+                   ^
+1 error"
+"P03","Contador de livros","gemma3:4b","2026-11-10T20:36:26.119634+00:00","ok","261","239","500","25.886","2.515","21.246","34","1","sim","sim","100","resultados_modelos\P03\gemma3_4b\Main.java",""
+"P03","Contador de livros","mistral:7b-instruct","2026-11-10T20:36:52.703039+00:00","ok","362","264","626","42.69","1.039","39.555","34","1","sim","sim","95","resultados_modelos\P03\mistral_7b-instruct\Main.java",""
+"P04","Estado de disponibilidade","phi4-mini:3.8b","2026-11-10T20:37:36.117156+00:00","ok","279","303","582","28.707","0.679","25.899","49","4","sim","sim","100","resultados_modelos\P04\phi4-mini_3.8b\Main.java",""
+"P04","Estado de disponibilidade","gemma3:4b","2026-11-10T20:38:05.717966+00:00","ok","286","469","755","48.155","3.304","42.012","59","6","sim","sim","100","resultados_modelos\P04\gemma3_4b\Main.java",""
+"P04","Estado de disponibilidade","mistral:7b-instruct","2026-11-10T20:38:54.703782+00:00","ok","400","395","795","63.65","2.067","59.505","47","5","sim","sim","90","resultados_modelos\P04\mistral_7b-instruct\Main.java",""
+"P05","Usuário da biblioteca","phi4-mini:3.8b","2026-11-10T20:39:59.053853+00:00","ok","260","231","491","21.737","0.537","19.087","42","5","sim","sim","100","resultados_modelos\P05\phi4-mini_3.8b\Main.java",""
+"P05","Usuário da biblioteca","gemma3:4b","2026-11-10T20:40:21.586351+00:00","ok","270","321","591","33.519","2.743","28.637","47","6","sim","sim","75","resultados_modelos\P05\gemma3_4b\Main.java",""
+"P05","Usuário da biblioteca","mistral:7b-instruct","2026-11-10T20:40:55.905768+00:00","ok","367","294","661","47.564","1.439","44.029","35","3","sim","sim","100","resultados_modelos\P05\mistral_7b-instruct\Main.java",""
+"P06","Limite de empréstimos","phi4-mini:3.8b","2026-11-10T20:41:44.246592+00:00","ok","286","334","620","30.927","0.709","28.093","51","3","sim","sim","85","resultados_modelos\P06\phi4-mini_3.8b\Main.java",""
+"P06","Limite de empréstimos","gemma3:4b","2026-11-10T20:42:15.969233+00:00","ok","292","487","779","47.947","2.613","43.207","58","4","sim","nao","85","resultados_modelos\P06\gemma3_4b\Main.java","Exception in thread ""main"" java.lang.IllegalStateException: Limite de empréstimos atingido.
+	at Main$Usuario.registrarEmprestimo(Main.java:23)
+	at Main.main(Main.java:46)"
+"P06","Limite de empréstimos","mistral:7b-instruct","2026-11-10T20:43:04.669738+00:00","ok","405","537","942","84.988","1.917","80.959","54","4","sim","sim","90","resultados_modelos\P06\mistral_7b-instruct\Main.java",""
+"P07","Multa por atraso","phi4-mini:3.8b","2026-11-10T20:44:30.452516+00:00","ok","258","325","583","29.862","0.546","27.192","45","3","sim","sim","100","resultados_modelos\P07\phi4-mini_3.8b\Main.java",""
+"P07","Multa por atraso","gemma3:4b","2026-11-10T20:45:01.076586+00:00","ok","270","277","547","28.824","2.474","24.208","30","3","sim","sim","100","resultados_modelos\P07\gemma3_4b\Main.java",""
+"P07","Multa por atraso","mistral:7b-instruct","2026-11-10T20:45:30.653971+00:00","ok","372","333","705","53.459","1.541","49.789","29","3","sim","sim","90","resultados_modelos\P07\mistral_7b-instruct\Main.java",""
+"P08","Item emprestável por interface","phi4-mini:3.8b","2026-11-10T20:46:24.864888+00:00","ok","271","305","576","28.185","0.648","25.374","53","3","sim","sim","85","resultados_modelos\P08\phi4-mini_3.8b\Main.java",""
+"P08","Item emprestável por interface","gemma3:4b","2026-11-10T20:46:53.792929+00:00","ok","282","551","833","53.969","2.83","49.033","81","7","sim","sim","100","resultados_modelos\P08\gemma3_4b\Main.java",""
+"P08","Item emprestável por interface","mistral:7b-instruct","2026-11-10T20:47:48.586630+00:00","ok","383","395","778","63.252","1.638","59.486","49","4","nao","nao","0","resultados_modelos\P08\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P08\mistral_7b-instruct\build\Main.java:1: error: interface Emprestavel is public, should be declared in a file named Emprestavel.java
+public interface Emprestavel {
+       ^
+1 error"
+"P09","Herança de publicação","phi4-mini:3.8b","2026-11-10T20:48:52.437633+00:00","ok","271","307","578","28.481","0.743","25.598","53","2","nao","nao","0","resultados_modelos\P09\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P09\phi4-mini_3.8b\build\Main.java:3: error: cannot find symbol
+        List<Publicacao> publicacoes = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P09\phi4-mini_3.8b\build\Main.java:3: error: cannot find symbol
+        List<Publicacao> publicacoes = new ArrayList<>();
+                                           ^
+  symbol:   class ArrayList
+  location: class Main
+2 errors"
+"P09","Herança de publicação","gemma3:4b","2026-11-10T20:49:21.544688+00:00","ok","282","503","785","49.45","2.639","44.669","76","2","sim","sim","100","resultados_modelos\P09\gemma3_4b\Main.java",""
+"P09","Herança de publicação","mistral:7b-instruct","2026-11-10T20:50:11.863452+00:00","ok","381","544","925","89.114","1.689","85.295","71","2","sim","sim","100","resultados_modelos\P09\mistral_7b-instruct\Main.java",""
+"P10","Pessoa e usuário","phi4-mini:3.8b","2026-11-10T20:51:41.766659+00:00","ok","261","329","590","30.188","0.552","27.538","71","1","sim","sim","100","resultados_modelos\P10\phi4-mini_3.8b\Main.java",""
+"P10","Pessoa e usuário","gemma3:4b","2026-11-10T20:52:12.690844+00:00","ok","271","324","595","33.651","2.818","28.712","55","1","nao","nao","0","resultados_modelos\P10\gemma3_4b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P10\gemma3_4b\build\Main.java:25: error: method does not override or implement a method from a supertype
+        @Override
+        ^
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P10\gemma3_4b\build\Main.java:39: error: method does not override or implement a method from a supertype
+        @Override
+        ^
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P10\gemma3_4b\build\Main.java:53: error: cannot find symbol
+        System.out.println(pessoa.tipo());
+                                 ^
+  symbol:   method tipo()
+  location: variable pessoa of type Pessoa
+3 errors"
+"P10","Pessoa e usuário","mistral:7b-instruct","2026-11-10T20:52:46.941922+00:00","ok","373","354","727","56.265","1.347","52.799","51","1","nao","nao","0","resultados_modelos\P10\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P10\mistral_7b-instruct\build\Main.java:20: error: no enclosing instance of type Main is in scope
+            super(nome);
+                 ^
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P10\mistral_7b-instruct\build\Main.java:34: error: no enclosing instance of type Main is in scope
+            super(nome);
+                 ^
+2 errors"
+"P11","Catálogo pesquisável","phi4-mini:3.8b","2026-11-10T20:53:43.800023+00:00","ok","270","284","554","26.528","0.593","23.728","44","2","nao","nao","0","resultados_modelos\P11\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\phi4-mini_3.8b\build\Main.java:21: error: cannot find symbol
+        private List<Livro> livros = new ArrayList<>();
+                ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\phi4-mini_3.8b\build\Main.java:27: error: cannot find symbol
+        public List<Livro> buscarPorTítulo(String trecho) {
+               ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\phi4-mini_3.8b\build\Main.java:21: error: cannot find symbol
+        private List<Livro> livros = new ArrayList<>();
+                                         ^
+  symbol:   class ArrayList
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\phi4-mini_3.8b\build\Main.java:29: error: cannot find symbol
+                    .filter(livro -> livro.getTitulo().toLowerCase().contains(titulo.toLowerCase()))
+                                                                              ^
+  symbol:   variable titulo
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\phi4-mini_3.8b\build\Main.java:30: error: cannot find symbol
+                    .collect(Collectors.toList());
+                             ^
+  symbol:   variable Collectors
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\phi4-mini_3.8b\build\Main.java:39: "
+"P11","Catálogo pesquisável","gemma3:4b","2026-11-10T20:54:10.923795+00:00","ok","279","463","742","46.84","2.86","41.868","48","5","nao","nao","0","resultados_modelos\P11\gemma3_4b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\gemma3_4b\build\Main.java:14: error: cannot find symbol
+        public static List<Livro> buscarPorTrecho(List<Livro> catalogo, String trecho) {
+                                                  ^
+  symbol:   class List
+  location: class BuscaLivros
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\gemma3_4b\build\Main.java:14: error: cannot find symbol
+        public static List<Livro> buscarPorTrecho(List<Livro> catalogo, String trecho) {
+                      ^
+  symbol:   class List
+  location: class BuscaLivros
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\gemma3_4b\build\Main.java:15: error: cannot find symbol
+            List<Livro> resultados = new ArrayList<>();
+            ^
+  symbol:   class List
+  location: class BuscaLivros
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\gemma3_4b\build\Main.java:15: error: cannot find symbol
+            List<Livro> resultados = new ArrayList<>();
+                                         ^
+  symbol:   class ArrayList
+  location: class BuscaLivros
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\gemma3_4b\build\Main.java:26: error: cannot find symbol
+        List<Livro> catalogo = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\gemma3_4b\build\Main.java:26: error: cannot find symbol
+        List<Livro> catalogo = new Array"
+"P11","Catálogo pesquisável","mistral:7b-instruct","2026-11-10T20:54:58.349607+00:00","ok","378","430","808","69.355","2.158","65.086","49","4","nao","nao","0","resultados_modelos\P11\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\mistral_7b-instruct\build\Main.java:22: error: cannot find symbol
+        private final List<Livro> livros = new ArrayList<>();
+                      ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\mistral_7b-instruct\build\Main.java:28: error: cannot find symbol
+        public List<Livro> buscaPorTitulo(String trecho) {
+               ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\mistral_7b-instruct\build\Main.java:22: error: cannot find symbol
+        private final List<Livro> livros = new ArrayList<>();
+                                               ^
+  symbol:   class ArrayList
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\mistral_7b-instruct\build\Main.java:29: error: cannot find symbol
+            List<Livro> resultado = new ArrayList<>();
+            ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\mistral_7b-instruct\build\Main.java:29: error: cannot find symbol
+            List<Livro> resultado = new ArrayList<>();
+                                        ^
+  symbol:   class ArrayList
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P11\mistral_7b-instruct\build\Main.java:44: error: cannot find symbol
+        List<Livro> resulta"
+"P12","Remoção do catálogo","phi4-mini:3.8b","2026-11-10T20:56:08.300846+00:00","ok","264","344","608","31.418","0.596","28.71","45","2","nao","nao","0","resultados_modelos\P12\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P12\phi4-mini_3.8b\build\Main.java:21: error: cannot find symbol
+        private Map<String, Livro> livros = new HashMap<>();
+                ^
+  symbol:   class Map
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P12\phi4-mini_3.8b\build\Main.java:21: error: cannot find symbol
+        private Map<String, Livro> livros = new HashMap<>();
+                                                ^
+  symbol:   class HashMap
+  location: class Catalogo
+2 errors"
+"P12","Remoção do catálogo","gemma3:4b","2026-11-10T20:56:40.267737+00:00","ok","272","637","909","62.061","2.844","57.102","64","3","sim","sim","100","resultados_modelos\P12\gemma3_4b\Main.java",""
+"P12","Remoção do catálogo","mistral:7b-instruct","2026-11-10T20:57:43.152022+00:00","ok","376","489","865","77.075","1.488","73.51","54","2","nao","nao","0","resultados_modelos\P12\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P12\mistral_7b-instruct\build\Main.java:26: error: cannot find symbol
+        private final Map<String, Livro> livros = new HashMap<>();
+                      ^
+  symbol:   class Map
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P12\mistral_7b-instruct\build\Main.java:26: error: cannot find symbol
+        private final Map<String, Livro> livros = new HashMap<>();
+                                                      ^
+  symbol:   class HashMap
+  location: class Catalogo
+2 errors"
+"P13","Reserva de livro","phi4-mini:3.8b","2026-11-10T20:59:00.812877+00:00","ok","261","260","521","24.197","0.506","21.579","52","3","sim","sim","100","resultados_modelos\P13\phi4-mini_3.8b\Main.java",""
+"P13","Reserva de livro","gemma3:4b","2026-11-10T20:59:25.711038+00:00","ok","269","461","730","46.756","2.978","41.64","70","3","sim","sim","15","resultados_modelos\P13\gemma3_4b\Main.java",""
+"P13","Reserva de livro","mistral:7b-instruct","2026-11-10T21:00:13.241314+00:00","ok","375","417","792","66.79","1.58","63.09","61","2","sim","sim","100","resultados_modelos\P13\mistral_7b-instruct\Main.java",""
+"P14","Fila de reservas","phi4-mini:3.8b","2026-11-10T21:01:20.823357+00:00","ok","272","231","503","22.548","0.677","19.747","35","3","nao","nao","0","resultados_modelos\P14\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P14\phi4-mini_3.8b\build\Main.java:3: error: cannot find symbol
+        private LinkedList<T> fila = new LinkedList<>();
+                ^
+  symbol:   class LinkedList
+  location: class FilaReservas<T>
+  where T is a type-variable:
+    T extends Object declared in class FilaReservas
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P14\phi4-mini_3.8b\build\Main.java:3: error: cannot find symbol
+        private LinkedList<T> fila = new LinkedList<>();
+                                         ^
+  symbol:   class LinkedList
+  location: class FilaReservas<T>
+  where T is a type-variable:
+    T extends Object declared in class FilaReservas
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P14\phi4-mini_3.8b\build\Main.java:11: error: cannot find symbol
+                throw new NoSuchElementException(""Fila vazia"");
+                          ^
+  symbol:   class NoSuchElementException
+  location: class FilaReservas<T>
+  where T is a type-variable:
+    T extends Object declared in class FilaReservas
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P14\phi4-mini_3.8b\build\Main.java:31: error: cannot find symbol
+        } catch (NoSuchElementException e) {
+                 ^
+  symbol:   class NoSuchElementException
+  location: class Main
+4 errors"
+"P14","Fila de reservas","gemma3:4b","2026-11-10T21:01:43.926818+00:00","ok","279","273","552","30.251","3.159","24.958","38","3","sim","sim","100","resultados_modelos\P14\gemma3_4b\Main.java",""
+"P14","Fila de reservas","mistral:7b-instruct","2026-11-10T21:02:14.953704+00:00","ok","388","404","792","64.384","1.692","60.595","57","3","nao","nao","0","resultados_modelos\P14\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P14\mistral_7b-instruct\build\Main.java:25: error: cannot find symbol
+                throw new NoSuchElementException(""Fila vazia"");
+                          ^
+  symbol:   class NoSuchElementException
+  location: class FilaReservas
+1 error"
+"P15","Empréstimo e datas","phi4-mini:3.8b","2026-11-10T21:03:19.924744+00:00","ok","268","359","627","33.71","0.577","30.996","40","2","sim","sim","30","resultados_modelos\P15\phi4-mini_3.8b\Main.java",""
+"P15","Empréstimo e datas","gemma3:4b","2026-11-10T21:03:54.460438+00:00","ok","276","431","707","43.152","2.787","38.249","38","2","sim","nao","85","resultados_modelos\P15\gemma3_4b\Main.java","Exception in thread ""main"" java.lang.IllegalArgumentException: A data de retirada não pode ser posterior à data de devolução.
+	at com.example.Emprestimo.<init>(Main.java:13)
+	at com.example.TesteEmprestimo.main(Main.java:35)"
+"P15","Empréstimo e datas","mistral:7b-instruct","2026-11-10T21:04:38.348022+00:00","ok","378","363","741","58.793","1.717","54.47","27","2","sim","sim","30","resultados_modelos\P15\mistral_7b-instruct\Main.java",""
+"P16","Exceção de livro indisponível","phi4-mini:3.8b","2026-11-10T21:05:37.885587+00:00","ok","262","228","490","22.28","0.564","19.588","39","3","sim","sim","100","resultados_modelos\P16\phi4-mini_3.8b\Main.java",""
+"P16","Exceção de livro indisponível","gemma3:4b","2026-11-10T21:06:00.875027+00:00","ok","273","445","718","44.681","2.95","39.574","52","5","sim","sim","100","resultados_modelos\P16\gemma3_4b\Main.java",""
+"P16","Exceção de livro indisponível","mistral:7b-instruct","2026-11-10T21:06:46.315222+00:00","ok","377","382","759","61.317","1.568","57.635","31","3","sim","sim","100","resultados_modelos\P16\mistral_7b-instruct\Main.java",""
+"P17","Pagamento de multa por interface","phi4-mini:3.8b","2026-11-10T21:07:48.338925+00:00","ok","263","240","503","23.245","0.596","20.526","36","4","sim","sim","85","resultados_modelos\P17\phi4-mini_3.8b\Main.java",""
+"P17","Pagamento de multa por interface","gemma3:4b","2026-11-10T21:08:12.317839+00:00","ok","269","325","594","33.586","2.672","28.776","51","4","sim","sim","100","resultados_modelos\P17\gemma3_4b\Main.java",""
+"P17","Pagamento de multa por interface","mistral:7b-instruct","2026-11-10T21:08:46.669295+00:00","ok","368","330","698","53.156","1.41","49.646","42","3","sim","sim","100","resultados_modelos\P17\mistral_7b-instruct\Main.java",""
+"P18","Formas de notificação","phi4-mini:3.8b","2026-11-10T21:09:40.545989+00:00","ok","268","153","421","16.014","0.655","13.213","26","2","sim","sim","100","resultados_modelos\P18\phi4-mini_3.8b\Main.java",""
+"P18","Formas de notificação","gemma3:4b","2026-11-10T21:09:57.333474+00:00","ok","279","235","514","25.63","2.784","20.735","35","2","sim","sim","100","resultados_modelos\P18\gemma3_4b\Main.java",""
+"P18","Formas de notificação","mistral:7b-instruct","2026-11-10T21:10:23.736510+00:00","ok","379","220","599","36.903","1.583","33.242","27","2","nao","nao","0","resultados_modelos\P18\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P18\mistral_7b-instruct\build\Main.java:7: error: enviar(String) in NotificadorEmail cannot implement enviar(String) in Notificador
+        void enviar(String mensagem) {
+             ^
+  attempting to assign weaker access privileges; was public
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P18\mistral_7b-instruct\build\Main.java:13: error: enviar(String) in NotificadorConsole cannot implement enviar(String) in Notificador
+        void enviar(String mensagem) {
+             ^
+  attempting to assign weaker access privileges; was public
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P18\mistral_7b-instruct\build\Main.java:19: error: cannot find symbol
+        List<Notificador> notificadores = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P18\mistral_7b-instruct\build\Main.java:19: error: cannot find symbol
+        List<Notificador> notificadores = new ArrayList<>();
+                                              ^
+  symbol:   class ArrayList
+  location: class Main
+4 errors"
+"P19","Cálculo de multa polimórfico","phi4-mini:3.8b","2026-11-10T21:11:01.209776+00:00","ok","274","333","607","32.164","0.728","29.326","35","3","nao","nao","0","resultados_modelos\P19\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P19\phi4-mini_3.8b\build\Main.java:2: error: RegraMulta is not abstract and does not override abstract method calcular(int) in RegraMulta
+    static class RegraMulta {
+           ^
+1 error"
+"P19","Cálculo de multa polimórfico","gemma3:4b","2026-11-10T21:11:33.951067+00:00","ok","284","350","634","36.905","2.878","31.907","35","1","nao","nao","0","resultados_modelos\P19\gemma3_4b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P19\gemma3_4b\build\Main.java:3: error: RegraMulta is not abstract and does not override abstract method calcular(int) in RegraMulta
+    static class RegraMulta {
+           ^
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P19\gemma3_4b\build\Main.java:12: error: valorPorDia has private access in RegraMulta
+            return diasAtraso * valorPorDia;
+                                ^
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P19\gemma3_4b\build\Main.java:21: error: valorPorDia has private access in RegraMulta
+            double multa = diasAtraso * valorPorDia;
+                                        ^
+3 errors"
+"P19","Cálculo de multa polimórfico","mistral:7b-instruct","2026-11-10T21:12:11.484711+00:00","ok","382","434","816","68.879","1.643","65.145","50","2","nao","nao","0","resultados_modelos\P19\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P19\mistral_7b-instruct\build\Main.java:24: error: diasAtraso has private access in RegraMulta
+            return diasAtraso * 2.0;
+                   ^
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P19\mistral_7b-instruct\build\Main.java:38: error: diasAtraso has private access in RegraMulta
+            double valor = diasAtraso * 2.0;
+                           ^
+2 errors"
+"P20","Repositório em memória","phi4-mini:3.8b","2026-11-10T21:13:20.951087+00:00","ok","263","444","707","41.446","0.536","38.365","70","1","sim","sim","55","resultados_modelos\P20\phi4-mini_3.8b\Main.java",""
+"P20","Repositório em memória","gemma3:4b","2026-11-10T21:14:03.382934+00:00","ok","278","666","944","68.874","2.977","63.744","77","5","nao","nao","0","resultados_modelos\P20\gemma3_4b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P20\gemma3_4b\build\Main.java:8: error: cannot find symbol
+        Optional<Livro> buscarPorIsbn(String isbn);
+        ^
+  symbol:   class Optional
+  location: interface RepositorioLivro
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P20\gemma3_4b\build\Main.java:23: error: cannot find symbol
+        public Optional<Livro> buscarPorIsbn(String isbn) {
+               ^
+  symbol:   class Optional
+  location: class RepositorioLivroMemoria
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P20\gemma3_4b\build\Main.java:24: error: cannot find symbol
+            return Optional.ofNullable(livros.get(isbn));
+                   ^
+  symbol:   variable Optional
+  location: class RepositorioLivroMemoria
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P20\gemma3_4b\build\Main.java:61: error: cannot find symbol
+        Optional<Livro> livroEncontrado = repositorio.buscarPorIsbn(""978-0618260264"");
+        ^
+  symbol:   class Optional
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P20\gemma3_4b\build\Main.java:66: error: cannot find symbol
+        Optional<Livro> livroNaoEncontrado = repositorio.buscarPorIsbn(""123-456-789"");
+        ^
+  symbol:   class Optional
+  location: class Main
+5 errors"
+"P20","Repositório em memória","mistral:7b-instruct","2026-11-10T21:15:13.033587+00:00","ok","381","545","926","115.633","2.563","110.22","57","4","sim","sim","100","resultados_modelos\P20\mistral_7b-instruct\Main.java",""
+"P21","Validador de ISBN","phi4-mini:3.8b","2026-11-10T21:17:09.683484+00:00","ok","278","267","545","29.608","3.242","24.094","22","2","sim","sim","90","resultados_modelos\P21\phi4-mini_3.8b\Main.java",""
+"P21","Validador de ISBN","gemma3:4b","2026-11-10T21:17:40.072982+00:00","ok","287","512","799","62.482","6.049","54.117","45","3","nao","nao","0","resultados_modelos\P21\gemma3_4b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P21\gemma3_4b\build\Main.java:33: error: ';' expected
+        System.out.println(""Validando ISBN-13: 978032176564""));
+                                                             ^
+1 error"
+"P21","Validador de ISBN","mistral:7b-instruct","2026-11-10T21:18:43.083315+00:00","ok","389","292","681","51.994","2.906","46.898","24","2","sim","sim","85","resultados_modelos\P21\mistral_7b-instruct\Main.java",""
+"P22","Ordenação de livros","phi4-mini:3.8b","2026-11-10T21:19:35.835418+00:00","ok","253","211","464","23.464","1.423","19.566","35","1","nao","nao","0","resultados_modelos\P22\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P22\phi4-mini_3.8b\build\Main.java:26: error: cannot find symbol
+        List<Livro> livros = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P22\phi4-mini_3.8b\build\Main.java:26: error: cannot find symbol
+        List<Livro> livros = new ArrayList<>();
+                                 ^
+  symbol:   class ArrayList
+  location: class Main
+2 errors"
+"P22","Ordenação de livros","gemma3:4b","2026-11-10T21:19:59.882900+00:00","ok","263","388","651","43.552","3.05","37.891","49","3","sim","sim","100","resultados_modelos\P22\gemma3_4b\Main.java",""
+"P22","Ordenação de livros","mistral:7b-instruct","2026-11-10T21:20:44.412238+00:00","ok","358","437","795","83.824","1.246","80.374","35","2","sim","sim","100","resultados_modelos\P22\mistral_7b-instruct\Main.java",""
+"P23","Busca com estratégia","phi4-mini:3.8b","2026-11-10T21:22:09.427562+00:00","ok","270","340","610","36.368","0.903","33.32","41","1","nao","nao","0","resultados_modelos\P23\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\phi4-mini_3.8b\build\Main.java:21: error: cannot find symbol
+        private List<String> livros = Arrays.asList(""O Mundo sem Músicas"", ""A Arte da Programação"", ""Algoritmos e Estruturas de Dados"");
+                ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\phi4-mini_3.8b\build\Main.java:9: error: cannot find symbol
+            return Main.catalogo.buscarExatamentePorTítulo(título.toLowerCase());
+                       ^
+  symbol:   variable catalogo
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\phi4-mini_3.8b\build\Main.java:16: error: cannot find symbol
+            return Main.catalogo.buscarPorTrechoDoTítulo(título.toLowerCase());
+                       ^
+  symbol:   variable catalogo
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\phi4-mini_3.8b\build\Main.java:16: error: cannot find symbol
+            return Main.catalogo.buscarPorTrechoDoTítulo(título.toLowerCase());
+                                                         ^
+  symbol:   variable título
+  location: class BuscaPorTrechoDoTítulo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\phi4-mini_3.8b\build\Main.java:21: error: cannot find symbol
+        private List<String> livros = Arrays.asList(""O Mundo sem Músicas"", ""A Arte da Programação"", ""Algoritmos e Estruturas de Dados"");
+             "
+"P23","Busca com estratégia","gemma3:4b","2026-11-10T21:22:46.445219+00:00","ok","281","485","766","95.877","3.891","89.046","60","5","nao","nao","0","resultados_modelos\P23\gemma3_4b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\gemma3_4b\build\Main.java:4: error: cannot find symbol
+        String buscar(List<String> livros);
+                      ^
+  symbol:   class List
+  location: interface EstrategiaBusca
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\gemma3_4b\build\Main.java:9: error: cannot find symbol
+        public String buscar(List<String> livros) {
+                             ^
+  symbol:   class List
+  location: class BuscaExata
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\gemma3_4b\build\Main.java:22: error: cannot find symbol
+        public String buscar(List<String> livros) {
+                             ^
+  symbol:   class List
+  location: class BuscaTrecho
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\gemma3_4b\build\Main.java:40: error: cannot find symbol
+        public String buscar(List<String> livros) {
+                             ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\gemma3_4b\build\Main.java:46: error: cannot find symbol
+        List<String> livros = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\gemma3_4b\build\Main.java:46: error: cannot find symbol
+        List<String> livros = new ArrayList<>();
+                                  ^
+  symbol:   class ArrayList
+  location: class Main
+6 errors"
+"P23","Busca com estratégia","mistral:7b-instruct","2026-11-10T21:24:23.009379+00:00","ok","388","506","894","85.272","3.475","79.102","60","1","nao","nao","0","resultados_modelos\P23\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\mistral_7b-instruct\build\Main.java:44: error: cannot find symbol
+    private static final List<Livro> livros = Arrays.asList(
+                         ^
+  symbol:   class List
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\mistral_7b-instruct\build\Main.java:8: error: cannot find symbol
+        return livros.stream()
+               ^
+  symbol:   variable livros
+  location: class Exata
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\mistral_7b-instruct\build\Main.java:24: error: cannot find symbol
+        return livros.stream()
+               ^
+  symbol:   variable livros
+  location: class Trecho
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P23\mistral_7b-instruct\build\Main.java:44: error: cannot find symbol
+    private static final List<Livro> livros = Arrays.asList(
+                                              ^
+  symbol:   variable Arrays
+  location: class Main
+4 errors"
+"P24","Carrinho de devoluções","phi4-mini:3.8b","2026-11-10T21:25:48.867902+00:00","ok","262","278","540","29.938","1.051","26.354","34","1","nao","nao","0","resultados_modelos\P24\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P24\phi4-mini_3.8b\build\Main.java:3: error: cannot find symbol
+        private final Map<String, String> livros = new HashMap<>();
+                      ^
+  symbol:   class Map
+  location: class Devolucao
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P24\phi4-mini_3.8b\build\Main.java:3: error: cannot find symbol
+        private final Map<String, String> livros = new HashMap<>();
+                                                       ^
+  symbol:   class HashMap
+  location: class Devolucao
+2 errors"
+"P24","Carrinho de devoluções","gemma3:4b","2026-11-10T21:26:19.403820+00:00","ok","271","607","878","63.101","3.744","56.679","72","5","sim","sim","10","resultados_modelos\P24\gemma3_4b\Main.java",""
+"P24","Carrinho de devoluções","mistral:7b-instruct","2026-11-10T21:27:23.361748+00:00","ok","377","398","775","65.757","1.612","61.604","50","2","nao","nao","0","resultados_modelos\P24\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P24\mistral_7b-instruct\build\Main.java:28: error: cannot find symbol
+        private final Set<Livro> livros = new TreeSet<>();
+                      ^
+  symbol:   class Set
+  location: class Devolucao
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P24\mistral_7b-instruct\build\Main.java:28: error: cannot find symbol
+        private final Set<Livro> livros = new TreeSet<>();
+                                              ^
+  symbol:   class TreeSet
+  location: class Devolucao
+2 errors"
+"P25","Histórico de empréstimos","phi4-mini:3.8b","2026-11-10T21:28:29.720572+00:00","ok","253","473","726","45.137","0.48","42.168","54","1","nao","nao","0","resultados_modelos\P25\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\phi4-mini_3.8b\build\Main.java:13: error: invalid method declaration; return type required
+        public Empresteo(String identificador, String usuario, String isbn, LocalDate dataEmpréstimo) {
+               ^
+1 error"
+"P25","Histórico de empréstimos","gemma3:4b","2026-11-10T21:29:15.316100+00:00","ok","263","592","855","62.633","2.63","57.409","61","1","nao","nao","10","resultados_modelos\P25\gemma3_4b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\gemma3_4b\build\Main.java:25: error: cannot find symbol
+        List<Emprestimo> emprestimos;
+        ^
+  symbol:   class List
+  location: class HistoricoEmprestimos
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\gemma3_4b\build\Main.java:35: error: cannot find symbol
+        public List<Emprestimo> getEmprestimos() {
+               ^
+  symbol:   class List
+  location: class HistoricoEmprestimos
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\gemma3_4b\build\Main.java:28: error: cannot find symbol
+            this.emprestimos = new ArrayList<>();
+                                   ^
+  symbol:   class ArrayList
+  location: class HistoricoEmprestimos
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\gemma3_4b\build\Main.java:54: error: cannot find symbol
+        List<Emprestimo> emprestimosJoao = historico.getEmprestimos().stream()
+        ^
+  symbol:   class List
+  location: class Main
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\gemma3_4b\build\Main.java:56: error: cannot find symbol
+                .collect(Collectors.toList());
+                         ^
+  symbol:   variable Collectors
+  location: class Main
+5 errors"
+"P25","Histórico de empréstimos","mistral:7b-instruct","2026-11-10T21:30:18.612355+00:00","ok","368","506","874","88.346","1.678","84.555","40","2","nao","nao","0","resultados_modelos\P25\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\mistral_7b-instruct\build\Main.java:6: error: cannot find symbol
+        private final LocalDate data;
+                      ^
+  symbol:   class LocalDate
+  location: class Emprestimo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\mistral_7b-instruct\build\Main.java:8: error: cannot find symbol
+        public Emprestimo(String usuario, String isbn, LocalDate data) {
+                                                       ^
+  symbol:   class LocalDate
+  location: class Emprestimo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\mistral_7b-instruct\build\Main.java:16: error: cannot find symbol
+        private final Map<String, List<Emprestimo>> emprestimosPorUsuario = new HashMap<>();
+                      ^
+  symbol:   class Map
+  location: class Historico
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\mistral_7b-instruct\build\Main.java:16: error: cannot find symbol
+        private final Map<String, List<Emprestimo>> emprestimosPorUsuario = new HashMap<>();
+                                  ^
+  symbol:   class List
+  location: class Historico
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\mistral_7b-instruct\build\Main.java:26: error: cannot find symbol
+        public List<Emprestimo> getHistorico(String usuario) {
+               ^
+  symbol:   class List
+  location: class Historico
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P25\mistral_7b"
+"P26","Biblioteca agregadora","phi4-mini:3.8b","2026-11-10T21:31:47.600775+00:00","ok","253","220","473","26.394","1.692","22.355","42","1","nao","nao","0","resultados_modelos\P26\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P26\phi4-mini_3.8b\build\Main.java:12: error: method adicionarLivro in class Catalogo cannot be applied to given types;
+            catalogo.adicionarLivro(livro);
+                    ^
+  required: no arguments
+  found:    String
+  reason: actual and formal argument lists differ in length
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P26\phi4-mini_3.8b\build\Main.java:38: error: method adicionarLivro in class Biblioteca cannot be applied to given types;
+        biblioteca.adicionarLivro();
+                  ^
+  required: String
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P26\phi4-mini_3.8b\build\Main.java:39: error: method adicionarLivro in class Biblioteca cannot be applied to given types;
+        biblioteca.adicionarLivro();
+                  ^
+  required: String
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+3 errors"
+"P26","Biblioteca agregadora","gemma3:4b","2026-11-10T21:32:14.715722+00:00","ok","261","364","625","43.087","4.168","36.661","49","1","sim","sim","100","resultados_modelos\P26\gemma3_4b\Main.java",""
+"P26","Biblioteca agregadora","mistral:7b-instruct","2026-11-10T21:32:58.733154+00:00","ok","365","427","792","81.556","1.979","77.436","50","2","sim","sim","15","resultados_modelos\P26\mistral_7b-instruct\Main.java",""
+"P27","Configuração imutável","phi4-mini:3.8b","2026-11-10T21:34:21.095146+00:00","ok","253","188","441","21.331","1.513","17.632","25","1","sim","sim","90","resultados_modelos\P27\phi4-mini_3.8b\Main.java",""
+"P27","Configuração imutável","gemma3:4b","2026-11-10T21:34:43.219741+00:00","ok","262","321","583","35.35","2.742","30.4","38","4","sim","sim","100","resultados_modelos\P27\gemma3_4b\Main.java",""
+"P27","Configuração imutável","mistral:7b-instruct","2026-11-10T21:35:19.283096+00:00","ok","368","312","680","53.587","2.241","48.668","29","3","sim","sim","100","resultados_modelos\P27\mistral_7b-instruct\Main.java",""
+"P28","Estatísticas do catálogo","phi4-mini:3.8b","2026-11-10T21:36:13.735455+00:00","ok","253","300","553","29.832","0.695","26.978","46","3","nao","nao","0","resultados_modelos\P28\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P28\phi4-mini_3.8b\build\Main.java:15: error: cannot find symbol
+        private List<Livro> livros = new ArrayList<>();
+                ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P28\phi4-mini_3.8b\build\Main.java:15: error: cannot find symbol
+        private List<Livro> livros = new ArrayList<>();
+                                         ^
+  symbol:   class ArrayList
+  location: class Catalogo
+2 errors"
+"P28","Estatísticas do catálogo","gemma3:4b","2026-11-10T21:36:44.206219+00:00","ok","261","484","745","50.645","2.92","45.024","58","3","sim","sim","100","resultados_modelos\P28\gemma3_4b\Main.java",""
+"P28","Estatísticas do catálogo","mistral:7b-instruct","2026-11-10T21:37:35.655462+00:00","ok","366","528","894","92.303","1.432","88.755","52","2","nao","nao","0","resultados_modelos\P28\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P28\mistral_7b-instruct\build\Main.java:22: error: cannot find symbol
+        private final Map<String, List<Livro>> livrosPorGenero = new HashMap<>();
+                      ^
+  symbol:   class Map
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P28\mistral_7b-instruct\build\Main.java:22: error: cannot find symbol
+        private final Map<String, List<Livro>> livrosPorGenero = new HashMap<>();
+                                  ^
+  symbol:   class List
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P28\mistral_7b-instruct\build\Main.java:22: error: cannot find symbol
+        private final Map<String, List<Livro>> livrosPorGenero = new HashMap<>();
+                                                                     ^
+  symbol:   class HashMap
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P28\mistral_7b-instruct\build\Main.java:27: error: cannot find symbol
+                livrosPorGenero.put(genero, new ArrayList<>());
+                                                ^
+  symbol:   class ArrayList
+  location: class Catalogo
+C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P28\mistral_7b-instruct\build\Main.java:33: error: cannot find symbol
+            return livrosPorGenero.values().stream().mapToInt(List::size).sum();
+                                                              ^
+  symbol:   "
+"P29","Processador de devolução","phi4-mini:3.8b","2026-11-10T21:39:08.812438+00:00","ok","257","292","549","36.26","2.857","30.64","25","2","nao","nao","0","resultados_modelos\P29\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P29\phi4-mini_3.8b\build\Main.java:9: error: package ChronoUnit does not exist
+            return (int) ChronoUnit.DAYS.between(dataPresencaPrazo, dataPresenca);
+                                   ^
+1 error"
+"P29","Processador de devolução","gemma3:4b","2026-11-10T21:39:45.762818+00:00","ok","267","470","737","49.887","3.788","43.816","37","3","sim","sim","15","resultados_modelos\P29\gemma3_4b\Main.java",""
+"P29","Processador de devolução","mistral:7b-instruct","2026-11-10T21:40:36.450976+00:00","ok","363","373","736","61.94","1.494","57.852","25","2","nao","nao","0","resultados_modelos\P29\mistral_7b-instruct\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P29\mistral_7b-instruct\build\Main.java:11: error: package ChronoUnit does not exist
+            return dataReal.isAfter(dataPrevista) ? (int) ChronoUnit.DAYS.between(dataPrevista, dataReal) : 0;
+                                                                    ^
+1 error"
+"P30","Serviço de empréstimo","phi4-mini:3.8b","2026-11-10T21:41:39.005854+00:00","ok","271","436","707","41.877","0.689","39.02","72","5","nao","nao","0","resultados_modelos\P30\phi4-mini_3.8b\Main.java","C:\Users\oTaffarel\Documents\TrabalhoDOO\resultados_ollama\P30\phi4-mini_3.8b\build\Main.java:42: error: cannot find symbol
+            if (!livro.isEmprestado() && !livro.isAtivo()) {
+                                               ^
+  symbol:   method isAtivo()
+  location: variable livro of type Livro
+1 error"
+"P30","Serviço de empréstimo","gemma3:4b","2026-11-10T21:42:21.450171+00:00","ok","280","531","811","55.109","3.027","49.96","61","5","sim","sim","90","resultados_modelos\P30\gemma3_4b\Main.java",""
+"P30","Serviço de empréstimo","mistral:7b-instruct","2026-11-10T21:43:17.472025+00:00","ok","396","987","1383","162.616","2.092","158.425","78","5","sim","sim","15","resultados_modelos\P30\mistral_7b-instruct\Main.java",""

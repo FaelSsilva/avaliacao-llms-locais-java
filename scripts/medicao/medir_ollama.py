@@ -2,9 +2,9 @@
 """Executa os 30 prompts nos modelos Ollama e registra métricas locais.
 
 Uso:
-  python medir_ollama.py                 # roda todos os 90 pares
-  python medir_ollama.py --limit 1       # teste rápido com o primeiro problema
-  python medir_ollama.py --report        # resume resultados já gravados
+  python scripts/medicao/medir_ollama.py                 # roda todos os 90 pares
+  python scripts/medicao/medir_ollama.py --limit 1       # teste rápido com o primeiro problema
+  python scripts/medicao/medir_ollama.py --report        # resume resultados já gravados
 
 Assertividade deve ser avaliada com testes do problema e preenchida manualmente
 na coluna assertividade_0_100 do CSV. Compilar/executar não prova correção.
@@ -25,9 +25,9 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-PROMPTS_FILE = ROOT / "prompts_30_biblioteca.md"
-OUT_DIR = ROOT / "resultados_ollama"
+ROOT = Path(__file__).resolve().parents[2]
+PROMPTS_FILE = ROOT / "prompts" / "prompts_30_biblioteca.md"
+OUT_DIR = ROOT / "resultados_modelos"
 CSV_FILE = OUT_DIR / "metricas.csv"
 DEFAULT_MODELS = ["phi4-mini:3.8b", "gemma3:4b", "mistral:7b-instruct"]
 OLLAMA_URL = "http://localhost:11434/api/chat"

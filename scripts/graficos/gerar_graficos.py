@@ -1,6 +1,6 @@
 """Gera gráficos vetoriais e um resumo por modelo a partir de metricas.csv.
 
-Uso: python gerar_graficos.py
+Uso: python scripts/graficos/gerar_graficos.py
 
 Assertividade entra no gráfico quando a coluna assertividade_0_100 da planilha
 de métricas estiver preenchida com notas calculadas pelos mesmos testes.
@@ -10,9 +10,9 @@ import csv
 import html
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-CSV_PATH = ROOT / "resultados_ollama" / "metricas.csv"
-OUT = ROOT / "graficos_metricas"
+ROOT = Path(__file__).resolve().parents[2]
+CSV_PATH = ROOT / "resultados_modelos" / "metricas.csv"
+OUT = ROOT / "graficos"
 MODELS = ["phi4-mini:3.8b", "gemma3:4b", "mistral:7b-instruct"]
 COLORS = {
     "phi4-mini:3.8b": "#3267a8",

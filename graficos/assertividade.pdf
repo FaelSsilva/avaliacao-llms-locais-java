@@ -1,0 +1,61 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 960 560] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1209 >>
+stream
+1 1 1 rg
+BT /F1 24 Tf 70 515 Td (Assertividade media por modelo) Tj ET
+BT /F1 12 Tf 70 492 Td (Pontuacao media em 30 respostas, escala de 0 a 100) Tj ET
+0.84 0.87 0.90 RG 0.7 w
+120 125.0 m 880 125.0 l S
+0.20 0.24 0.28 rg BT /F1 11 Tf 82 121.0 Td (0) Tj ET
+0.84 0.87 0.90 RG 0.7 w
+120 200.0 m 880 200.0 l S
+0.20 0.24 0.28 rg BT /F1 11 Tf 82 196.0 Td (25) Tj ET
+0.84 0.87 0.90 RG 0.7 w
+120 275.0 m 880 275.0 l S
+0.20 0.24 0.28 rg BT /F1 11 Tf 82 271.0 Td (50) Tj ET
+0.84 0.87 0.90 RG 0.7 w
+120 350.0 m 880 350.0 l S
+0.20 0.24 0.28 rg BT /F1 11 Tf 82 346.0 Td (75) Tj ET
+0.84 0.87 0.90 RG 0.7 w
+120 425.0 m 880 425.0 l S
+0.20 0.24 0.28 rg BT /F1 11 Tf 82 421.0 Td (100) Tj ET
+0.196 0.404 0.659 rg 192 125 125 139.5 re f
+0.10 0.13 0.17 rg BT /F1 13 Tf 216 274.5 Td (46.5%) Tj ET
+0.10 0.13 0.17 rg BT /F1 12 Tf 206 98 Td (Phi-4 Mini) Tj ET
+0.812 0.482 0.133 rg 435 125 125 197.0 re f
+0.10 0.13 0.17 rg BT /F1 13 Tf 459 332.0 Td (65.7%) Tj ET
+0.10 0.13 0.17 rg BT /F1 12 Tf 449 98 Td (Gemma 3) Tj ET
+0.157 0.478 0.345 rg 678 125 125 141.0 re f
+0.10 0.13 0.17 rg BT /F1 13 Tf 702 276.0 Td (47.0%) Tj ET
+0.10 0.13 0.17 rg BT /F1 12 Tf 692 98 Td (Mistral 7B Instruct) Tj ET
+0.20 0.24 0.28 RG 1 w
+120 125 m 880 125 l S
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1577
+%%EOF

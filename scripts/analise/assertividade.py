@@ -4,11 +4,11 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-RESULTADOS = ROOT / "resultados_ollama"
-FICHA = ROOT / "ficha_assertividade.csv"
+ROOT = Path(__file__).resolve().parents[2]
+RESULTADOS = ROOT / "resultados_modelos"
+FICHA = ROOT / "avaliacao" / "ficha_assertividade.csv"
 METRICAS = RESULTADOS / "metricas.csv"
-RESUMO = ROOT / "resumo_assertividade.txt"
+RESUMO = ROOT / "avaliacao" / "resumo_assertividade.txt"
 
 # Notas em (funcionalidade /70, OO /20, validações /10).
 # A nota cheia só é atribuída após revisão do fonte e evidência de compilação.

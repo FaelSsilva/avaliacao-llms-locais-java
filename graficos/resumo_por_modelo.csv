@@ -1,0 +1,4 @@
+﻿modelo,tokens_total_medio,tempo_segundos_medio,linhas_codigo_media,complexidade_ciclomatica_estimada_media,compilacao_pct,execucao_pct,assertividade_pct_media,respostas
+phi4-mini:3.8b,553.333,29.225,43.0,2.4,53.333,53.333,46.5,30
+gemma3:4b,698.933,46.136,51.7,3.3,76.667,70.0,65.667,30
+mistral:7b-instruct,798.367,72.153,44.467,2.6,56.667,56.667,47.0,30

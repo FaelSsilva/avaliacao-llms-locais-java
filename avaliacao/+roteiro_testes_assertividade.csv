@@ -1,0 +1,31 @@
+﻿problema_id;teste_funcional_70;teste_oo_20;teste_validacao_10
+P01;Resumo retorna Título — Autor (Ano) e getters retornam os valores corretos;"Campos privados; Livro encapsula os dados";Título/autor vazios e ano < 1 são rejeitados
+P02;Cópia começa com os mesmos dados e permanece independente após alterar original;Dados encapsulados e copiar() devolve novo Livro;Sem requisito explícito de validação
+P03;Três instâncias produzem total 3;Contador é compartilhado/estático e total é exposto;Sem requisito explícito de validação
+P04;Empréstimo e devolução válidos alternam disponibilidade;Estado privado e operações de domínio;Emprestar indisponível/devolver disponível lança IllegalStateException
+P05;"apresentar() retorna nome (identificador); getters corretos";Campos privados;Nome e identificador vazios rejeitados
+P06;"Pode emprestar até o limite; empréstimo/devolução atualizam quantidade";Estado e limite pertencem ao Usuario;"Não ultrapassa limite nem deixa quantidade negativa; IllegalStateException"
+P07;"Total é dias × valor diário; atraso zero resulta em zero";Cálculo encapsulado em Multa;Dias e valor diário negativos rejeitados
+P08;Livro funciona via Emprestavel e alterna disponibilidade;Livro implementa interface e chamadas polimórficas;Empréstimo duplicado/devolução indevida lança IllegalStateException
+P09;"Livro e Revista fornecem descrições específicas; lista usa polimorfismo";Herança Publicacao e sobrescrita de descricao();Getters e campos conforme especificação
+P10;Usuario.tipo() e Bibliotecario.tipo() distinguem as subclasses via Pessoa;"Pessoa abstrata; subclasses implementam tipo()";Nome encapsulado na hierarquia
+P11;Busca parcial ignora caixa e encontra correspondências;Catalogo armazena livros e devolve nova lista;Não expõe/modifica coleção interna
+P12;Adiciona, remove por ISBN e retorna false para ISBN ausente;"Catálogo gerencia coleção; ISBN identifica livro";ISBN duplicado não é aceito
+P13;Reserva associa usuário/livro e pode ser cancelada uma vez;Reserva encapsula relação e estado;Segundo cancelamento lança IllegalStateException
+P14;Fila atende em ordem FIFO e fica vazia após retirar todos;FilaReservas encapsula estrutura;proximo() vazia lança NoSuchElementException
+P15;estaAtrasado é falso no prazo e verdadeiro após o prazo;"Datas representadas por LocalDate; estado encapsulado";Prazo anterior à retirada rejeitado
+P16;Primeiro empréstimo funciona e tentativa seguinte lança exceção própria;Exceção própria e operação em Livro;Tipo exato LivroIndisponivelException
+P17;calcularTotal retorna valor e pagar altera estado;Uso por Pagavel;Pagar novamente lança IllegalStateException
+P18;Email e Console geram representações textuais diferentes;"Duas classes implementam Notificador; lista polimórfica";Não faz envio real
+P19;"Regra fixa calcula 2/dia; regra com teto limita em 20";Regras herdam RegraMulta e funcionam pela classe base;Dias negativos rejeitados
+P20;Salva e busca por ISBN com Optional presente/ausente;Interface RepositorioLivro e implementação Map;"ISBN único; duplicata não sobrescreve silenciosamente"
+P21;Aceita 13 algarismos e rejeita tamanho diferente ou caracteres não numéricos;Implementa Validador<String>;Não exige dígito verificador
+P22;Ordena títulos sem diferenciar maiúsculas/minúsculas;Livro implementa Comparable<Livro>;Comparação consistente para títulos
+P23;Busca exata e por trecho têm resultados distintos corretos, ignorando caixa;Catalogo delega à EstratégiaBusca recebida;Sem requisito explícito de validação
+P24;"Adicionar/remover e quantidade funcionam; ISBN repetido conta uma vez";Coleção interna encapsulada;Identidade baseada em ISBN, não no título
+P25;Histórico filtra empréstimos pelo identificador do usuário;Historico gerencia Emprestimo e devolve nova lista;Resultado não deve permitir alteração do histórico interno
+P26;Biblioteca adiciona e consulta livros por meio do Catalogo;Composição Biblioteca–Catalogo e campos encapsulados;Sem requisito explícito de validação
+P27;Getters retornam prazo e limite configurados;"Campos private final; classe imutável e sem setters";"Prazo e limite positivos; valores inválidos rejeitados"
+P28;Quantidade total e por gênero corretas em pelo menos dois gêneros;Catálogo não expõe coleção interna;Contagem por gênero correta
+P29;Atraso zero quando no prazo/antecipado e diferença correta quando atrasado;RegraDevolucao e LocalDate usados;Sem regra adicional de validação explícita
+P30;"Empréstimo válido atualiza livro e usuário; falha não muda nenhum estado";ServicoEmprestimo coordena Livro e Usuario;Indisponível/limite atingido lança IllegalStateException atomicamente

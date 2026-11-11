@@ -126,11 +126,13 @@ def quantiles(values):
 
 
 def main():
+    project_root = Path(__file__).resolve().parents[2]
     if len(sys.argv) > 1:
         csv_path = Path(sys.argv[1])
     else:
-        candidates = [Path("resultados_ollama/metricas.csv"), Path(__file__).with_name("metricas.csv"),
-                      Path(__file__).parent / "artefatos" / "metricas.csv"]
+        candidates = [project_root / "resultados_modelos" / "metricas.csv",
+                      Path(__file__).with_name("metricas.csv"),
+                      project_root / "relatorio" / "artefatos" / "metricas.csv"]
         csv_path = next((candidate for candidate in candidates if candidate.exists()), candidates[0])
     rows = list(csv.DictReader(csv_path.open(encoding="utf-8-sig", newline="")))
     data = defaultdict(dict)

@@ -3,10 +3,10 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-METRICAS = ROOT / "resultados_ollama" / "metricas.csv"
-ROTEIRO = ROOT / "roteiro_testes_assertividade.csv"
-FICHA = ROOT / "ficha_assertividade.csv"
+ROOT = Path(__file__).resolve().parents[2]
+METRICAS = ROOT / "resultados_modelos" / "metricas.csv"
+ROTEIRO = ROOT / "avaliacao" / "roteiro_testes_assertividade.csv"
+FICHA = ROOT / "avaliacao" / "ficha_assertividade.csv"
 
 criterios = {
 "P01": ("Resumo retorna Título — Autor (Ano) e getters retornam os valores corretos", "Campos privados; Livro encapsula os dados", "Título/autor vazios e ano < 1 são rejeitados"),

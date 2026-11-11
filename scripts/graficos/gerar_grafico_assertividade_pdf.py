@@ -2,9 +2,9 @@
 import csv
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-CSV = ROOT / "resultados_ollama" / "metricas.csv"
-OUT_DIR = ROOT / "graficos_metricas"
+ROOT = Path(__file__).resolve().parents[2]
+CSV = ROOT / "resultados_modelos" / "metricas.csv"
+OUT_DIR = ROOT / "graficos"
 OUT_DIR.mkdir(exist_ok=True)
 
 models = ["phi4-mini:3.8b", "gemma3:4b", "mistral:7b-instruct"]

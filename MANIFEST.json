@@ -6,1624 +6,1504 @@
       "sha256": "0855c81e94964abce28eddfa10784c70f3c8991713a2fb526f09726479bf4b4a"
     },
     {
-      "path": "analise_estatistica_pareada.py",
-      "bytes": 8944,
-      "sha256": "149ddc82e77fd58efe69705092d2347567ae4c9d7873a66ccb42438386df8c39"
-    },
-    {
-      "path": "Assertividade.txt",
+      "path": "avaliacao/+Assertividade.txt",
       "bytes": 527,
       "sha256": "e47468c574547b8f600a70f0472ae2ec965e1c5fa76b0cec789fd278772476bd"
     },
     {
-      "path": "CITATION.cff",
-      "bytes": 395,
-      "sha256": "3f52c8c9b2fb7b9f06c1b9900a1f973ac36993da0f60c3016aeebeba4a438bdb"
-    },
-    {
-      "path": "ficha_assertividade.csv",
+      "path": "avaliacao/+ficha_assertividade.csv",
       "bytes": 19954,
       "sha256": "e9a5a12e1a0e81e0d0d6b87d7855b9cd56edc5384482e3909ac450ded4004155"
     },
     {
-      "path": "gerar_ficha_assertividade.py",
-      "bytes": 6436,
-      "sha256": "2b5d1b41704d3be3f436792e5bc4d53a79e2305c10835ac4777870ae7dc9213f"
+      "path": "avaliacao/+roteiro_testes_assertividade.csv",
+      "bytes": 4784,
+      "sha256": "ede6c85fc5323a10039cafddd5afa41d81bfa302b95f19f9aea05038a6124e12"
     },
     {
-      "path": "gerar_grafico_assertividade_pdf.py",
-      "bytes": 2733,
-      "sha256": "404b64e09ce7a30a75adb6ba57efcdb412732ce280479d65b058f4bd7643aaf8"
-    },
-    {
-      "path": "gerar_graficos.py",
-      "bytes": 10492,
-      "sha256": "23fe56c67da6efced51d9efe38b85a489c347d9c2f028051990a082163d6106d"
-    },
-    {
-      "path": "graficos_metricas/assertividade.pdf",
+      "path": "graficos/assertividade.pdf",
       "bytes": 1761,
       "sha256": "df2e575ac2304dff70c435d9b2e1ce0866764006311866309a7f1c36618cceb5"
     },
     {
-      "path": "graficos_metricas/assertividade.svg",
+      "path": "graficos/assertividade.svg",
       "bytes": 2818,
       "sha256": "ccc7eb4653724600eb2244ff2bc4b1b29ed860aa7c8e0cdfff61f49354d5b660"
     },
     {
-      "path": "graficos_metricas/complexidade-estimada.png",
+      "path": "graficos/complexidade-estimada.png",
       "bytes": 40405,
       "sha256": "feb4794cf16353f1e5b797215783c0627510fb74b071c52ad7eacee643430aab"
     },
     {
-      "path": "graficos_metricas/complexidade-estimada.svg",
+      "path": "graficos/complexidade-estimada.svg",
       "bytes": 2797,
       "sha256": "19371ed9c45b17fe4a175cad21c70a377a59a59838db888d974768797064ef8d"
     },
     {
-      "path": "graficos_metricas/linhas-medias.png",
+      "path": "graficos/linhas-medias.png",
       "bytes": 43810,
       "sha256": "894fe4f0eca3409066ba3444914e41fb99febed4dca3addad254855ca2c0e18c"
     },
     {
-      "path": "graficos_metricas/linhas-medias.svg",
+      "path": "graficos/linhas-medias.svg",
       "bytes": 2770,
       "sha256": "136744ad1871c70e4daa1b69f5be10bb5c0d943e4abea896b2113047e8b404c8"
     },
     {
-      "path": "graficos_metricas/resumo_por_modelo.csv",
+      "path": "graficos/resumo_por_modelo.csv",
       "bytes": 361,
       "sha256": "d8c6362bdb38ceb72530da6e6c97353a5537d1a05676ed988f68091cb9d04845"
     },
     {
-      "path": "graficos_metricas/taxa-compilacao.png",
+      "path": "graficos/taxa-compilacao.png",
       "bytes": 49538,
       "sha256": "5982d502125989abca4d263eb5801bf4084deb3f9ebf3771208cece1238d190e"
     },
     {
-      "path": "graficos_metricas/taxa-compilacao.svg",
+      "path": "graficos/taxa-compilacao.svg",
       "bytes": 2792,
       "sha256": "c0054c8c2ed4b520cc9bbf530844941b9bb1763784ccc6ef7e15ff86f2a26e14"
     },
     {
-      "path": "graficos_metricas/taxa-execucao.png",
+      "path": "graficos/taxa-execucao.png",
       "bytes": 48962,
       "sha256": "0e03caf310c95e288597fc0d2b40e7cf223b4da855ab4f0ac22dcfd8d82f8ebb"
     },
     {
-      "path": "graficos_metricas/taxa-execucao.svg",
+      "path": "graficos/taxa-execucao.svg",
       "bytes": 2806,
       "sha256": "ac418bb27c057a83a8f95d7590c935662020073e171088d87d24ccc0e4d362b2"
     },
     {
-      "path": "graficos_metricas/tempo-medio.png",
+      "path": "graficos/tempo-medio.png",
       "bytes": 43873,
       "sha256": "93a458940555eb347771761809fa6caed61da3fa2db4982c1a26bc48ef6cd25e"
     },
     {
-      "path": "graficos_metricas/tempo-medio.svg",
+      "path": "graficos/tempo-medio.svg",
       "bytes": 2817,
       "sha256": "99d36fa4311057e5a43d7d957888dcb80541d23287afb367172eb792f7cff7a0"
     },
     {
-      "path": "graficos_metricas/tokens-medios.png",
+      "path": "graficos/tokens-medios.png",
       "bytes": 51777,
       "sha256": "5f549dcee2134ab7675919206a42a408c41a0298ff837609870ce10651d53739"
     },
     {
-      "path": "graficos_metricas/tokens-medios.svg",
+      "path": "graficos/tokens-medios.svg",
       "bytes": 2834,
       "sha256": "a972c414da9082fa6f963e81ee87161f1e3ce604f844fb23936b618211ae4303"
     },
     {
-      "path": "medir_ollama.py",
-      "bytes": 15122,
-      "sha256": "e3480a35cfac631405e378d1649ab7210ba030788897200bf6a09f77bf879c6f"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/analise_estatistica_pareada.json",
-      "bytes": 11997,
-      "sha256": "35ea88ff3699cda4a57aa07e205248549418fe3093c21b1464a0264b9ca71f3f"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/analise_estatistica_pareada.md",
-      "bytes": 3018,
-      "sha256": "936e0c1ac02caa4bd01ffbd838c7cf14e3314b35ccf4105a0aae306aa46dbdd4"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/analise_estatistica_pareada.py",
-      "bytes": 8944,
-      "sha256": "149ddc82e77fd58efe69705092d2347567ae4c9d7873a66ccb42438386df8c39"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/ficha_assertividade.csv",
-      "bytes": 19954,
-      "sha256": "e9a5a12e1a0e81e0d0d6b87d7855b9cd56edc5384482e3909ac450ded4004155"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/metricas.csv",
-      "bytes": 42862,
-      "sha256": "f06b740308d4a7d6e078617e319521171d8adbe3b15946b89d787ab5c342d778"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/prompts_30_biblioteca.md",
-      "bytes": 10220,
-      "sha256": "b66600ef71e59642304459aacf38e0303edf74e4cf7ee21cb929900a56c0eb89"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/rastreabilidade_especificacoes.csv",
-      "bytes": 4338,
-      "sha256": "9e44ca1ea94c05b8d1dd0e69c0b66457b02d402fb90a8e8eb370cec9d1790c7d"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/resumo_assertividade.txt",
-      "bytes": 527,
-      "sha256": "e47468c574547b8f600a70f0472ae2ec965e1c5fa76b0cec789fd278772476bd"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/revisao_e_procedencia.md",
-      "bytes": 4404,
-      "sha256": "a210937b2381f7d7adaa836e1c80e5f9ed566bbb43a4256a0794180759b07399"
-    },
-    {
-      "path": "overleaf_upload_pronto/artefatos/roteiro_testes_assertividade.csv",
-      "bytes": 4784,
-      "sha256": "ede6c85fc5323a10039cafddd5afa41d81bfa302b95f19f9aea05038a6124e12"
-    },
-    {
-      "path": "overleaf_upload_pronto/caption2.sty",
-      "bytes": 15190,
-      "sha256": "e923719d02b98e2f1ecdf6a85092261e9b36b627f95667bc8985172f55448698"
-    },
-    {
-      "path": "overleaf_upload_pronto/figuras/assertividade.pdf",
-      "bytes": 1761,
-      "sha256": "df2e575ac2304dff70c435d9b2e1ce0866764006311866309a7f1c36618cceb5"
-    },
-    {
-      "path": "overleaf_upload_pronto/figuras/complexidade-estimada.png",
-      "bytes": 40405,
-      "sha256": "feb4794cf16353f1e5b797215783c0627510fb74b071c52ad7eacee643430aab"
-    },
-    {
-      "path": "overleaf_upload_pronto/figuras/linhas-medias.png",
-      "bytes": 43810,
-      "sha256": "894fe4f0eca3409066ba3444914e41fb99febed4dca3addad254855ca2c0e18c"
-    },
-    {
-      "path": "overleaf_upload_pronto/figuras/taxa-compilacao.png",
-      "bytes": 49538,
-      "sha256": "5982d502125989abca4d263eb5801bf4084deb3f9ebf3771208cece1238d190e"
-    },
-    {
-      "path": "overleaf_upload_pronto/figuras/taxa-execucao.png",
-      "bytes": 48962,
-      "sha256": "0e03caf310c95e288597fc0d2b40e7cf223b4da855ab4f0ac22dcfd8d82f8ebb"
-    },
-    {
-      "path": "overleaf_upload_pronto/figuras/tempo-medio.png",
-      "bytes": 43873,
-      "sha256": "93a458940555eb347771761809fa6caed61da3fa2db4982c1a26bc48ef6cd25e"
-    },
-    {
-      "path": "overleaf_upload_pronto/figuras/tokens-medios.png",
-      "bytes": 51777,
-      "sha256": "5f549dcee2134ab7675919206a42a408c41a0298ff837609870ce10651d53739"
-    },
-    {
-      "path": "overleaf_upload_pronto/main.tex",
-      "bytes": 21400,
-      "sha256": "58eb847278f984fdbc45bd0c16b0074120d3b19cfb61c220c44a4661f1b0b627"
-    },
-    {
-      "path": "overleaf_upload_pronto/referencias.bib",
-      "bytes": 5324,
-      "sha256": "95379f6624ef0480c7a18f8d02f5b8396a3bf56cae4f1b9b507a9f87cad4423d"
-    },
-    {
-      "path": "overleaf_upload_pronto/sbc-template.sty",
-      "bytes": 6074,
-      "sha256": "dbe513d56dde32bedc53dcf7b9efba052ff1b3b747037ed2f284f7095a91e895"
-    },
-    {
-      "path": "overleaf_upload_pronto/sbc.bst",
-      "bytes": 21864,
-      "sha256": "d884c6793e4ea54d13f5c751b3d6f4ea529a62d0906cd9774f2ec350b394691f"
-    },
-    {
-      "path": "preencher_assertividade.py",
-      "bytes": 9704,
-      "sha256": "2c3eeff22e05c0c124237c5cd8e79c03df948085c54d05ea925581efb60ca91a"
-    },
-    {
-      "path": "preparar_zip_overleaf.py",
-      "bytes": 1208,
-      "sha256": "a25f14b12a21613cb41bf093f4b1af824d804c8b0836e59dceb6261a5eb7c492"
-    },
-    {
-      "path": "prompts_30_biblioteca.md",
-      "bytes": 10220,
-      "sha256": "b66600ef71e59642304459aacf38e0303edf74e4cf7ee21cb929900a56c0eb89"
+      "path": "prompts/prompts_30_biblioteca.md",
+      "bytes": 10330,
+      "sha256": "6952705cdd20e9ef6cb6651811a8dd3baa6dec3cdf854fe933fd6dd7ed429f3c"
     },
     {
       "path": "README.md",
-      "bytes": 6358,
-      "sha256": "8b66d3321b62d21fa277f30ea046e342de441a29a388b56d29f6fa7011f97aed"
+      "bytes": 6357,
+      "sha256": "1efaa8ea1b16c60c1bed05cd583161f8dab646b05feabcf915f31717d3675bcb"
     },
     {
-      "path": "relatorio_sbc_completo_overleaf.zip",
-      "bytes": 276279,
-      "sha256": "30644794ff4018814d0eb169d1a74145c04a3de01c8c2357e1d742f23b12018f"
+      "path": "relatorio/Projeto_Overleaf.zip",
+      "bytes": 276541,
+      "sha256": "d0f1210f3f54771b93fe72cabf6d5a0a9080e1c71bf2e18f1b2fb83f5a5b1b83"
     },
     {
-      "path": "resultados_ollama/analise_estatistica_pareada.json",
+      "path": "resultados_modelos/analise_estatistica_pareada.json",
       "bytes": 11997,
       "sha256": "35ea88ff3699cda4a57aa07e205248549418fe3093c21b1464a0264b9ca71f3f"
     },
     {
-      "path": "resultados_ollama/analise_estatistica_pareada.md",
+      "path": "resultados_modelos/analise_estatistica_pareada.md",
       "bytes": 3018,
       "sha256": "936e0c1ac02caa4bd01ffbd838c7cf14e3314b35ccf4105a0aae306aa46dbdd4"
     },
     {
-      "path": "resultados_ollama/metricas.csv",
-      "bytes": 42862,
-      "sha256": "f06b740308d4a7d6e078617e319521171d8adbe3b15946b89d787ab5c342d778"
+      "path": "resultados_modelos/metricas.csv",
+      "bytes": 46153,
+      "sha256": "c201cb4cb24de680e1f478a633b2d3c59750c27f92585bc43189f49e5c518ecc"
     },
     {
-      "path": "resultados_ollama/P01/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P01/gemma3_4b/Main.java",
       "bytes": 970,
       "sha256": "e35cb438c0ccbcbd0b570825c7b674b94ddfb7b605ff404cad9480b3c4c3b2da"
     },
     {
-      "path": "resultados_ollama/P01/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P01/gemma3_4b/resposta_bruta.json",
       "bytes": 1404,
       "sha256": "633560e9c77885c90011a038f71b3671a07c377a46c1f2fbb9a6a048169b2a94"
     },
     {
-      "path": "resultados_ollama/P01/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P01/gemma3_4b/resposta_completa.txt",
       "bytes": 982,
       "sha256": "6a61d52ffcef9909d9c5ae38ebabf6cf3530fc04026645f32352384530a4f750"
     },
     {
-      "path": "resultados_ollama/P01/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P01/mistral_7b-instruct/Main.java",
       "bytes": 1262,
       "sha256": "afd4bf2a562f874147a00aa51690bf49bb12faf0e1f397ec89cbe3f430b67ff9"
     },
     {
-      "path": "resultados_ollama/P01/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P01/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1707,
       "sha256": "1daea299c4cfa1df590d0209b6e41fffb0cb661cec5d0cccdc99f1233fe22f12"
     },
     {
-      "path": "resultados_ollama/P01/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P01/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1275,
       "sha256": "46858acb3a0951bf370c68f7d5b9c0c555354d2a63b878a4a88bf75e75526d9f"
     },
     {
-      "path": "resultados_ollama/P01/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P01/phi4-mini_3.8b/Main.java",
       "bytes": 808,
       "sha256": "5a944a4ee5e1b3d1fe9e5beeb2fba82073a1c29d107caaba0262eec22b8bd5b4"
     },
     {
-      "path": "resultados_ollama/P01/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P01/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1247,
       "sha256": "156090b899b4d00ebc5f5a4ce298ba08bf9437e8f7729b1b7d834fe92b364be6"
     },
     {
-      "path": "resultados_ollama/P01/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P01/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 820,
       "sha256": "44111a3146c3591ac911680a9576ff6f12a12c733c077314311e8c5d08c3ce07"
     },
     {
-      "path": "resultados_ollama/P02/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P02/gemma3_4b/Main.java",
       "bytes": 961,
       "sha256": "e9d8af46f3e80f00ac917682a6720f13e69bdffef2a8dc6438ff99d03355cffb"
     },
     {
-      "path": "resultados_ollama/P02/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P02/gemma3_4b/resposta_bruta.json",
       "bytes": 1393,
       "sha256": "1eaece2664e37249367b3e6fb3c23e812cf94d70983962d6e648bb100596fe85"
     },
     {
-      "path": "resultados_ollama/P02/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P02/gemma3_4b/resposta_completa.txt",
       "bytes": 973,
       "sha256": "8ba6234e3b77a63af0f8e79a013d4e24ae599f5e4b6038e609a73fdb24cc70ae"
     },
     {
-      "path": "resultados_ollama/P02/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P02/mistral_7b-instruct/Main.java",
       "bytes": 701,
       "sha256": "601b33317f61f0437c50697bdc4c15a75ddde3b6429212d521c4b5d81a45ddce"
     },
     {
-      "path": "resultados_ollama/P02/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P02/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1587,
       "sha256": "a1e6baf5de846c312c054789b446c6288b9d378160bead65d6dc6136d7a94286"
     },
     {
-      "path": "resultados_ollama/P02/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P02/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1158,
       "sha256": "efae55c847603949e517dc5bb3b4fb409e046849c60a96c4d13aa9e233e0f6d6"
     },
     {
-      "path": "resultados_ollama/P02/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P02/phi4-mini_3.8b/Main.java",
       "bytes": 894,
       "sha256": "856354680dae543c30d3752ec89f4bb62003709be10f89c5f0c93d23abd7dba2"
     },
     {
-      "path": "resultados_ollama/P02/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P02/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1333,
       "sha256": "48e5b64a0329f8deb2d5ee685dd70eba6049cf49f673148219bf16d0320fe051"
     },
     {
-      "path": "resultados_ollama/P02/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P02/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 906,
       "sha256": "60fb1e5e2d400df1356aead2c980b05a70f398f87021177d0b32ef1e61d5a812"
     },
     {
-      "path": "resultados_ollama/P03/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P03/gemma3_4b/Main.java",
       "bytes": 916,
       "sha256": "b0917e9e27fc31c36e9313f32d6daead9feb6d82acf18123906d85761a657756"
     },
     {
-      "path": "resultados_ollama/P03/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P03/gemma3_4b/resposta_bruta.json",
       "bytes": 1350,
       "sha256": "f6197a1c1e2b10e556ef39e98fd324a6317ddd0a1b35f5e682fdbbd0ba764e1d"
     },
     {
-      "path": "resultados_ollama/P03/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P03/gemma3_4b/resposta_completa.txt",
       "bytes": 928,
       "sha256": "69c968e22675e36f8f851d7b7fa4b943e2f0399f3cb13a9bfd60b91453ec9707"
     },
     {
-      "path": "resultados_ollama/P03/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P03/mistral_7b-instruct/Main.java",
       "bytes": 896,
       "sha256": "541b913d828944e0aa076c3dd9d2c715a7c4b0951068ad324a2c1dec5682d514"
     },
     {
-      "path": "resultados_ollama/P03/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P03/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1343,
       "sha256": "e1a1cfa886469041c6bd3ae726c0e149d5f9d91f0c5cb73a91cc744203e0374c"
     },
     {
-      "path": "resultados_ollama/P03/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P03/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 909,
       "sha256": "d67d0a28902d3e0ae8fe62282d09b88e57019495c5e271035775b364f74db1b8"
     },
     {
-      "path": "resultados_ollama/P03/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P03/phi4-mini_3.8b/Main.java",
       "bytes": 1242,
       "sha256": "36e32a46c3a0bf01c6f46d4bce0555d57a800952da0cedaa39f841e74d4c9456"
     },
     {
-      "path": "resultados_ollama/P03/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P03/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1682,
       "sha256": "f8dba952830ab305e704973b3309c94b777145013c89f9896f9e36c2f4878a53"
     },
     {
-      "path": "resultados_ollama/P03/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P03/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1254,
       "sha256": "bada99ecb966f93ddec65ffd254d1a4e17d65ce61b4566de0bdb53a6a09d7917"
     },
     {
-      "path": "resultados_ollama/P04/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P04/gemma3_4b/Main.java",
       "bytes": 1960,
       "sha256": "1be9ca802c788ee4aea4b987d9760cc73cb3b0964b33aa602497e91ce8adf6de"
     },
     {
-      "path": "resultados_ollama/P04/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P04/gemma3_4b/resposta_bruta.json",
       "bytes": 2401,
       "sha256": "40d3e17d5d3c1d37508e7992cc0b8f179b6d133b04670e91e5a56bdd61aa706e"
     },
     {
-      "path": "resultados_ollama/P04/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P04/gemma3_4b/resposta_completa.txt",
       "bytes": 1972,
       "sha256": "344965145cd369d8ab3e7dbb8a7956fe4e8556e0bd41ec7f0b7946a7d9b328e7"
     },
     {
-      "path": "resultados_ollama/P04/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P04/mistral_7b-instruct/Main.java",
       "bytes": 1393,
       "sha256": "c0fcba17b80fe407b655e60e84a1a02e9342420e1f0e7a6aed743402e5a1d36b"
     },
     {
-      "path": "resultados_ollama/P04/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P04/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1839,
       "sha256": "5af412234ef094d7cd651685493f84b1b996b989cb1aec71a54536c254a5892b"
     },
     {
-      "path": "resultados_ollama/P04/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P04/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1406,
       "sha256": "95e549a84572e177d729029dfd2130eba3da911988e3156cca5571ce739ac4ad"
     },
     {
-      "path": "resultados_ollama/P04/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P04/phi4-mini_3.8b/Main.java",
       "bytes": 1486,
       "sha256": "27b4d15f877f94d4dde35db695a26bba348dd2be538941d524d26d82297a1a60"
     },
     {
-      "path": "resultados_ollama/P04/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P04/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1927,
       "sha256": "120ec808a34a9ea3e7bf00e30e0e4e23abd6e09544164822d797422a8fd9e3d7"
     },
     {
-      "path": "resultados_ollama/P04/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P04/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1498,
       "sha256": "60f439b974a1484f66f3afdec64d097745e6dd37c76524b5a086f9ecff85f7ce"
     },
     {
-      "path": "resultados_ollama/P05/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P05/gemma3_4b/Main.java",
       "bytes": 1305,
       "sha256": "9ac7108aca6f06ce75f2421a95db07857b6f0af43702bf5e48916400578b4a7b"
     },
     {
-      "path": "resultados_ollama/P05/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P05/gemma3_4b/resposta_bruta.json",
       "bytes": 1742,
       "sha256": "7c48611070bfd37cf28cd27108792651f4c4838dc2f55be6fe398e9dcd47c182"
     },
     {
-      "path": "resultados_ollama/P05/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P05/gemma3_4b/resposta_completa.txt",
       "bytes": 1317,
       "sha256": "55780eb65f1400ceaa564601c4148b5c83951ef354beac08fb5f51b2b4d700d8"
     },
     {
-      "path": "resultados_ollama/P05/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P05/mistral_7b-instruct/Main.java",
       "bytes": 1049,
       "sha256": "04670c5a927022f792698f27be797b6533591b58d9655626261c8154ab679630"
     },
     {
-      "path": "resultados_ollama/P05/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P05/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1493,
       "sha256": "5db89160e5880c5c290a2ae65f0407ccc453642711137d1417da37df3c69710c"
     },
     {
-      "path": "resultados_ollama/P05/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P05/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1062,
       "sha256": "89e1ac9109deda180a75cd7a11b38a87c17d1dd4393db30684d05bc1cddaa845"
     },
     {
-      "path": "resultados_ollama/P05/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P05/phi4-mini_3.8b/Main.java",
       "bytes": 1250,
       "sha256": "f31d80fcca70348424641f40a4fc67195edc3a16f91803b8993eab8d4fb9c6f3"
     },
     {
-      "path": "resultados_ollama/P05/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P05/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1687,
       "sha256": "3f50fcdbe2b214daad2438c1f09c9101029eeabdf9c43e6b83c929a3df075839"
     },
     {
-      "path": "resultados_ollama/P05/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P05/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1262,
       "sha256": "071340865e4a108facfe9f028da79361dd1501b8ca1825386e93c69df77a7cb4"
     },
     {
-      "path": "resultados_ollama/P06/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P06/gemma3_4b/Main.java",
       "bytes": 2033,
       "sha256": "e97797d55a2d809096db18127ea1ba3ff3e4866acc485d421d353c165285acca"
     },
     {
-      "path": "resultados_ollama/P06/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P06/gemma3_4b/resposta_bruta.json",
       "bytes": 2470,
       "sha256": "96f41075589b842d975ee6f9f6c6f1d9d6d695a58e0a5afd2151b04eaab77650"
     },
     {
-      "path": "resultados_ollama/P06/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P06/gemma3_4b/resposta_completa.txt",
       "bytes": 2045,
       "sha256": "cc4b2b1f66491fbdd49349b568ef4b90823e6762ca255b0f078f82229d645528"
     },
     {
-      "path": "resultados_ollama/P06/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P06/mistral_7b-instruct/Main.java",
       "bytes": 1882,
       "sha256": "33e2f5c4d0ef2b8f0d90853bb756971c16f6a5fe102ad6514678a3dfd6cb5b5d"
     },
     {
-      "path": "resultados_ollama/P06/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P06/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 2330,
       "sha256": "a3d3c81894091cdd6bee54d19fb01a440b2774b0c222f3327f14d73baf07ac15"
     },
     {
-      "path": "resultados_ollama/P06/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P06/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1895,
       "sha256": "b5fa6b691dc7a2f27213b1620f2bdea721a2fd1880cf9eae4e25b0f5262d35cc"
     },
     {
-      "path": "resultados_ollama/P06/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P06/phi4-mini_3.8b/Main.java",
       "bytes": 1696,
       "sha256": "f1939acc747dcacc1a76f98ebf3e355d9a2567bec07ae50c2ca05908a2fba627"
     },
     {
-      "path": "resultados_ollama/P06/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P06/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 2131,
       "sha256": "55ccf8c417d44bde5bbb4b9784f21f831838df7c62434d419fcbfd241984e24a"
     },
     {
-      "path": "resultados_ollama/P06/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P06/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1708,
       "sha256": "ddba793ee26f4a9382a9d0521e66010f6f1fadc7f6c1f4d17555cfca160a7fe0"
     },
     {
-      "path": "resultados_ollama/P07/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P07/gemma3_4b/Main.java",
       "bytes": 996,
       "sha256": "0773dfe87b2612860624491b2866c053b96dbe9b7c05483c12c7bfc130782506"
     },
     {
-      "path": "resultados_ollama/P07/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P07/gemma3_4b/resposta_bruta.json",
       "bytes": 1423,
       "sha256": "98d8b0b9b1dd6b9a53fbb799bb595b238e481640ae700f14ad424728ffe3d412"
     },
     {
-      "path": "resultados_ollama/P07/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P07/gemma3_4b/resposta_completa.txt",
       "bytes": 1008,
       "sha256": "d1cd1d971bb222d9475c2a3eb20c12d4dd2a481c19c45d6308c2cb2f6f0f2046"
     },
     {
-      "path": "resultados_ollama/P07/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P07/mistral_7b-instruct/Main.java",
       "bytes": 1021,
       "sha256": "cdaa3d49e21a3136355bd6831d603b2d10f7873c4bdfbc0856304919553a2f9e"
     },
     {
-      "path": "resultados_ollama/P07/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P07/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1461,
       "sha256": "33bf976c221113c07452ab32d82c2c9b60b19aec455e51c736522da17f3ed89a"
     },
     {
-      "path": "resultados_ollama/P07/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P07/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1034,
       "sha256": "e0faf8df51f7482a47f5021187fadb678688f303654aa29f696a26ffc410c2fb"
     },
     {
-      "path": "resultados_ollama/P07/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P07/phi4-mini_3.8b/Main.java",
       "bytes": 1403,
       "sha256": "f09f475bfe6491ad0d9201a9ec1c1384c19f4a786d37cb8e653e02acd1567b76"
     },
     {
-      "path": "resultados_ollama/P07/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P07/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1836,
       "sha256": "10c0abb8250381b981561db47ad37c7a90d9e761af74ad3fa3813f97be8925d0"
     },
     {
-      "path": "resultados_ollama/P07/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P07/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1415,
       "sha256": "7b56c86346cabf4e8b30cde35a6f219d04d7edeacaa77df618ef2bfaa939892e"
     },
     {
-      "path": "resultados_ollama/P08/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P08/gemma3_4b/Main.java",
       "bytes": 2227,
       "sha256": "81bf08a81c2d4518739ed98fb835a31f60285de8793faf0751952f1d727acc40"
     },
     {
-      "path": "resultados_ollama/P08/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P08/gemma3_4b/resposta_bruta.json",
       "bytes": 2658,
       "sha256": "48bcddaddbfc53b94bfa5c25273e21f3385215e66e527ab24f1f6a2eb9cd092a"
     },
     {
-      "path": "resultados_ollama/P08/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P08/gemma3_4b/resposta_completa.txt",
       "bytes": 2239,
       "sha256": "6305a8959b1ea9c3ee978b40ab2c2799f3cdd517ab77ceb822e1d71c0ab04de6"
     },
     {
-      "path": "resultados_ollama/P08/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P08/mistral_7b-instruct/Main.java",
       "bytes": 1489,
       "sha256": "2680ae761b75ae765e9fb50baae54ae047db0429d6a597eefbc998e39857ce81"
     },
     {
-      "path": "resultados_ollama/P08/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P08/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1930,
       "sha256": "2a5c7c52544c6d89b25b70bd9d68432d2fe8678b65a578e2266bcbfb5d0c82fb"
     },
     {
-      "path": "resultados_ollama/P08/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P08/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1502,
       "sha256": "7a7059cd47dd686390ce1c877d902b791f28191691122abf43695ebb45945cc4"
     },
     {
-      "path": "resultados_ollama/P08/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P08/phi4-mini_3.8b/Main.java",
       "bytes": 1442,
       "sha256": "0eef7b59af37ff73af319e6585638c7d0cb3d49d61704d453e1009e281f662ff"
     },
     {
-      "path": "resultados_ollama/P08/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P08/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1875,
       "sha256": "e1d0032a6b94f3f45c51b117408625fb5c6427022e701c36e2bd8d9e45c08c04"
     },
     {
-      "path": "resultados_ollama/P08/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P08/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1454,
       "sha256": "8ada6d8061be5e9682b4b9645950379dda9f6b266537330484bded4d3d3524e4"
     },
     {
-      "path": "resultados_ollama/P09/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P09/gemma3_4b/Main.java",
       "bytes": 1953,
       "sha256": "27ff132c0edd09416bc90ac06a62b132d8b7d9a5e77be7b98ce477e9e7c6ed7b"
     },
     {
-      "path": "resultados_ollama/P09/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P09/gemma3_4b/resposta_bruta.json",
       "bytes": 2397,
       "sha256": "f65438084c26d8bcc2492db299279db6b7e5ebe0dbac0d4c218c1ed74f7d94a3"
     },
     {
-      "path": "resultados_ollama/P09/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P09/gemma3_4b/resposta_completa.txt",
       "bytes": 1965,
       "sha256": "343041c08fe6c7f7a1bce0e9ceb05af232ad0b9de5855e043ca69e5c58d45ba4"
     },
     {
-      "path": "resultados_ollama/P09/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P09/mistral_7b-instruct/Main.java",
       "bytes": 1823,
       "sha256": "14f8503d08007646c9193294ee5003274200dc7efe1063253c277a180fca6166"
     },
     {
-      "path": "resultados_ollama/P09/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P09/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 2274,
       "sha256": "1a7295701e66ba25e28ac26844c916f9dc72837cdfb86e6bde659195770198e4"
     },
     {
-      "path": "resultados_ollama/P09/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P09/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1836,
       "sha256": "aef0beab831b3dc23e4fb50ee5258c3bf6e76e7a852290fee540f07c32a68403"
     },
     {
-      "path": "resultados_ollama/P09/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P09/phi4-mini_3.8b/Main.java",
       "bytes": 1456,
       "sha256": "2e34b6d151ca322d3aeea3e9f61d656f9c9ce1429f52ce81af0a6bf6c3038e39"
     },
     {
-      "path": "resultados_ollama/P09/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P09/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1897,
       "sha256": "4bc31c01b617bda15fce817c18729064e6df7f87842a6835d9f4d4369fdd16d3"
     },
     {
-      "path": "resultados_ollama/P09/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P09/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1468,
       "sha256": "6b907648065fc8bd3084ba9d3222f6300cd78841fa76705155f28d36881c7d45"
     },
     {
-      "path": "resultados_ollama/P10/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P10/gemma3_4b/Main.java",
       "bytes": 1360,
       "sha256": "5c71dec2949f3489547fa714baab9cdbb4c198905513734ff26cf9789e078089"
     },
     {
-      "path": "resultados_ollama/P10/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P10/gemma3_4b/resposta_bruta.json",
       "bytes": 1793,
       "sha256": "d57b2e8dae7323cb15d414a3089f57b0165b744fea1cc9fc6f4ede53a99e0097"
     },
     {
-      "path": "resultados_ollama/P10/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P10/gemma3_4b/resposta_completa.txt",
       "bytes": 1372,
       "sha256": "1f6da54a2b380c76bee788d0692eb645a66e18fc28e5e4dcae6ef8ac8766b04c"
     },
     {
-      "path": "resultados_ollama/P10/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P10/mistral_7b-instruct/Main.java",
       "bytes": 1233,
       "sha256": "6eaa294e78e8c74d37828d89435547bc63aac188c1dee4e89ef11b65b2016302"
     },
     {
-      "path": "resultados_ollama/P10/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P10/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1673,
       "sha256": "3a224343881e3cb3f95ae13a83ce77ab17ee44bf857a8fd863605cf041852115"
     },
     {
-      "path": "resultados_ollama/P10/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P10/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1246,
       "sha256": "d27a92af24120e081a49244c4b523aef08f8867aa164492a173aecc30f468fd2"
     },
     {
-      "path": "resultados_ollama/P10/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P10/phi4-mini_3.8b/Main.java",
       "bytes": 1565,
       "sha256": "b37bf59ed005a3634f093630573718ce5ed37399c87d7f49fd2820ccb73634fd"
     },
     {
-      "path": "resultados_ollama/P10/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P10/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 2002,
       "sha256": "75beba35a25224cc955ecbc1c3b94fe2c1b8fa580393222c093cd24c731bd650"
     },
     {
-      "path": "resultados_ollama/P10/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P10/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1577,
       "sha256": "a6145595e371266dd278d4b966515c7a164f9d491e7674931b8500093acb12d5"
     },
     {
-      "path": "resultados_ollama/P11/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P11/gemma3_4b/Main.java",
       "bytes": 1672,
       "sha256": "f6dfa68e5524104cae661bf5a5b08461707e11aae8c8c1240f1c67d701ea12e1"
     },
     {
-      "path": "resultados_ollama/P11/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P11/gemma3_4b/resposta_bruta.json",
       "bytes": 2124,
       "sha256": "d3c88e2fb499f97e1a37eb77185a11b010c189574e6c9cf73f06124aa886ece6"
     },
     {
-      "path": "resultados_ollama/P11/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P11/gemma3_4b/resposta_completa.txt",
       "bytes": 1684,
       "sha256": "932f57ffd39d867b3adcb3fd6bdc2d2d530f1d3c5ac68475c1af82fd01db4bb8"
     },
     {
-      "path": "resultados_ollama/P11/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P11/mistral_7b-instruct/Main.java",
       "bytes": 1475,
       "sha256": "dd611d894cfa692d044fd026d5d9fa7737257c43e9fa58aa25fc3759acbfc6a4"
     },
     {
-      "path": "resultados_ollama/P11/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P11/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1925,
       "sha256": "244e36c629df3ef523a27279c0c0490cfafb7c0316504daad7c2f73218e07a51"
     },
     {
-      "path": "resultados_ollama/P11/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P11/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1488,
       "sha256": "381ad71792ee6a50cd3ea81b310bc871dfe1bb0e0bfe00c30e8c289f5c41c3db"
     },
     {
-      "path": "resultados_ollama/P11/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P11/phi4-mini_3.8b/Main.java",
       "bytes": 1356,
       "sha256": "c40a330abca39a418d662be4f621ecb13e405fad666215f5e17a5b6e36ae625a"
     },
     {
-      "path": "resultados_ollama/P11/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P11/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1793,
       "sha256": "7baaee1dcd697bf2bb6eec72c2ba516001f90ec44e15afe77b65a58cbf71928a"
     },
     {
-      "path": "resultados_ollama/P11/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P11/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1368,
       "sha256": "251b5c7da91d25f2ca96b2fcabab7373ee25321c393413b3f4e7faf36ce4d997"
     },
     {
-      "path": "resultados_ollama/P12/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P12/gemma3_4b/Main.java",
       "bytes": 2157,
       "sha256": "c5541199bc7f6118e7bf9785fe8b9c2bf0efc8abce39754b1caacbb91ccb2b6d"
     },
     {
-      "path": "resultados_ollama/P12/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P12/gemma3_4b/resposta_bruta.json",
       "bytes": 2618,
       "sha256": "ece20c0176fff6de056cdadcd056b4562b1a9b5ae1838281d4c21b72a02e968d"
     },
     {
-      "path": "resultados_ollama/P12/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P12/gemma3_4b/resposta_completa.txt",
       "bytes": 2169,
       "sha256": "d7e5269965717e72856e7f29421e5777ee9a6dfbe9aabc755221cd72ef382f6a"
     },
     {
-      "path": "resultados_ollama/P12/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P12/mistral_7b-instruct/Main.java",
       "bytes": 1544,
       "sha256": "de0c606f91ba61d99f43a164261bba59a0072a8b12883c985c4aaa19bce1a65d"
     },
     {
-      "path": "resultados_ollama/P12/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P12/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 2001,
       "sha256": "cd2bae830b665854aa88e2e5de3243621f04301a136a716cb46b4fa7982ad57f"
     },
     {
-      "path": "resultados_ollama/P12/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P12/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1557,
       "sha256": "08e0ccca4aef96c770c2707f3800135d42c39c99ffd0de9d6b757b501c14050c"
     },
     {
-      "path": "resultados_ollama/P12/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P12/phi4-mini_3.8b/Main.java",
       "bytes": 1498,
       "sha256": "f8bf9b19fd982e5fe5731e60668eda6ff03dad2e5fe0ff5737464e571b4c5826"
     },
     {
-      "path": "resultados_ollama/P12/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P12/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1952,
       "sha256": "982d503f372ef149e780d40d5079c5b1503cba3a785582efb88b787db259753a"
     },
     {
-      "path": "resultados_ollama/P12/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P12/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1510,
       "sha256": "3b36da314e29d147882e322ac7737c7465b169d4d589706e40043d6960695045"
     },
     {
-      "path": "resultados_ollama/P13/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P13/gemma3_4b/Main.java",
       "bytes": 1859,
       "sha256": "4813f8a11630fe2f77415a70c1bd2449f04de6587003d986669ad6a96d9c9675"
     },
     {
-      "path": "resultados_ollama/P13/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P13/gemma3_4b/resposta_bruta.json",
       "bytes": 2296,
       "sha256": "2bf06f9f6b8740c3085dccc2c27db135ba6650e8da836fd35b85f99c92b9bb22"
     },
     {
-      "path": "resultados_ollama/P13/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P13/gemma3_4b/resposta_completa.txt",
       "bytes": 1871,
       "sha256": "1464eecaae27352725f4810439aa86f1668d72471a4b223d84b88fcdafb836df"
     },
     {
-      "path": "resultados_ollama/P13/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P13/mistral_7b-instruct/Main.java",
       "bytes": 1487,
       "sha256": "22bb37ee860d587d2222a9487eba58db7f39f3462773a92974eb6906bc0ebb6e"
     },
     {
-      "path": "resultados_ollama/P13/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P13/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1929,
       "sha256": "3f21ba77906f0eab21149b58966f41fa04f0b3db70be00e5307a1cfa042b5385"
     },
     {
-      "path": "resultados_ollama/P13/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P13/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1500,
       "sha256": "24f171b666707e38e59a2335c5c11aafac9295cca94d0a5ad4a104c7f06f3942"
     },
     {
-      "path": "resultados_ollama/P13/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P13/phi4-mini_3.8b/Main.java",
       "bytes": 1335,
       "sha256": "9a1ef841532462a53cb07b316e558a66a0515c1c4aa86aa885ee403786b2cf53"
     },
     {
-      "path": "resultados_ollama/P13/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P13/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1771,
       "sha256": "b9c7d4efce9f1ae332ebe5f58c59b7c61786c13e2bd4b05d85b22655c0287d9a"
     },
     {
-      "path": "resultados_ollama/P13/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P13/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1347,
       "sha256": "4b32c2f98419a2a874f97fb3ac3a8b0d46ce6da4e78bf019a67f2fe298657297"
     },
     {
-      "path": "resultados_ollama/P14/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P14/gemma3_4b/Main.java",
       "bytes": 1073,
       "sha256": "3ed7b4c245347242f60bd020243f2b49668c8cc5701dbaa473fc11d9ec1b800d"
     },
     {
-      "path": "resultados_ollama/P14/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P14/gemma3_4b/resposta_bruta.json",
       "bytes": 1504,
       "sha256": "53dffa03e3f4bfcd3e8d3b638c59a89ef2714ffc6d24a09d83dea9c00eed56fa"
     },
     {
-      "path": "resultados_ollama/P14/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P14/gemma3_4b/resposta_completa.txt",
       "bytes": 1085,
       "sha256": "7a291e73d2f880785edb700ec751c3e42fdafb4e802a4e7c797fc486f8179089"
     },
     {
-      "path": "resultados_ollama/P14/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P14/mistral_7b-instruct/Main.java",
       "bytes": 1445,
       "sha256": "ed01c357c28737eeeff8dc2ceb5a408cfdc32cbc9bbff11f5419510a750e6fe4"
     },
     {
-      "path": "resultados_ollama/P14/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P14/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1888,
       "sha256": "caf5ff7a724ff16a076c1eecaececfd6c6ff186e80d2b360773f9e727aff1e1b"
     },
     {
-      "path": "resultados_ollama/P14/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P14/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1458,
       "sha256": "a5d3b252883f29deeec008d1b455ab9a51d9d5079cf546f1845580abb9c434c7"
     },
     {
-      "path": "resultados_ollama/P14/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P14/phi4-mini_3.8b/Main.java",
       "bytes": 1048,
       "sha256": "47da40d117f363decf8b4132633ae7cb4f3c37013a0c7d78dc68d584f5fcfd71"
     },
     {
-      "path": "resultados_ollama/P14/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P14/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1486,
       "sha256": "9e7b28c4c197418dec1ff4504cafd02303f1ffc276e0759207a3ae67fe396076"
     },
     {
-      "path": "resultados_ollama/P14/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P14/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1060,
       "sha256": "5d537927516929d4093ff9b91eeba0e5b4b94652467743e3deeccc3798322208"
     },
     {
-      "path": "resultados_ollama/P15/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P15/gemma3_4b/Main.java",
       "bytes": 1326,
       "sha256": "3aab3a133195dce2e11364565da1572bfa016952441dc99632ef49e44624a970"
     },
     {
-      "path": "resultados_ollama/P15/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P15/gemma3_4b/resposta_bruta.json",
       "bytes": 1751,
       "sha256": "d347758cbc630efa14119e78a34de3ac5890002b0972670f4f9f6af2335170c0"
     },
     {
-      "path": "resultados_ollama/P15/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P15/gemma3_4b/resposta_completa.txt",
       "bytes": 1338,
       "sha256": "7e1484fe792083900c837343d7477f419781e565af566988939ffd693f46250a"
     },
     {
-      "path": "resultados_ollama/P15/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P15/mistral_7b-instruct/Main.java",
       "bytes": 1072,
       "sha256": "8b4ff7bf9acd2e282ddc78b59154d0b39576416345c9463bf0994fbf969c4d16"
     },
     {
-      "path": "resultados_ollama/P15/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P15/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1510,
       "sha256": "6c2acb2145677180f948972f3d98d5ae5d0ff3973adeba138120750a321027c7"
     },
     {
-      "path": "resultados_ollama/P15/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P15/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1085,
       "sha256": "792d370d6135abd516db1caad09000d9ecc613a91dbee66f3fb3a0309fcc7767"
     },
     {
-      "path": "resultados_ollama/P15/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P15/phi4-mini_3.8b/Main.java",
       "bytes": 1525,
       "sha256": "e73f7f468dcda2a81208169e93afdd540389d74c4d5efefe5539498b5567b131"
     },
     {
-      "path": "resultados_ollama/P15/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P15/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1961,
       "sha256": "94d63cefdb7aae9673eed3514231fbe608eef986e13636151c56c31dfe88ff4e"
     },
     {
-      "path": "resultados_ollama/P15/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P15/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1537,
       "sha256": "09f99403e40a3fd276543e4f5d6dbd91694ad425cd7d04d2d0546dfc145628e2"
     },
     {
-      "path": "resultados_ollama/P16/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P16/gemma3_4b/Main.java",
       "bytes": 1670,
       "sha256": "854484e82e95dd21bf87af5f5d38499e05ffd70f54068d3531989aa360da6d6d"
     },
     {
-      "path": "resultados_ollama/P16/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P16/gemma3_4b/resposta_bruta.json",
       "bytes": 2110,
       "sha256": "498b0bc2a7681074c41db86dbd993185d7e6b8193da2a9a22e9702a35c6bbc84"
     },
     {
-      "path": "resultados_ollama/P16/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P16/gemma3_4b/resposta_completa.txt",
       "bytes": 1682,
       "sha256": "9746ddfae46423b4c10f026e3c5a1bcf5ab7ed0a602282f6c0fe4107c34ea1c3"
     },
     {
-      "path": "resultados_ollama/P16/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P16/mistral_7b-instruct/Main.java",
       "bytes": 866,
       "sha256": "00fbccb4bb29de3dfe44a7ea26a1b95b39f2973bfd2f68e1871de9674b5496ca"
     },
     {
-      "path": "resultados_ollama/P16/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P16/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1678,
       "sha256": "00d7646b4a7cfc54b18d510071484a4eb808ec386702443d6694f9daef07d1d3"
     },
     {
-      "path": "resultados_ollama/P16/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P16/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1253,
       "sha256": "8b2c3f2ce377c1d2d62e77aaa00dae976400c457edf90cbf5d461295e66fa8ec"
     },
     {
-      "path": "resultados_ollama/P16/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P16/phi4-mini_3.8b/Main.java",
       "bytes": 1126,
       "sha256": "28d9700eb27659c399c516ab757052488650d6e04d8741ef5ded660613fab657"
     },
     {
-      "path": "resultados_ollama/P16/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P16/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1556,
       "sha256": "31d582e4dbff4e7fa6b38f44edae8ee65ead328ed9742c6b22287053d8a9d6bd"
     },
     {
-      "path": "resultados_ollama/P16/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P16/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1138,
       "sha256": "232991567a1ebdb55b80324cceba6eee5c5c6f780f985153f73988234459a7ea"
     },
     {
-      "path": "resultados_ollama/P17/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P17/gemma3_4b/Main.java",
       "bytes": 1305,
       "sha256": "23923a5ed0256393b9e18ac0c9fdb97cc70cfad23638b143f0f32a6312c2efa9"
     },
     {
-      "path": "resultados_ollama/P17/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P17/gemma3_4b/resposta_bruta.json",
       "bytes": 1736,
       "sha256": "00428a8baedb5e8f31e8b2e3d068f00961bb03a95bfc6698830de5d977e5c646"
     },
     {
-      "path": "resultados_ollama/P17/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P17/gemma3_4b/resposta_completa.txt",
       "bytes": 1317,
       "sha256": "f27e8274ec64c7606b42f8b6e134a8158d1be49ad02a2e9bd88b9b3c11544287"
     },
     {
-      "path": "resultados_ollama/P17/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P17/mistral_7b-instruct/Main.java",
       "bytes": 1063,
       "sha256": "6eddc4a1c9233e5d271f76b150ea376b74daf933cc4021c441fbe91205a60e21"
     },
     {
-      "path": "resultados_ollama/P17/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P17/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1503,
       "sha256": "9fac89e16d1bf0c69e7109d8338d3bd6db6c89c91a035618da01b063d827ed3c"
     },
     {
-      "path": "resultados_ollama/P17/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P17/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1076,
       "sha256": "f8bcaa556dd6ecba992b1af745e3a16c4b1f79d6b981c6d0f83ee1fc877f72c2"
     },
     {
-      "path": "resultados_ollama/P17/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P17/phi4-mini_3.8b/Main.java",
       "bytes": 1170,
       "sha256": "cd51752d30d213f5ed7162ac7c3927ecf23abfe1d103116227a53823fa1cf45e"
     },
     {
-      "path": "resultados_ollama/P17/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P17/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1602,
       "sha256": "df82118f3fb2c35157aa66202ccf117be3381a9e2efe0943b0754a47c5055db2"
     },
     {
-      "path": "resultados_ollama/P17/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P17/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1182,
       "sha256": "0d7d7d8c31be0f0fb3644fd601f84e864768449f11686e2dcc22ca7f03ae6ebd"
     },
     {
-      "path": "resultados_ollama/P18/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P18/gemma3_4b/Main.java",
       "bytes": 973,
       "sha256": "a6ac00c94801f67b21728371cb99f56e6539b492f13de8faff6b81865091e784"
     },
     {
-      "path": "resultados_ollama/P18/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P18/gemma3_4b/resposta_bruta.json",
       "bytes": 1398,
       "sha256": "5e7e112532c65217b459278bb81081deae40f6ce6b96097fd89f01b3cd9546a5"
     },
     {
-      "path": "resultados_ollama/P18/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P18/gemma3_4b/resposta_completa.txt",
       "bytes": 985,
       "sha256": "ef8d822f4ae67ea9f6d074204d117fc5d5d13e420ef9671863eb1046c8075d0b"
     },
     {
-      "path": "resultados_ollama/P18/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P18/mistral_7b-instruct/Main.java",
       "bytes": 805,
       "sha256": "5a46c841655385ad7aa729527671f5acdc1e6a92e7799faa88190e69d17fd89d"
     },
     {
-      "path": "resultados_ollama/P18/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P18/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1244,
       "sha256": "f5d0bc3861e6bcc5547d139f0dc5aad563625c96d6d4f8232fe751f90dd199cb"
     },
     {
-      "path": "resultados_ollama/P18/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P18/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 818,
       "sha256": "1625378e480d20416acf3598dabc9e37e4f2e7718d489bcf6536a196a470e697"
     },
     {
-      "path": "resultados_ollama/P18/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P18/phi4-mini_3.8b/Main.java",
       "bytes": 778,
       "sha256": "f985ae4700a6f3a9473b1a7dad57dda1070b53a8b750a3e25e9af9243797e276"
     },
     {
-      "path": "resultados_ollama/P18/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P18/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1209,
       "sha256": "e06b9271e8a26756b9b16247c26f0d345505b57f8e8aa2c254eab85b4e38254e"
     },
     {
-      "path": "resultados_ollama/P18/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P18/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 790,
       "sha256": "d5f47e8cc388045f42d51eeee4992d2427aaf9d934b86414588c8893995385d1"
     },
     {
-      "path": "resultados_ollama/P19/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P19/gemma3_4b/Main.java",
       "bytes": 1147,
       "sha256": "b8cb2b8dfc845b68e663bd0efb6589470d57c785c348d684f4a9c7c05a54a839"
     },
     {
-      "path": "resultados_ollama/P19/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P19/gemma3_4b/resposta_bruta.json",
       "bytes": 1574,
       "sha256": "e869e20a3a1b40097d678d58058983ad838f69125999e0dbf9331ca214345b96"
     },
     {
-      "path": "resultados_ollama/P19/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P19/gemma3_4b/resposta_completa.txt",
       "bytes": 1159,
       "sha256": "41740966d95b2e26fa719bbcafa098971b0f67c7e4bc251b794706ea97800112"
     },
     {
-      "path": "resultados_ollama/P19/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P19/mistral_7b-instruct/Main.java",
       "bytes": 1367,
       "sha256": "93bff8dbff461037636d6b8e53f16ccb7237e4463067d238c5ea92996accf17a"
     },
     {
-      "path": "resultados_ollama/P19/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P19/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1806,
       "sha256": "8f0d4180577b7d0bed8f394acc7f53cc43bf024f235275aadca20c2f2303b89c"
     },
     {
-      "path": "resultados_ollama/P19/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P19/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1380,
       "sha256": "81b3d01299efa65fd59ae8bed37405c26695a2257c78dc67d0971d589d964b8f"
     },
     {
-      "path": "resultados_ollama/P19/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P19/phi4-mini_3.8b/Main.java",
       "bytes": 1244,
       "sha256": "cfc400310208be321e5e25cb01553172745724171e21e37e7b28dc77b4faea0b"
     },
     {
-      "path": "resultados_ollama/P19/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P19/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1679,
       "sha256": "5c5335ea19d39e5fb7e7606d82b7b24a6253c78510da02da65fc8fb254a78fd4"
     },
     {
-      "path": "resultados_ollama/P19/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P19/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1256,
       "sha256": "784942fbeea40bb8fb16aa5ae8385fad5ced6e78ab278f524528568f5789300a"
     },
     {
-      "path": "resultados_ollama/P20/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P20/gemma3_4b/Main.java",
       "bytes": 2345,
       "sha256": "890aec3f695ad1e0fc673106b05ecee5e7e17078f571b81c40b8fda154f5305e"
     },
     {
-      "path": "resultados_ollama/P20/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P20/gemma3_4b/resposta_bruta.json",
       "bytes": 2792,
       "sha256": "fc90625d57125fb301dc2027518511f644f39f6b9ad48f83a7c2172c7bbc0300"
     },
     {
-      "path": "resultados_ollama/P20/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P20/gemma3_4b/resposta_completa.txt",
       "bytes": 2357,
       "sha256": "e9b1afefd17d8aa921369da7520b96822530b1aac2c31c31d188c4e3adc5784f"
     },
     {
-      "path": "resultados_ollama/P20/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P20/mistral_7b-instruct/Main.java",
       "bytes": 1738,
       "sha256": "5559da9aff0f3059c1528f92e801523265181a50b1beff2ca6e8897992e87cc2"
     },
     {
-      "path": "resultados_ollama/P20/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P20/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 2187,
       "sha256": "0e44cb7eab51126c8042eaffb18e675f9a3c770441f1e1451e24d6f7fcb9a36a"
     },
     {
-      "path": "resultados_ollama/P20/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P20/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1751,
       "sha256": "3bcdb09321a893d1e5876544872258253121ba34e5d1f54d6ecdabbb04f018f6"
     },
     {
-      "path": "resultados_ollama/P20/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P20/phi4-mini_3.8b/Main.java",
       "bytes": 2104,
       "sha256": "dfa601d8fd614ae40ec3a1c27582428c9a5ecd59ebeaf54d661c8da7fec0f4ff"
     },
     {
-      "path": "resultados_ollama/P20/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P20/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 2553,
       "sha256": "cd613dc5694e91d62789d859b77a2c34bf01bd769a914d155ec50470973c3c22"
     },
     {
-      "path": "resultados_ollama/P20/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P20/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 2116,
       "sha256": "ff3407c340a427f097718a30dcad80e1f8372bebe5265c512be96bb975e72aa0"
     },
     {
-      "path": "resultados_ollama/P21/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P21/gemma3_4b/Main.java",
       "bytes": 1500,
       "sha256": "2e27a06e7f59fec38cf4ef1951b49ab22913f4c224ec0a714502b86ceee460fb"
     },
     {
-      "path": "resultados_ollama/P21/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P21/gemma3_4b/resposta_bruta.json",
       "bytes": 1942,
       "sha256": "c9493a382647bb5c3b70dbd2067232ee2840710862737a1e844263bf1ef50a6b"
     },
     {
-      "path": "resultados_ollama/P21/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P21/gemma3_4b/resposta_completa.txt",
       "bytes": 1512,
       "sha256": "6d6668693573ba1c11a0497bbd83ac0a6c924d79317874b6fbdb9a630b822644"
     },
     {
-      "path": "resultados_ollama/P21/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P21/mistral_7b-instruct/Main.java",
       "bytes": 801,
       "sha256": "51554eeb44ef403dce29d9b876b36cbb6286bf49f3110983123894c56a0d4251"
     },
     {
-      "path": "resultados_ollama/P21/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P21/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1250,
       "sha256": "6a9bda1a100b9c92d81e10675731c054d1ea515551e33c2e30589de4e3f98872"
     },
     {
-      "path": "resultados_ollama/P21/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P21/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 814,
       "sha256": "286b8d805b7f9b6d4926179852c6b9b0e810fae75b3f5fd80637a8cca09d84d3"
     },
     {
-      "path": "resultados_ollama/P21/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P21/phi4-mini_3.8b/Main.java",
       "bytes": 1054,
       "sha256": "bd28f9e9a80d81a3b9dedb718092082ac76d176a4d16eb117757e5041cefd554"
     },
     {
-      "path": "resultados_ollama/P21/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P21/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1503,
       "sha256": "700dd95b7f0c2653ae81a83a49a3b2259f0dd3afca6f072a17aef0bfe8037e09"
     },
     {
-      "path": "resultados_ollama/P21/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P21/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1066,
       "sha256": "6397f80d9a4546de646bdc2d6cd8d77b02f4cb60a8af481f78687fb92ae462ca"
     },
     {
-      "path": "resultados_ollama/P22/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P22/gemma3_4b/Main.java",
       "bytes": 1462,
       "sha256": "d0e77cc9ab9a3cca07d5f8748b3bcb3bd069ecd6fb0f6ae22ea276fd8045677b"
     },
     {
-      "path": "resultados_ollama/P22/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P22/gemma3_4b/resposta_bruta.json",
       "bytes": 1907,
       "sha256": "77aea6562b751f665352a8c5e7cd67985dbae76f1f07d1a3376662b44e0e6c4b"
     },
     {
-      "path": "resultados_ollama/P22/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P22/gemma3_4b/resposta_completa.txt",
       "bytes": 1474,
       "sha256": "7e42da8d75d13f2fb1d7b44592761c867e129b016109bd709caffb5f9ebce983"
     },
     {
-      "path": "resultados_ollama/P22/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P22/mistral_7b-instruct/Main.java",
       "bytes": 1123,
       "sha256": "8dc40a959c1ac780a0db0d175d0d515a31b726688a035ef61dc099d852df486b"
     },
     {
-      "path": "resultados_ollama/P22/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P22/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1832,
       "sha256": "e1afd07965508d592b9888fcecdd6be32d4e8ed4f61815dfb2cd821ea517fcb0"
     },
     {
-      "path": "resultados_ollama/P22/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P22/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1394,
       "sha256": "a2e35fcdfb8c660b60b08e5d6d23ea8fe3567f5e397aa429f769b812b57a913e"
     },
     {
-      "path": "resultados_ollama/P22/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P22/phi4-mini_3.8b/Main.java",
       "bytes": 1006,
       "sha256": "c445ae5110901b2c4b889d4e765ed4b9ba5c958a1fdaebfa493ef75c6740e436"
     },
     {
-      "path": "resultados_ollama/P22/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P22/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1445,
       "sha256": "fc4d5625b42605115bc7b051a4a8bd2d533855d577f6eb2d6dbc17c45310b55e"
     },
     {
-      "path": "resultados_ollama/P22/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P22/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1018,
       "sha256": "edf7ae371d5e243b5e0cdbe6f1277d997a83003d54912382d25a624938a55683"
     },
     {
-      "path": "resultados_ollama/P23/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P23/gemma3_4b/Main.java",
       "bytes": 1941,
       "sha256": "4ae3e45d8690807851505b83b0084c0ad2e8cdebc345f7493da8dddc1dc48767"
     },
     {
-      "path": "resultados_ollama/P23/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P23/gemma3_4b/resposta_bruta.json",
       "bytes": 2382,
       "sha256": "ef39a3f90c33f71bc1e5300ec8118a33d3d9fc88363de1db94dc0e4bc46225f7"
     },
     {
-      "path": "resultados_ollama/P23/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P23/gemma3_4b/resposta_completa.txt",
       "bytes": 1953,
       "sha256": "43c0d984a893479f96691d1f67ddf05bd9cbd13ad369f6cf4478ed4f1b699705"
     },
     {
-      "path": "resultados_ollama/P23/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P23/mistral_7b-instruct/Main.java",
       "bytes": 1611,
       "sha256": "0281c7b927001f7790ea1dfeabe63c0daa37ac0f615188c00b43ec495aee97f3"
     },
     {
-      "path": "resultados_ollama/P23/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P23/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 2062,
       "sha256": "81f15fc32c5556873629274a7f37d87b822c599e2a2871654dd895b2231cbcda"
     },
     {
-      "path": "resultados_ollama/P23/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P23/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1624,
       "sha256": "4e965a11121f17b18e4bb2a59c242b22825cc549d7019e8f1e71c4723fb217a1"
     },
     {
-      "path": "resultados_ollama/P23/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P23/phi4-mini_3.8b/Main.java",
       "bytes": 1611,
       "sha256": "d9f6bddd5e689de738ccae12accc0fa7f3ac28c5701ee9f24cd223c3e371bc22"
     },
     {
-      "path": "resultados_ollama/P23/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P23/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 2050,
       "sha256": "b73172f09248435d7cfefa59a27c69b284455f89d276d6eb409c64ad8bc38f8d"
     },
     {
-      "path": "resultados_ollama/P23/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P23/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1623,
       "sha256": "4b6ad296723075e4cf832630234def6882a94b8c85b451346ebc18ef576f28f7"
     },
     {
-      "path": "resultados_ollama/P24/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P24/gemma3_4b/Main.java",
       "bytes": 2092,
       "sha256": "8a18cc68448bbe029fca87e119f2ee2d038c3a82863d852c69c2fd2dfe1a5fe3"
     },
     {
-      "path": "resultados_ollama/P24/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P24/gemma3_4b/resposta_bruta.json",
       "bytes": 2537,
       "sha256": "43c09fb2e88f56e898c9aeaee4516e8fee639fc9a9fdc0f2b8d622b16e5e65fa"
     },
     {
-      "path": "resultados_ollama/P24/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P24/gemma3_4b/resposta_completa.txt",
       "bytes": 2104,
       "sha256": "7571526e8fb483e5b67d4d007423387bc806b8ff288f59dd234007bd4ec0a611"
     },
     {
-      "path": "resultados_ollama/P24/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P24/mistral_7b-instruct/Main.java",
       "bytes": 1275,
       "sha256": "a877002923f62df1ecdf046aed8b3733fbd67b852a0b8da7bd758cf6d2f3f77b"
     },
     {
-      "path": "resultados_ollama/P24/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P24/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1720,
       "sha256": "eeb475bb6d457edf92d5751a8dd28f77eff4ad42cd5a9e4b505e4e66932c422b"
     },
     {
-      "path": "resultados_ollama/P24/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P24/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1288,
       "sha256": "fd5a20ac0fe5df97622cf72d2fb5a37954e41b3fdcd5516f0058615c454cc758"
     },
     {
-      "path": "resultados_ollama/P24/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P24/phi4-mini_3.8b/Main.java",
       "bytes": 1267,
       "sha256": "632df056dc4acbbc33f1d182430c8001c9209a19a30f6f1fe1fd0f2c810b6a8c"
     },
     {
-      "path": "resultados_ollama/P24/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P24/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1718,
       "sha256": "3f1e35057fc19fdae39279916c4328b09bcbcb8315bd77731ff87ae326328da6"
     },
     {
-      "path": "resultados_ollama/P24/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P24/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1279,
       "sha256": "2fefdbd30bb78460ef179d676eac2e7eccb87562e98e0dfffe9b00f1066a532c"
     },
     {
-      "path": "resultados_ollama/P25/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P25/gemma3_4b/Main.java",
       "bytes": 2012,
       "sha256": "c5e4449fae7a987b03fbf2a7b02b771974192d8028c104c01210fc7acf5ab0cd"
     },
     {
-      "path": "resultados_ollama/P25/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P25/gemma3_4b/resposta_bruta.json",
       "bytes": 2460,
       "sha256": "56060565805c6550d5e22e4ea01ecdcb82f8daf96cd0adc3068ef50804a5ba2c"
     },
     {
-      "path": "resultados_ollama/P25/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P25/gemma3_4b/resposta_completa.txt",
       "bytes": 2024,
       "sha256": "d3de53edd56414d142e494d93e258f08940ba7e9440ff58bb0c10baae412f647"
     },
     {
-      "path": "resultados_ollama/P25/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P25/mistral_7b-instruct/Main.java",
       "bytes": 1573,
       "sha256": "eb495980b2a88bd4cd4cc883bbad750311f345b37e53449071427b5e35f2b19c"
     },
     {
-      "path": "resultados_ollama/P25/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P25/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 2022,
       "sha256": "ad5b0c7871174428ab1811e1248bdd2fb54d9bb1c6c8d471b9be2abd39888797"
     },
     {
-      "path": "resultados_ollama/P25/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P25/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1586,
       "sha256": "4d879b6fd8eb52d897a2f164f6681d873b9a777e3679c819f5528202c0b7a295"
     },
     {
-      "path": "resultados_ollama/P25/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P25/phi4-mini_3.8b/Main.java",
       "bytes": 2088,
       "sha256": "39dd2d7a812a6fd09d3f5e0ab51f3d214a1e9418501c7082e820bf85057cdfc2"
     },
     {
-      "path": "resultados_ollama/P25/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P25/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 2540,
       "sha256": "dd5f074dc9b542dd9a9196464f47e5a0f6e6bfecfc544401f67388789929cd84"
     },
     {
-      "path": "resultados_ollama/P25/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P25/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 2100,
       "sha256": "07d97d13b7680b3497231dc9c29e038fc4c095fd0e3401d28e73f16edbbbe748"
     },
     {
-      "path": "resultados_ollama/P26/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P26/gemma3_4b/Main.java",
       "bytes": 1488,
       "sha256": "39703b10fbb7a59e571004f03c1a2a82af4976df44b7a52e6053f648ccd80dcc"
     },
     {
-      "path": "resultados_ollama/P26/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P26/gemma3_4b/resposta_bruta.json",
       "bytes": 1920,
       "sha256": "db64bd076bc33cb7b0896ed722266af699ef4022b9d77f49e0f8973570a82f69"
     },
     {
-      "path": "resultados_ollama/P26/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P26/gemma3_4b/resposta_completa.txt",
       "bytes": 1500,
       "sha256": "b4ac88539eb48702d2cc7ac59e4c6db247e6e9b9c80c820b9e4f03300e5ef1c0"
     },
     {
-      "path": "resultados_ollama/P26/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P26/mistral_7b-instruct/Main.java",
       "bytes": 1511,
       "sha256": "d5adb90157a30a6bb80577a8781e872d27ab758771286a94639c326b1a07fc75"
     },
     {
-      "path": "resultados_ollama/P26/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P26/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1952,
       "sha256": "0199ead5848c586515acfd94a30c0aa2495d3b75df971421c0c2c27d1609c66e"
     },
     {
-      "path": "resultados_ollama/P26/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P26/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1524,
       "sha256": "ef694ae3d580df76e993e6272f79feb8bd4ea02e8f1eac43160c8842bd2dfbf2"
     },
     {
-      "path": "resultados_ollama/P26/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P26/phi4-mini_3.8b/Main.java",
       "bytes": 1176,
       "sha256": "ecefe33a402bb260bd16a94facb4dfa89e6cf8c6f1193673daa4613faae42c7d"
     },
     {
-      "path": "resultados_ollama/P26/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P26/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1609,
       "sha256": "5db0eb61795f1f17a37f7bd253c65a7b70d6a58771cfca12347800475f416fdf"
     },
     {
-      "path": "resultados_ollama/P26/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P26/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1188,
       "sha256": "eaa4d959d65ddaf168b563a246e97eb6fda10675f5e883e0c4e22a94be3fb8f9"
     },
     {
-      "path": "resultados_ollama/P27/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P27/gemma3_4b/Main.java",
       "bytes": 1281,
       "sha256": "ec08ac6d3cb05cdc47223440b8f59f2b0c480c9367a3a0c1af26aae284208039"
     },
     {
-      "path": "resultados_ollama/P27/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P27/gemma3_4b/resposta_bruta.json",
       "bytes": 1713,
       "sha256": "2546c30ae33ea68555a49c79d2c554d6575b3535e0fe2a39437b76589485b4f5"
     },
     {
-      "path": "resultados_ollama/P27/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P27/gemma3_4b/resposta_completa.txt",
       "bytes": 1293,
       "sha256": "a2bcc2821c5370dabd142248a28aff8f4a97936d0a498a743f10c7278edcf0c2"
     },
     {
-      "path": "resultados_ollama/P27/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P27/mistral_7b-instruct/Main.java",
       "bytes": 967,
       "sha256": "95d48752aaa9699dd5dc2ca57d3f97948c92fa8fcc4a45f85f56e868b5c10739"
     },
     {
-      "path": "resultados_ollama/P27/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P27/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1406,
       "sha256": "4f4d25fefbc316527512f77f5ccf1b09f4c00a80f9673ca2d3559518d3fffaf3"
     },
     {
-      "path": "resultados_ollama/P27/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P27/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 980,
       "sha256": "5bf8bed9373c5f173025dddcbd9ca5baafffb2a9b930d0f42515f17fabe0a2d3"
     },
     {
-      "path": "resultados_ollama/P27/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P27/phi4-mini_3.8b/Main.java",
       "bytes": 819,
       "sha256": "6bc7eb2f1d0006332403c0d00ea6d6da3b09d657590eec4467f60c1af6926904"
     },
     {
-      "path": "resultados_ollama/P27/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P27/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1250,
       "sha256": "8bb8aea711218a5a0a2324822d1ae54db8a93dec92a4aae84491a8d578de8034"
     },
     {
-      "path": "resultados_ollama/P27/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P27/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 831,
       "sha256": "34ca1f72f8cf2bf13662f565cc416cabc41769c054b8cad52dcedc3380e39f40"
     },
     {
-      "path": "resultados_ollama/P28/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P28/gemma3_4b/Main.java",
       "bytes": 1887,
       "sha256": "08b2f2828cca1fe830c54f15d92c2fb85de1b365bc3d1acd78ca14f2974ead3d"
     },
     {
-      "path": "resultados_ollama/P28/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P28/gemma3_4b/resposta_bruta.json",
       "bytes": 2329,
       "sha256": "31ff6852aca072ff0389e39cdcbd7802ae12858c7299912fa2d8690c5aa2dfb1"
     },
     {
-      "path": "resultados_ollama/P28/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P28/gemma3_4b/resposta_completa.txt",
       "bytes": 1899,
       "sha256": "7c9908e6ce48e6c402439b7e7af8c52df34f71577dc113c3ebba0c75245c93a3"
     },
     {
-      "path": "resultados_ollama/P28/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P28/mistral_7b-instruct/Main.java",
       "bytes": 1776,
       "sha256": "68a5088c6c5f215acd19d35179995925e46d9e46b7686e28d96fd806d31fa844"
     },
     {
-      "path": "resultados_ollama/P28/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P28/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 2235,
       "sha256": "56e93ecc12cb53e161dea1c85142371b3da10cd9b3f245a4fed7131311280f0f"
     },
     {
-      "path": "resultados_ollama/P28/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P28/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1789,
       "sha256": "370495fa16d6b603b71bab6a0ccfb93b02c638d0a7ed057067088dc33729ab2e"
     },
     {
-      "path": "resultados_ollama/P28/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P28/phi4-mini_3.8b/Main.java",
       "bytes": 1498,
       "sha256": "c25c9801a8990d128e8ede4f4541508b5283860d674b344f8b84482a87f47f22"
     },
     {
-      "path": "resultados_ollama/P28/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P28/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1940,
       "sha256": "45c09c934b3b5076dfecec0530b1b35b4e3225a76730bee50eaa943e2f939372"
     },
     {
-      "path": "resultados_ollama/P28/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P28/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1510,
       "sha256": "d7089b8261e64cd42775d60c751c53d3082c12905f31f00a798ee8f74472c2c3"
     },
     {
-      "path": "resultados_ollama/P29/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P29/gemma3_4b/Main.java",
       "bytes": 1496,
       "sha256": "f4bc1c6b77088ac3f7391a80ae809589175e848e1812813fc23e2720cdc03fef"
     },
     {
-      "path": "resultados_ollama/P29/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P29/gemma3_4b/resposta_bruta.json",
       "bytes": 1930,
       "sha256": "7903a6feb7a68736a9fa528a7ced9fadd1b0412ab7355637f973256554cb2bad"
     },
     {
-      "path": "resultados_ollama/P29/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P29/gemma3_4b/resposta_completa.txt",
       "bytes": 1508,
       "sha256": "d764791567fb8800ce2c98536da765eb9600a98a78be43f3f293d76cfde3df38"
     },
     {
-      "path": "resultados_ollama/P29/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P29/mistral_7b-instruct/Main.java",
       "bytes": 1090,
       "sha256": "554c708fcaf0c2d4fb04192a126d69b83f78f6e148befffc39ad24b4e5740a45"
     },
     {
-      "path": "resultados_ollama/P29/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P29/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 1531,
       "sha256": "101b658afcd3dcf989d73e59fe30ee194d414a21c2245e9e8f30ebd7d61ece3f"
     },
     {
-      "path": "resultados_ollama/P29/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P29/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 1103,
       "sha256": "a8774119a7319591a98e207bd1c7580579fcf95a9b3e9829b6c955e54dd57c28"
     },
     {
-      "path": "resultados_ollama/P29/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P29/phi4-mini_3.8b/Main.java",
       "bytes": 1048,
       "sha256": "a449210724c9273cb84239964f574b2ea874a2ee947a7b01c4d724dc79c73876"
     },
     {
-      "path": "resultados_ollama/P29/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P29/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 1478,
       "sha256": "b77542f511cf6d896a490b5e2d7d7643fc2186e32b6251b0fdf92ec6f493cdd9"
     },
     {
-      "path": "resultados_ollama/P29/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P29/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 1060,
       "sha256": "394d099f31843d812f802993ec5dba6d6cd534076726fa026772fe8626843d87"
     },
     {
-      "path": "resultados_ollama/P30/gemma3_4b/Main.java",
+      "path": "resultados_modelos/P30/gemma3_4b/Main.java",
       "bytes": 2029,
       "sha256": "6f3e7ed5fc951d810c79e356d65048a09d355cef22c990d63d939c0baef451b3"
     },
     {
-      "path": "resultados_ollama/P30/gemma3_4b/resposta_bruta.json",
+      "path": "resultados_modelos/P30/gemma3_4b/resposta_bruta.json",
       "bytes": 2472,
       "sha256": "56a74e52d1c5135d74ac27991bde3c80bce8fdb17e5b67377560e1979661704d"
     },
     {
-      "path": "resultados_ollama/P30/gemma3_4b/resposta_completa.txt",
+      "path": "resultados_modelos/P30/gemma3_4b/resposta_completa.txt",
       "bytes": 2041,
       "sha256": "aef6885c901816ab7639e5cf9a247a2eb7de61843bdef1807373f5a4c23a42a3"
     },
     {
-      "path": "resultados_ollama/P30/mistral_7b-instruct/Main.java",
+      "path": "resultados_modelos/P30/mistral_7b-instruct/Main.java",
       "bytes": 2465,
       "sha256": "97ac540d7521d2188480889c54cf1a29e90174ccf2bb4d923eef54da81f62244"
     },
     {
-      "path": "resultados_ollama/P30/mistral_7b-instruct/resposta_bruta.json",
+      "path": "resultados_modelos/P30/mistral_7b-instruct/resposta_bruta.json",
       "bytes": 3627,
       "sha256": "a642d377394691eec17e798436334455f794ec2b9102648cbb806797bb064ac2"
     },
     {
-      "path": "resultados_ollama/P30/mistral_7b-instruct/resposta_completa.txt",
+      "path": "resultados_modelos/P30/mistral_7b-instruct/resposta_completa.txt",
       "bytes": 3189,
       "sha256": "29efd9b7650b29aacfe424f8b13fbca5265506d432996dc697a517bf0662b637"
     },
     {
-      "path": "resultados_ollama/P30/phi4-mini_3.8b/Main.java",
+      "path": "resultados_modelos/P30/phi4-mini_3.8b/Main.java",
       "bytes": 2148,
       "sha256": "728d05daa115c1218c629c39198c64a13ebae4233a60983038aa14959ce61701"
     },
     {
-      "path": "resultados_ollama/P30/phi4-mini_3.8b/resposta_bruta.json",
+      "path": "resultados_modelos/P30/phi4-mini_3.8b/resposta_bruta.json",
       "bytes": 2586,
       "sha256": "eaeea22e1082cbde791471dd5661d58bbcd8e66deae472b4021f6238bc969b77"
     },
     {
-      "path": "resultados_ollama/P30/phi4-mini_3.8b/resposta_completa.txt",
+      "path": "resultados_modelos/P30/phi4-mini_3.8b/resposta_completa.txt",
       "bytes": 2160,
       "sha256": "c45bd5cedc2c21f7c9dcd012df9a4ce46d9d2961930f9a03ca4f023f6ff33955"
     },
     {
-      "path": "roteiro_testes_assertividade.csv",
-      "bytes": 4784,
-      "sha256": "ede6c85fc5323a10039cafddd5afa41d81bfa302b95f19f9aea05038a6124e12"
+      "path": "scripts/analise/analise_estatistica_pareada.py",
+      "bytes": 9232,
+      "sha256": "4ea0c75a91f15a77478ecf09533c388e1a98f104d99d0bdf3f82637db8c1a577"
+    },
+    {
+      "path": "scripts/analise/assertividade.py",
+      "bytes": 9850,
+      "sha256": "4ceff816a924a934872aa9d70c1523bcd1aedbeab8a7264e9b60140883476e24"
+    },
+    {
+      "path": "scripts/analise/gerar_ficha_assertividade.py",
+      "bytes": 6529,
+      "sha256": "c1accff0154acb490539c7eba91bc8c6180383b397ca633cf25e07ed69caff8c"
+    },
+    {
+      "path": "scripts/graficos/gerar_grafico_assertividade_pdf.py",
+      "bytes": 2784,
+      "sha256": "94bc29105f45aa5d0e777df7adc5e596ad99699de096ce96f54e0c393797f85c"
+    },
+    {
+      "path": "scripts/graficos/gerar_graficos.py",
+      "bytes": 10697,
+      "sha256": "ad1c9435348468729ea87756b3f0f5bb7244ea1425c05e8e898cbf550cac1950"
+    },
+    {
+      "path": "scripts/medicao/medir_ollama.py",
+      "bytes": 15517,
+      "sha256": "dd9e6eea2d97011d9f6a7b970ff138bebb015f523282591411bf615adfd2e58b"
     }
   ]
 }

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Linhas de código</title>
+<desc id="desc">Gráfico de barras comparando Média de linhas por resposta para Phi-4 Mini, Gemma 3 e Mistral. Os valores estão escritos sobre as barras.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="100" y="38" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#18212b">Linhas de código</text>
+<text x="100" y="66" font-family="Arial, sans-serif" font-size="15" fill="#52606d">Média de linhas por resposta</text>
+<line x1="100" y1="456.0" x2="912" y2="456.0" stroke="#d8dee5" stroke-width="1"/>
+<text x="88" y="461.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#46515c">0</text>
+<line x1="100" y1="365.0" x2="912" y2="365.0" stroke="#d8dee5" stroke-width="1"/>
+<text x="88" y="370.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#46515c">18</text>
+<line x1="100" y1="274.0" x2="912" y2="274.0" stroke="#d8dee5" stroke-width="1"/>
+<text x="88" y="279.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#46515c">35</text>
+<line x1="100" y1="183.0" x2="912" y2="183.0" stroke="#d8dee5" stroke-width="1"/>
+<text x="88" y="188.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#46515c">52</text>
+<line x1="100" y1="92.0" x2="912" y2="92.0" stroke="#d8dee5" stroke-width="1"/>
+<text x="88" y="97.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#46515c">70</text>
+<rect x="179.3" y="232.4" width="112.0" height="223.6" rx="3" fill="#3267a8"/>
+<text x="235.3" y="222.4" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#18212b">43.0 linhas</text>
+<text x="235.3" y="484" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#18212b">Phi-4 Mini</text>
+<rect x="450.0" y="187.2" width="112.0" height="268.8" rx="3" fill="#cf7b22"/>
+<text x="506.0" y="177.2" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#18212b">51.7 linhas</text>
+<text x="506.0" y="484" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#18212b">Gemma 3</text>
+<rect x="720.7" y="224.8" width="112.0" height="231.2" rx="3" fill="#287a58"/>
+<text x="776.7" y="214.8" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#18212b">44.5 linhas</text>
+<text x="776.7" y="484" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#18212b">Mistral 7B Instruct</text>
+<line x1="100" y1="456" x2="912" y2="456" stroke="#46515c" stroke-width="1.5"/>
+</svg>
